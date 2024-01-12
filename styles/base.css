@@ -1,14 +1,41 @@
+* {
+	box-sizing:border-box;
+}
+
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
+    max-width: 50%;        
+}
+
+header {
+    background-color: rgb(113, 113, 220);
+    text-align: center;
+    /* display: inline;  did not work here */
+}
+
+
+header img {
+    width: 100px;
+    height: auto;
+    /* display: inline; Did not do anything here */
+}
+
+img h1 {
+    display: inline-block; /*is still not doing anything here*/
+    /* float:left; Did nothing */
+}
+
+nav {
+    align-items: center;
 }
 
 main {
-    width: 95vw;
+    /* width: 95vw; */
     background-color: rgb(254, 234, 209);
     outline: 8px solid #4834d4
     display: grid;
-    /* grid-template-columns: auto;
-    grid-template-rows: auto; */
+    grid-template-columns: auto;
+    grid-template-rows: auto;
 }
 
 .card {
