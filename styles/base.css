@@ -79,15 +79,19 @@ h2 {
     grid-template-columns: auto;
     outline: 2px;
     width: 97%;    
-    /* place-items: center; changes*/
-    /* margin: 0p ; */
+    /* place-items: center; //changes the width of the background for the title to smaller*/
+    margin: 5px;
+    border: solid black 1px;
+    border-radius: 10px;
     
 }
 
+/* This gets the first item in each .card */
 .card > :nth-child(1) {
     background-color: black;
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
+    margin: 0;
 }
 
 li {
@@ -107,21 +111,27 @@ li {
 
 .card div {
     text-align: center;
+    padding: 2px;
+    line-height: 1.5;
 }
 h3 {
     /* background: #4834d4; */
     color:white;
+    /* padding: 5px;  -duplicated */
 }
 
 h3 ul {
-    background:rgb(254, 234, 209)
+    /* background:rgb(254, 234, 209) */
+    padding: 5px
 }
 
 footer {
     text-align: center;
     background-color: black;
+    padding: 5px;
 }
 
 footer p {
     color: white;
+    line-height: 1.2;
 }
