@@ -1,8 +1,11 @@
 * {
 	box-sizing:border-box;
+    
 }
 
 body {
+    /* display: block;    default value */
+    display: grid;
     font-family: 'Roboto', Helvetica, sans-serif;
     max-width: 50%;        
 }
@@ -10,23 +13,33 @@ body {
 header {
     background-color: rgb(113, 113, 220);
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    /* vertical-align: middle; */
     /* display: inline;  did not work here */
 }
 
-
-header img {
-    width: 100px;
-    height: auto;
-    /* display: inline; Did not do anything here */
+h1 {
+    display: inline;
+    margin-right: 10px;
+    
 }
 
-img h1 {
-    display: inline-block; /*is still not doing anything here*/
-    /* float:left; Did nothing */
+img {
+    width: 100px;
+    height: auto;
+    /* display: block; inherited, not needed */
+    /* margin-left: auto; not working here*/
+    /* margin-right: auto; not working here*/
+    /* display: inline;  works with text? */
+    /* padding: 20px;  need margin instead*/
+    margin: 10px;
 }
 
 nav {
-    align-items: center;
+    /* align-items: center; */
 }
 
 main {
