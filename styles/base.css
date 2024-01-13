@@ -17,29 +17,43 @@ header {
     flex-direction: row;
     justify-content: center;
     padding: 20px;
-    /* vertical-align: middle; */
-    /* display: inline;  did not work here */
 }
 
 h1 {
-    display: inline;
-    margin-right: 10px;
-    
+    /* display: inline; not using this, using flex*/
+    /* margin-right: 10px; not needed anymore*/
+    /* text-align:justify;     */
+    color: white;
 }
 
 img {
     width: 100px;
     height: auto;
-    /* display: block; inherited, not needed */
-    /* margin-left: auto; not working here*/
-    /* margin-right: auto; not working here*/
-    /* display: inline;  works with text? */
-    /* padding: 20px;  need margin instead*/
     margin: 10px;
 }
 
 nav {
-    /* align-items: center; */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    /* vertical-align: middle; */
+}
+
+ul {
+    /* display: flex;
+    align-items: center; */
+    width: 110px;
+    padding: 0px;
+    
+}
+
+a {
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    color: white;
 }
 
 main {
