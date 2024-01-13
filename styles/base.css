@@ -58,14 +58,53 @@ a {
 
 main {
     /* width: 95vw; */
-    background-color: rgb(254, 234, 209);
-    outline: 8px solid #4834d4
+    /* background-color: rgb(254, 234, 209); */
+    /* outline: 8px solid #4834d4 */
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
 }
 
-.card {
-    
+main > :nth-child(1) {
+    /* background-color: aquamarine; */
+    border-bottom: solid 1px rgba(0, 0, 0, 0.371);
+}
 
+h2 {
+    /* text-decoration: underline; */
+    padding-bottom: 5px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto;
+    outline: 2px;
+    width: 90%;    
+}
+
+.card > :nth-child(1) {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+/* 
+section .card >:nth-child(2) {
+    background-color: aquamarine;
+}
+
+main + main section.card {
+    background-color: aquamarine;
+} */
+
+.location.weather.numberVisits {
+    color: aquamarine;
+    text-align: center;
+}
+h3 {
+    /* background: #4834d4; */
+    color:white;
+}
+
+h3 ul {
+    background:rgb(254, 234, 209)
 }
