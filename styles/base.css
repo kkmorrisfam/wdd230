@@ -79,7 +79,7 @@ h2 {
     grid-template-columns: auto;
     outline: 2px;
     width: 97%;    
-    /* place-items: center; */
+    /* place-items: center; changes*/
     /* margin: 0p ; */
     
 }
