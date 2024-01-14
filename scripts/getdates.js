@@ -11,7 +11,7 @@ let todaysDate =  new Date();
 let lastModified = new Date(document.lastModified);
 
 document.querySelector("#year").textContent = todaysDate.getFullYear();
-document.querySelector('#lastModified').textContent = lastModified.toLocaleDateString("en-UK", options);
+document.querySelector('#lastModified').textContent = `Last Modification: ${lastModified.toLocaleDateString("en-UK", options)}`;
 
 
 //this is for current date/time. I need document last modified date.

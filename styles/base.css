@@ -8,13 +8,15 @@
 body {
     /* display: block;    default value */
     display: grid;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif; /*look for different fonts....*/
+    font-size: 16px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */    
     max-width: 600px;  
     margin: auto; /*centers the body to the page*/      
 }
 
 header {
-    background-color: rgb(113, 113, 220);
+    background-color: rgb(5, 5, 252);
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -122,4 +124,5 @@ footer {
 footer p {
     color: white;
     line-height: 1.2;
+    /* font-size: 0.875em; 14px/16=0.875em not sure if I need it smaller */
 }
