@@ -45,12 +45,12 @@ nav {
 }
 
 ul {
-    width: 110px;
+    /* width: 110px; */
     padding: 0px;
     
 }
 
-a {
+nav a {
     padding: 5px;
     display: block;
     text-decoration: none;
