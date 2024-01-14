@@ -9,7 +9,7 @@ body {
     /* display: block;    default value */
     display: grid;
     font-family: 'Roboto', Helvetica, sans-serif;
-    max-width: 50%;  
+    max-width: 600px;  
     margin: auto; /*centers the body to the page*/      
 }
 
