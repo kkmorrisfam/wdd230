@@ -1,0 +1,12 @@
+/* changed min-width to 700px from 500px because I can't minimize more than 500px, so no changes occur */
+@media screen and (min-width: 700px) {
+    header {
+        background-color: black;        
+    }
+    h1 {
+        color: white;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
