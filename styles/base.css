@@ -1,8 +1,9 @@
  /*root css, sets everything to zero to start*/
-    /* margin: 0;  *setting margin to zero messed other things up
+ /* *setting margin to zero messed other things up */
+  */ {   margin: 0;  
     padding: 0;
-    box-sizing:border-box; */
-    
+    box-sizing:border-box;
+}
 
 
 body {
@@ -44,16 +45,18 @@ nav {
     background-color: black;
 }
 
-/* ul {
+ul {
     /* width: 110px; */
-    /* padding: 0px;
-     */
-/* } */ */
+    padding: 0px;
+    /* flex-direction: column; */
+    /* list-style-type: none; */
+    
+}
 
 nav ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 nav ul li {
@@ -79,6 +82,8 @@ h2 {
     border-bottom: solid 1px rgba(0, 0, 0, 0.371);
     padding: 5px;
     margin: 5px;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 .card {
@@ -86,8 +91,8 @@ h2 {
     grid-template-columns: auto;
     /* outline: 2px;
     width: 97%;        */
-    /* margin: 5px; */
-    padding: 1rem;
+    margin: 0.8rem;
+    /* padding: 1rem; */
     border: solid black 1px;
     border-radius: 5px;
     
@@ -113,7 +118,7 @@ h2 {
     list-style-type: none;
 }
 
-/* this is for the version where I just a div
+/* this is for the version where I just used a div
 .card div {
     text-align: center;
     padding: 2px;
@@ -122,9 +127,9 @@ h2 {
 
 .card p {
     text-align: center;
-    /* padding: 5px; */
-    /* margin: 5px; */
-    /* line-height: 1.5; */
+    padding: 5px;
+    margin: 5px;
+    line-height: 1.5;
 }
 
 /* h3 {
