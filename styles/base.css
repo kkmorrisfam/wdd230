@@ -148,7 +148,7 @@ h2 {
 footer {
     text-align: center;
     background-color: black;
-    /* padding: 5px; */
+    padding: .5rem;
 }
 
 footer p {
