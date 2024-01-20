@@ -4,11 +4,8 @@
         flex-direction: row;
     }
 
-    main {
-        
-        grid-template-columns: 1fr 1fr;
-        
-        
+    main {        
+        grid-template-columns: 1fr auto;
     }
 
     main h2 {

@@ -1,11 +1,11 @@
 /* Style sheet for Design Principles activity */
 
-* {
-    /* background-color: aqua; */ 
+* {    
     margin: 0;  
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
+
 body {
     font-family: 'Poppins', sans-serif;    
     font-size: 16px;
@@ -41,7 +41,7 @@ main {
     padding: 1rem;
     box-shadow: 0 0 10px #333; /*Does not affect mobile view*/
     /* not sure the following affects it */
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr;
     margin: 10px 10px;
     border: solid black 1px;
@@ -62,19 +62,22 @@ main {
     border-top-right-radius: 10px;    
 }
 
-.card:nth-child(2) {
+/* .card:nth-child(2) { */
     /* I have no idea why the 2nd element shows different spacing */
     /* padding: 5px 5px 20px 5px; */
-    padding: auto;
+    /* padding: auto; */
     /* background-color:aquamarine; */
     
-}
+/* } */
 
 img {
     width: 95%; /*Puts the image into the size of the card; object-fit: contain doesn't really do anything here unless card smaller height*/
-    margin: auto;    
+    margin: auto;     
     /* max-width:100%;   either works
     display:block; */
+    /* Doesn't really change things, but works
+    aspect-ratio: 2/5;
+    object-fit: cover; */
 }
 
 
@@ -82,12 +85,10 @@ img {
     padding: 1.2rem;
 }
 
-.card p:nth-child(2) {
-    /* margin: auto auto 50px auto; */
-}
-footer {
-    backround-color: black;    
-}
+/* .card p:nth-child(2) {
+    margin: auto auto 50px auto;
+} */
+
 
 footer p {
     color: white;
