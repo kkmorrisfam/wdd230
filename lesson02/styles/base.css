@@ -7,8 +7,7 @@
     box-sizing:border-box;
 }
 body {
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;    
     font-size: 16px;
     margin: 0 auto; /*only centers when there is a width also declared.*/
     max-width: 900px; 
@@ -18,8 +17,7 @@ header {
     color: white;
     background-color: #333;
     text-align: center;   
-    line-height: 2.5rem; 
-    
+    line-height: 2.5rem;     
 }
 
 header h1 {
@@ -53,7 +51,8 @@ main {
 }
 
 .card h3, h4, a {
-    padding: .8rem;
+    padding: 5px;
+    height: 60px;
 }
 
 .card h3 {
@@ -63,15 +62,29 @@ main {
     border-top-right-radius: 10px;    
 }
 
+.card:nth-child(2) {
+    /* I have no idea why the 2nd element shows different spacing */
+    /* padding: 5px 5px 20px 5px; */
+    padding: auto;
+    /* background-color:aquamarine; */
+    
+}
+
 img {
     width: 95%; /*Puts the image into the size of the card; object-fit: contain doesn't really do anything here unless card smaller height*/
     margin: auto;    
+    /* max-width:100%;   either works
+    display:block; */
 }
+
 
 .card p {    
     padding: 1.2rem;
 }
 
+.card p:nth-child(2) {
+    /* margin: auto auto 50px auto; */
+}
 footer {
     backround-color: black;    
 }
