@@ -1,6 +1,85 @@
 /* Style sheet for Design Principles activity */
 
+* {
+    /* background-color: aqua; */ 
+    margin: 0;  
+    padding: 0;
+    box-sizing:border-box;
+}
 body {
     font-family: 'Poppins', sans-serif;
+    
+    font-size: 16px;
+    margin: 0 auto; /*only centers when there is a width also declared.*/
+    max-width: 900px; 
+}
+
+header {
+    color: white;
+    background-color: #333;
+    text-align: center;   
+    line-height: 2.5rem; 
+    
+}
+
+header h1 {
+    padding: 1rem 0 0 0;
     font-family: 'Ubuntu', sans-serif;
+}
+header h2 {
+    padding: 0 0 1rem 0;
+}
+main {
+    /* margin: 0 auto; doesn't do anything here*/
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    /* font-size: .8rem; */
+}
+
+.card {
+    /* max-width: 350px; */
+    border: 2px;
+    padding: 1rem;
+    box-shadow: 0 0 10px #333; /*Does not affect mobile view*/
+    /* not sure the following affects it */
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 10px 10px;
+    border: solid black 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(222, 224, 225, 0.299);
+}
+
+.card h3, h4, a {
+    padding: .8rem;
+}
+
+.card h3 {
+    color: white;
+    background-color: #333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+
+img {
+    width: 95%; /*Puts the image into the size of the card; object-fit: contain doesn't really do anything here unless card smaller height*/
+    margin: auto;    
+}
+
+.card p {    
+    padding: 1.2rem;
+}
+
+footer {
+    backround-color: black;    
+}
+
+footer p {
+    color: white;
+    font-size: .8rem;
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
 }

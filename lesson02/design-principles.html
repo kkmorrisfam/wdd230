@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-
+    <link rel="stylesheet" href="styles/base.css">    
+    <link rel="stylesheet" href="styles/medium-02.css">
+    <link rel="stylesheet" href="styles/large-02.css">
 </head>
 <body>
     <header>
@@ -21,9 +22,9 @@
     </header>
     <main>
         <section class="card">
-            <h2>PARC: Contrast</h2>
-            <h3>Land-O-Lakes</h3>
-            <a href = "https://www.landolakes.com/recipes/" target="_blank">Land-O-Lakes</a>
+            <h3>PARC: Contrast</h3>
+            <h4>Land-O-Lakes</h4>
+            <a href = "https://www.landolakes.com/recipes/" target="_blank">landolakes.com</a>
             <img src="images/land-lakes-website.jpg" alt="Land-O-Lakes mobile web page for recipes screenshot">
             <p>The Contrast principle on this website page is used to emphasize the differences in each element 
                 thereby making each one stand out. I particularly like the red background in the second section 
@@ -32,9 +33,9 @@
                 click on either of the receipe buttons.</p>
         </section>    
         <section class="card">
-            <h2>Fitt's Law</h2>
-            <h3>JPMorgan Chase Bank, N.A.</h3>
-            <a href = "https://www.chase.com/" target="_blank"></a>
+            <h3>Fitt's Law</h3>
+            <h4>JPMorgan Chase Bank, N.A.</h4>
+            <a href = "https://www.chase.com/" target="_blank">chase.com</a>
             <img src="images/chase-website.jpg" alt="Chase Bank mobile web page screenshot">
             <p>The Chase Bank website utilizes Fitt’s Law by making important elements, such as buttons and links, 
                 larger and placing them within easy reach. This helps minimize the time and effort a user needs to 
@@ -42,9 +43,9 @@
                 bank activities as well as login to a user account.  It fulfils its purpose for a website by doing this.</p>
         </section>
         <section class="card">
-            <h2>White Space and Clean Design</h2>
-            <h3>OttLite</h3>
-            <a href = "https://www.ottlite.com/" target="_blank">OttLite</a>
+            <h3>White Space and Clean Design</h3>
+            <h4>OttLite</h4>
+            <a href = "https://www.ottlite.com/" target="_blank">ottlite.com</a>
             <img src="images/ottlite-webite.jpg" alt="OttLite mobile web page screenshot">
             <p>The OttLite website uses the White Space and Clean Design principles.  It has empty space around the second 
                 and third sections to give visual breathing room and create a clean look.  This enhances readability and reduces 
@@ -53,10 +54,23 @@
                 the page.</p>
         </section>
     </main>
-    <footer>
-        <div id=""></div>
-
+    <footer>   
+        <p>&#169; <span id="year"></span>| Kerri MorrisCalifornia | Last Modified <span id="lastModified"></span></p>
     </footer>
+    <script>
+        const options = {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+        };
+
+        let todaysDate =  new Date();
+        let lastModified = new Date(document.lastModified);
+
+        document.querySelector("#year").textContent = todaysDate.getFullYear();
+        document.querySelector('#lastModified').textContent = `Last Modification: ${lastModified.toLocaleDateString("en-UK", options)}`;
+    </script>
 
 </body>
 </html>
