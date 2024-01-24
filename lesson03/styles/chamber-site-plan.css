@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margins: 0;
+    box-sizing: border-box;    
+}
+
+:root {
+    
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: #3F6634;
+    color: white;
+    text-align: center;
+    
+}
+
+header h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 2.5em;
+}
