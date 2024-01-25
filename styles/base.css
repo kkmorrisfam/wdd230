@@ -7,7 +7,6 @@
     box-sizing:border-box;
 }
 
-
 body {  
     font-family: 'Roboto', Helvetica, sans-serif; /*look for different fonts....*/
     font-size: 16px;
@@ -62,10 +61,6 @@ img {
     text-align: center;    
     background-color: black;
 }
-
-/* .navigation.active {
-    background-color: rgba(0, 0, 0, 0.295);
-} */
 
 .active {
     background-color: rgb(59, 59, 59);
@@ -171,40 +166,3 @@ footer p {
     /* font-size: 0.875em; 14px/16=0.875em not sure if I need it smaller */
 }
 
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
-	h1 {
-		font-size: 2.5rem;
-		margin-left: 0;
-		text-align: center;
-	}
-	
-	h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
-
-	#menu {
-		display: none; /* hide hamburger button */
-	}
-
-	.navigation ul {
-		flex-direction: row;
-	}
-
-	.navigation ul li {
-		display: block;
-		/* flex: 1 1 100%; -duplicate from small view*/
-	}
-
-    .navigation a {
-        display: block;
-        /* duplicate from small view, even though display:none */
-        /* padding: .5rem;        
-        text-decoration: none;
-        color: white; */
-    }
-
-    .map {
-        grid-column: 1 /3;
-    }
