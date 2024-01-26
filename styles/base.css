@@ -64,7 +64,9 @@ img {
 
 .active {
     background-color: rgb(59, 59, 59);
-    
+    /* Can't use text-decoration unless I change specificity */
+    /* text-decoration-line: underline;
+    text-decoration-color: whitesmoke; */
     padding: 10px
   }
   
