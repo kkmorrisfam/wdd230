@@ -1,12 +1,10 @@
 * {
     padding: 0;
-    margins: 0;
+    margin: 0;
     box-sizing: border-box;    
 }
 
 :root {
-    
-    font-family: 'Merriweather', serif;
     font-family: 'Poppins', sans-serif;
 }
 header {
@@ -19,4 +17,24 @@ header {
 header h1 {
     font-family: 'Lobster', sans-serif;
     font-size: 2.5em;
+    color: white;
+}
+
+header h2 {
+    color: white;
+}
+
+h1, h2 {
+    color: #3F6634;
+}
+article {
+    font-family: 'Merriweather', serif;
+}
+
+.colors img {
+    width: 200px;
+}
+
+.wireframe img {
+    width: 200px;
 }
