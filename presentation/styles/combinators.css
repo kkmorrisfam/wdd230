@@ -1,0 +1,27 @@
+/* Example child */
+
+/* h1, 
+h2,
+h3,
+h4 {
+    color: orange;
+} */
+
+ul {
+    color: blue;
+  }
+  
+  ul li {
+    color: red;
+    border: 5px solid red;
+  }
+
+ 
+  
+  /*Example Direct Child*/
+  /* ul > li {
+    color: blue;
+    font-weight: bold;
+  }
+   */
+  
