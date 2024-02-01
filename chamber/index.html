@@ -1,24 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce for Crescent City California</title>
-    <meta name="description"
-    content="Week 3 WDD 230 - Web Frontend Development | Kerri Morris course assignment.">
+    <meta name="description" content="Week 3 WDD 230 - Web Frontend Development | Kerri Morris course assignment.">
     <meta name="author" content="Kerri Morris">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/chamber-site-plan.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Facebook meta information -->
     <meta property="og:title" content="Crescent City Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kkmorrisfam.github.io/wdd230/chamber/index.html">
     <meta property="og:image" content="https://kkmorrisfam.github.io/wdd230/chamber/images/crescent-city-pier.jpg">
-
+    <!-- Twitter meta information -->
+    <meta name="twitter:title" content="Crescent City Chamber of Commerce">
+    <meta name="twitter:description" content="website">
+    <meta name="twitter:image" content="https://kkmorrisfam.github.io/wdd230/chamber/images/crescent-city-pier.jpg">
+    <!-- <meta name="twitter:card" content=""> -->
 </head>
+
 <body>
-    
+    <header>
+        <div class = "banner">
+            <div class="btn">Join Now</div>
+            <div class="social">
+                <a href="#"><img src="images/facebook.png"></a>
+                <a href="#"><img src="images/twitter-x.png"></a>
+                <a href="#"><img src="images/linked-in.png"></a>            
+            </div>
+        </div>
+        <div class ="heading">
+            <img src="images/chamber-logo.png">
+            <button id="menu"></button>
+            <nav class="navigation">            
+                <ul>
+                    <li><a href="#" class = "active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Membership</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/beach-sunset.jpg" alt="Beach at sunset: Hero Image">
+            <h1>Welcome Message</h1>           
+            <article>
+                <h2>Another message - h2 heading</h2>                
+                <p>an article here along with the welcome messages
+                </p>
+            </article>
+        </div>
+        <section class="info">
+            <div class = "card">
+                <img src="">
+                <h3>Find a member</h3>
+                <p>Find a business in our area</p>
+                <div class="btn">Directory Search</div>
+            </div>
+            <div class = "card">
+                <img src="">
+                <h3>Become a Member</h3>
+                <p>Become successful with us.</p>
+                <div class="btn">Join Us</div>
+            </div>
+            <div class = "card">
+                <img src="">
+                <h3>Find an Event</h3>
+                <p>Connect with us at an upcoming event.</p>
+                <div class="btn">Events Calendar</div>
+            </div>
+        </section>
+        <section class="pair text-right">
+            <img src="">
+            <div>
+                <h3>Company Spotlight</h3>
+                <p>Current member spotlight information, about what they are up to...</p>
+                <div class="btn">Action Button</div>
+            </div>            
+        </section>
+        <section class="pair">
+            <div class="weather">
+                <h3>Weather</h3>
+            </div>
+            <div>
+                <h3>Additional Information</h3>
+                <div class="btn">Action Button</div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <!-- The footer area must contain contact information and some additional development information including: your full name, the fact that this is a project for WDD 230, and the last modification date of the page, which is driven dynamically through JavaScript. -->
+        <p>&#169; <span id="year"></span><br>Kerri Morris<br>California</p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/navigation.js"></script>    
 </body>
+
 </html>

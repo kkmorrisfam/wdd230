@@ -1,0 +1,173 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */    
+    --royal: #03256C;
+    --robin: #44CFCB;
+    --green: #3F6634;
+    --yellow: #EDAE49;
+    --brown: #452103;
+    
+
+    /* fonts */
+    --heading1-font: 'Lobster', sans-serif;
+    --heading-font: 'Merriweather', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    /* --primary-color: #364344;
+    --secondary-color: #dbb4ad;  
+    --accent1-color: #acc196;
+    --accent2-color: #49475B;
+
+    --heading-font: 'Poppins', sans-serif; 
+    --paragraph-font: 'Chivo', sans-serif;
+    
+    --nav-background-color: #c6c9cb;
+    --nav-link-color: #231d3b;
+    --nav-hover-link-color: #cedada;
+    --nav-hover-background-color: #695658; */
+
+}
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0 auto;
+    
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:var(--royal);
+    font-family: var(--heading-font);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--yellow);
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+
+.heading {
+    background-color: var(--green);
+}
+
+.heading img {
+    width: 100px;
+    height: 100px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;    
+}
+
+.navigation ul li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: none;
+    padding: .5rem;    
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+	background-color: var(--yellow);
+	color: white;
+	font-weight: 700;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color:#000;
+ 	position: fixed;
+	top: 0.5rem;
+	right: 0;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active {
+    background-color: rgb(59, 59, 59);
+    /* Can't use text-decoration unless I change specificity */
+    /* text-decoration-line: underline;
+    text-decoration-color: whitesmoke; */
+    padding: 10px
+  }
+
+  /* main section */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div.hero {
+    
+    position: relative; 
+}
+
+/* without this code, the hero image doesn't display correctly.
+with this code, the article image inherit's this size, unless I add .hero to that code*/
+.hero img {          
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    position: absolute; 
+    width: 100%;
+    display: block;
+    text-align: center;
+    /* background-color: #49475b2e;  */
+
+    top: 20px;
+ }
+
+article {
+    position: absolute;  
+    top: 100px;
+    background: rgba(200, 218, 247, 0.8);     
+}
+
+p {
+    padding: 25px;
+}
+
+.hero article img {
+    width: 25%;
+    height: 15%;    
+    /* position: absolute;    -> this moves the img to the left, why? */
+    float: right;   
+    /* margin: 10 1 1rem 1rem;  -> causes an error */
+    border: 1px solid #49475B;   
+    box-shadow: 0 0 30px #695658;
+}

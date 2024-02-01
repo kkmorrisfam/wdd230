@@ -1,0 +1,14 @@
+/* duplicates of medium -change? */
+@media screen and (min-width: 700px) {
+    .navigation ul {
+        flex-direction: row;
+    }
+
+    .navigation ul li {
+        /display: block;    
+    }
+
+    .navigation a {
+        display: block;   
+    }
+}

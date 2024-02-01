@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		/* hide hamburger button */
+		display: block;
+		display: none; 
+	}
+
+	.navigation ul {
+		flex-direction: row;
+	}
+
+	.navigation ul li {
+		display: block;
+		/* flex: 1 1 100%; -duplicate from small view*/
+	}
+
+    .navigation a {
+        display: block;
+        /* duplicate from small view, even though display:none */
+        /* padding: .5rem;        
+        text-decoration: none;
+        color: white; */
+    }
+     
+}
