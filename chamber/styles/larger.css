@@ -1,14 +1,67 @@
 /* duplicates of medium -change? */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
     .navigation ul {
         flex-direction: row;
     }
 
     .navigation ul li {
-        /display: block;    
+        display: block;    
     }
 
     .navigation a {
         display: block;   
     }
+
+    .social img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero article {
+		position: absolute;  
+		width: 100%;
+        margin: 0 auto;
+		display: block;
+		text-align: center;
+		top: 100px;
+        
+        /* top: 25%;    
+		left: 28%;		 */
+	}
+
+    .hero h3{
+		/* position: absolute;
+		width: 100%;
+		display: block;
+		text-align: center;
+		top: 100px; */
+        background-color: bisque;
+        width: 50%;
+        margin: 0 auto;
+	}
+	
+	.hero p {
+		/* position: absolute;
+		width: 100%;
+		display: block;
+		text-align: center;
+		top: 140px; */
+        background-color: blanchedalmond;
+        width: 50%;
+        margin: 0 auto;
+	}
+
+    .info {       
+        grid-template-columns: 1fr 1fr 1fr;     
+
+    }
+    .card:nth-child(3) {
+		grid-column: span 1;
+	}
+
+    /* .pair {
+        
+    } */
+
+    
 }

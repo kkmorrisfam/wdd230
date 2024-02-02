@@ -7,6 +7,7 @@
     /* colors */    
     --royal: #03256C;
     --robin: #44CFCB;
+    --robin2: #90f6f3;
     --green: #3F6634;
     --yellow: #EDAE49;
     --brown: #452103;
@@ -38,8 +39,11 @@ body {
     
     font-size: 1rem;
 }
+h1 {
+    font-family: var(--heading1-font);
+}
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     color:var(--royal);
     font-family: var(--heading-font);
 }
@@ -47,13 +51,36 @@ h1, h2, h3, h4, h5, h6 {
 .banner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* flex: 1 1; */
     background-color: var(--yellow);
 }
 
+.banner .btn {
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn {
+    background-color: var(--robin2);
+    font-family: var(--heading-font);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    border-radius: 1rem;
+}
+
+.social {
+    display: flex;
+    flex: 1 1 30%;
+    gap: 1 rem;
+}
 .social img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    /* padding-inline: 10px; */
+    /* padding: 20px; */
 }
 
 .heading {
@@ -115,7 +142,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .active {
-    background-color: rgb(59, 59, 59);
+    /* background-color:var(--yellow); */
+    border: 2px solid black;
+    /* outline: rgb(224, 100, 100) solid 10px; */
     /* Can't use text-decoration unless I change specificity */
     /* text-decoration-line: underline;
     text-decoration-color: whitesmoke; */
@@ -128,7 +157,7 @@ main {
     grid-template-columns: 1fr;
 }
 
-div.hero {
+.hero {
     
     position: relative; 
 }
@@ -142,32 +171,75 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     margin: 0 auto;
 }
 
-.hero h1 {
+.hero h2 {
     position: absolute; 
     width: 100%;
     display: block;
     text-align: center;
-    /* background-color: #49475b2e;  */
-
     top: 20px;
  }
 
-article {
-    position: absolute;  
-    top: 100px;
-    background: rgba(200, 218, 247, 0.8);     
+
+.hero article {
+    /* background: rgba(200, 218, 247, 0.8);      */
 }
+
 
 p {
     padding: 25px;
 }
 
-.hero article img {
+/* .hero article img {
     width: 25%;
     height: 15%;    
-    /* position: absolute;    -> this moves the img to the left, why? */
+    position: absolute;    -> this moves the img to the left, why?
     float: right;   
-    /* margin: 10 1 1rem 1rem;  -> causes an error */
+    margin: 10 1 1rem 1rem;  -> causes an error
     border: 1px solid #49475B;   
     box-shadow: 0 0 30px #695658;
+} */
+
+/* info section */
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0.8rem;    
 }
+
+.card {
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 10px #333;
+}
+
+.info img {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    /* justify-self: center; This doesn't work DevTools says it's parent is block????*/
+}
+
+.pair {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 1.2rem;
+}
+
+.text-right h3 {
+    text-align: center;
+    width: 100%;
+    grid-column: span 1;
+}
+
+.text-right img {
+    height: 300px;
+    width: 0 auto;
+    justify-self: center;
+    align-self: center;
+
+}
+
