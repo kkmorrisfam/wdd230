@@ -43,10 +43,11 @@ header {
 }
 
 .banner {
-    /* display: flex;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center; 
-    justify-content: space-between;
-    flex: 1 1; */
+    /* justify-content: space-between; */
+    /* flex: 1 1;  */
     background-color: var(--yellow);
     width: auto;
 }
@@ -54,6 +55,7 @@ header {
 .banner .btn {
     padding: .9rem;
     margin: .9rem;
+    
 }
 
 .btn {
@@ -69,13 +71,17 @@ header {
 .social {
     display: flex;
     flex: 1 1 30%;
-    gap: 1 rem;
+    gap: 1 rem;    
 }
 .social img {
-    width: 1.1rem;
-    height: 1.1rem;
-    /* padding-inline: 10px; */
-    /* padding: 20px; */
+    /* if I make size relative, it doesn't look right */
+    width: 30px;
+    height: 30px;
+    margin-inline: 10px;    
+}
+
+.social img:nth-child(3) {
+    margin-right: 2rem;
 }
 
 .heading {
