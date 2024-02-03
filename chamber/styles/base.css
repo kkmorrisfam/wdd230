@@ -17,30 +17,20 @@
     --heading1-font: 'Lobster', sans-serif;
     --heading-font: 'Merriweather', serif;
     --paragraph-font: 'Poppins', sans-serif;
-
-    /* --primary-color: #364344;
-    --secondary-color: #dbb4ad;  
-    --accent1-color: #acc196;
-    --accent2-color: #49475B;
-
-    --heading-font: 'Poppins', sans-serif; 
-    --paragraph-font: 'Chivo', sans-serif;
     
-    --nav-background-color: #c6c9cb;
-    --nav-link-color: #231d3b;
-    --nav-hover-link-color: #cedada;
-    --nav-hover-background-color: #695658; */
-
 }
 
 body {
     font-family: var(--paragraph-font);
-    margin: 0 auto;
-    
+    margin: 0 auto;    
     font-size: 1rem;
+    width: 100%;
+    Display: block;
 }
 h1 {
     font-family: var(--heading1-font);
+    color: white;
+    text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
@@ -48,17 +38,22 @@ h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
+header {
+    width: 100%;
+}
+
 .banner {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    /* flex: 1 1; */
+    /* display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    flex: 1 1; */
     background-color: var(--yellow);
+    /* width: auto; */
 }
 
 .banner .btn {
-    padding: 10px;
-    margin: 10px;
+    padding: .9rem;
+    margin: .9rem;
 }
 
 .btn {
@@ -77,8 +72,8 @@ h2, h3, h4, h5, h6 {
     gap: 1 rem;
 }
 .social img {
-    width: 20px;
-    height: 20px;
+    width: 1.1rem;
+    height: 1.1rem;
     /* padding-inline: 10px; */
     /* padding: 20px; */
 }
@@ -88,8 +83,8 @@ h2, h3, h4, h5, h6 {
 }
 
 .heading img {
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
 }
 
 .navigation ul {
@@ -171,6 +166,13 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     margin: 0 auto;
 }
 
+.hero .welcome img {
+    display: inline;
+    height: 6rem;
+    width: auto;
+    border-radius: 50%;
+    border-color: #000;
+}
 .hero h2 {
     position: absolute; 
     width: 100%;

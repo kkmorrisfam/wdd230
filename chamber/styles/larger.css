@@ -1,5 +1,10 @@
 /* duplicates of medium -change? */
 @media screen and (min-width: 900px) {
+    /* .banner {
+
+        justify-content: space-between;
+    } */
+
     .navigation ul {
         flex-direction: row;
     }
@@ -13,8 +18,8 @@
     }
 
     .social img {
-        width: 30px;
-        height: 30px;
+        width: 2rem;
+        height: 2rem;
     }
 
     .hero article {
