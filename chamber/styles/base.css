@@ -48,7 +48,7 @@ header {
     justify-content: space-between;
     flex: 1 1; */
     background-color: var(--yellow);
-    /* width: auto; */
+    width: auto;
 }
 
 .banner .btn {
