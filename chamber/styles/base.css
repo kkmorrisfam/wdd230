@@ -32,14 +32,14 @@ h1 {
     font-family: var(--heading1-font);
     color: white;
     text-align: center;
-    text-wrap: balance;
+    /* text-wrap: balance; */
     font-size: 1.5rem;
 }
 
 h2, h3, h4, h5, h6 {
     color:var(--royal);
     font-family: var(--heading-font);
-    text-wrap: balance;
+    /* text-wrap: balance; */
 }
 
 header {
@@ -259,7 +259,7 @@ p {
 
 .text-right img {
     height: 300px;
-    width: 0 auto;
+    width: auto;
     justify-self: center;
     align-self: center;
 
