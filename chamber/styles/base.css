@@ -6,10 +6,11 @@
 :root {
     /* colors */    
     --royal: #03256C;
-    --royal2: #2366f8;
+    --royal2: #98E2e2;
+    --sky: #bac2c2;
     --robin: #44CFCB;
     --robin2: #90f6f3;
-    --green: #3F6634;
+    --green: #34542b;
     --yellow: #EDAE49;
     --brown: #452103;
     
@@ -62,8 +63,8 @@ header {
 .banner .btn {
     padding: .9rem;
     margin: .9rem; 
-    background-color: var(--royal2);   
-    color: white;
+    background-color: white;   
+    color: black;
 }
 
 .btn {
