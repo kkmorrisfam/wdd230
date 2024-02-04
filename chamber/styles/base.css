@@ -32,6 +32,7 @@ h1 {
     color: white;
     text-align: center;
     text-wrap: balance;
+    font-size: 1.5rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -47,17 +48,19 @@ header {
 .banner {
     display: flex;
     flex-wrap: wrap;
-    align-items: center; 
-    /* justify-content: space-between; */
-    /* flex: 1 1;  */
+    align-items: center;     
+    justify-content: space-between;
     background-color: var(--yellow);
     width: auto;
 }
 
+.banner > * {
+    display: flex;
+}
+
 .banner .btn {
     padding: .9rem;
-    margin: .9rem;
-    
+    margin: .9rem;    
 }
 
 .btn {
@@ -71,9 +74,9 @@ header {
 }
 
 .social {
-    display: flex;
-    flex: 1 1 30%;
-    gap: 1 rem;    
+    display: flex;    
+    gap: 5px;  
+    margin-inline-end: 3rem;  
 }
 .social img {
     /* if I make size relative, it doesn't look right */
@@ -82,17 +85,22 @@ header {
     margin-inline: 10px;    
 }
 
-.social img:nth-child(3) {
-    margin-right: 2rem;
-}
+/* .social img:nth-child(3) {
+    margin-right: 4rem;
+} */
 
 .heading {
     background-color: var(--green);
+    display: flex;
+    flex-wrap:wrap;
+
 }
 
 .heading img {
     width: 6rem;
     height: 6rem;
+    border-radius: 50%;
+    border-color: #000;
 }
 
 .navigation ul {
@@ -178,8 +186,7 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     display: inline;
     height: 6rem;
     width: auto;
-    border-radius: 50%;
-    border-color: #000;
+    
 }
 .hero h2 {
     position: absolute; 

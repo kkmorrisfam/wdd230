@@ -1,10 +1,11 @@
 /* duplicates of medium -change? */
 @media screen and (min-width: 900px) {
-    /* .banner {
-
+    
+    .heading > * {
         justify-content: space-between;
-    } */
-
+        flex-wrap:nowrap;
+        
+    }
     .navigation ul {
         flex-direction: row;
     }
