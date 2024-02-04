@@ -6,6 +6,7 @@
 :root {
     /* colors */    
     --royal: #03256C;
+    --royal2: #2366f8;
     --robin: #44CFCB;
     --robin2: #90f6f3;
     --green: #3F6634;
@@ -60,7 +61,9 @@ header {
 
 .banner .btn {
     padding: .9rem;
-    margin: .9rem;    
+    margin: .9rem; 
+    background-color: var(--royal2);   
+    color: white;
 }
 
 .btn {
@@ -168,8 +171,7 @@ main {
     grid-template-columns: 1fr;
 }
 
-.hero {
-    
+.hero {    
     position: relative; 
 }
 
@@ -196,10 +198,13 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     top: 20px;
  }
 
+/* .hero .welcome {
+    margin: 0 auto;
+}
 
 .hero article {
-    /* background: rgba(200, 218, 247, 0.8);      */
-}
+    background: rgba(200, 218, 247, 0.8);     
+} */
 
 
 p {

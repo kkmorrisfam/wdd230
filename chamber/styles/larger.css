@@ -3,9 +3,13 @@
     
     .heading > * {
         justify-content: space-between;
-        flex-wrap:nowrap;
+        /* flex-wrap:nowrap; */
         
     }
+    .heading {
+		justify-content: space-between;
+	}
+    
     .navigation ul {
         flex-direction: row;
     }

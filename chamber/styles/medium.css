@@ -10,17 +10,10 @@
 		text-align: center;
 	}
 
-	/* .banner {
-		justify-content: space-between;
+	.heading {
+		justify-content: space-around;
+		/* flex-wrap: nowrap; */
 	}
-
-	.banner > * {
-		justify-content: space-between;
-	} */
-
-	/* .banner {
-		justify-content: space-between;
-	} */
 
 	#menu {
 		/* hide hamburger button */
