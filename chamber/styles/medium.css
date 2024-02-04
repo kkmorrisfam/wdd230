@@ -52,4 +52,12 @@
 		grid-column: span 2;
 	}
 	
+	footer {
+		Display:flex;
+	}
+	
+	footer > * {
+		flex: 1;
+		justify-content: space-between;
+	}
 }

@@ -31,11 +31,13 @@ h1 {
     font-family: var(--heading1-font);
     color: white;
     text-align: center;
+    text-wrap: balance;
 }
 
 h2, h3, h4, h5, h6 {
     color:var(--royal);
     font-family: var(--heading-font);
+    text-wrap: balance;
 }
 
 header {
