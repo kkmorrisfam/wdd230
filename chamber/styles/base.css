@@ -29,6 +29,8 @@ body {
     width: 100%;
     Display: block;
     padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 h1 {
     font-family: var(--heading1-font);
@@ -244,6 +246,14 @@ p {
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 0 10px #333;
+    align-items: center;
+    justify-items: center;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;    
+    padding: 1rem;    
     align-items: center;
     justify-items: center;
 }
