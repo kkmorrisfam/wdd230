@@ -28,6 +28,7 @@ body {
     font-size: 1rem;
     width: 100%;
     Display: block;
+    padding: 0.5rem;
 }
 h1 {
     font-family: var(--heading1-font);
@@ -277,6 +278,10 @@ p {
     justify-self: center;
     align-self: center;
 
+}
+
+.weather img {
+    width: 100%;
 }
 
 footer {
