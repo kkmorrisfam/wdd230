@@ -43,13 +43,9 @@ h2, h3, h4, h5, h6 {
     /* text-wrap: balance; */
 }
 
-header {
-    width: 100%;
-}
-
 .banner {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     align-items: center;     
     justify-content: space-between;
     background-color: var(--yellow);
@@ -96,13 +92,15 @@ header {
 .heading {
     background-color: var(--green);
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
 }
 
 .heading img {
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4.1rem;
+    /* max-width: 2rem; */
+    /* height: auto; */
     border-radius: 50%;
     border-color: #000;
 }
@@ -179,16 +177,19 @@ main {
 /* without this code, the hero image doesn't display correctly.
 with this code, the article image inherit's this size, unless I add .hero to that code*/
 .hero img {          
-    display: block;
-    width: 80%;
+    /* display: block; */
+    /* width: 80%; */
     height: auto;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    width: 100%;
+    
 }
 
 .hero .welcome img {
     display: inline;
-    height: 6rem;
-    width: auto;
+    /* height: 6rem; */
+    height: auto;
+    width: 25%;
     
 }
 .hero h2 {
@@ -228,19 +229,27 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin: 0.8rem;    
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* margin: 0.8rem;     */
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     border: solid black 1px;
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 0 10px #333;
+    align-items: center;
+    justify-items: center;
 }
 
 .info img {
-    height: 100px;
-    width: 100px;
+    /* height: 100px; */
+    /* width: 100px; */
+    width: 40%;
+    height: auto;
     margin: 0 auto;
     /* justify-self: center; This doesn't work DevTools says it's parent is block????*/
 }
@@ -249,7 +258,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin: 1.2rem;
+    /* margin: 1.2rem; */
 }
 
 .text-right h3 {
@@ -259,10 +268,15 @@ p {
 }
 
 .text-right img {
-    height: 300px;
-    width: auto;
+    /* height: 300px; */
+    /* width: auto; */
+    height: auto;
+    width: 100%;
     justify-self: center;
     align-self: center;
 
 }
 
+footer {
+    display: block;
+}
