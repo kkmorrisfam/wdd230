@@ -190,8 +190,10 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     /* height: 6rem; */
     height: auto;
     width: 25%;
+    max-width: 100px;
     
 }
+
 .hero h2 {
     position: absolute; 
     width: 100%;
