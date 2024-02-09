@@ -91,7 +91,7 @@ p {
     padding: .9rem;
     margin: .9rem; 
     background-color: var(--clr-primary);   
-    color: var(--background);
+    color: var(--clr-light);
 }
 
 .btn {
@@ -165,6 +165,7 @@ p {
 
 #dark-toggle::before {
 	content: "🌘";
+    
 }
 
 #dark-toggle.dark-mode::before {
@@ -228,7 +229,7 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     /* width: 80%; */
     /* height: auto; */
     /* margin: 0 auto; */
-    width: 100%;
+    width: 100%;    
     object-fit: cover; 
     
 }
@@ -268,7 +269,7 @@ with this code, the article image inherit's this size, unless I add .hero to tha
 
 .welcome h3 {
     background-color: rgba(255, 235, 205, 0.852);
-    color: var(--clr-dark); 
+    color: var(--clr-primary); 
     width: 90%;
     margin: 0 auto;
 }
@@ -312,7 +313,7 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     box-shadow: 0 0 10px #333;
     align-items: center;
     justify-items: center;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
 }
 
 .card p{
