@@ -1,4 +1,6 @@
 Still need to fix dark mode for article heading and text on large view, when it covers the hero image.
 h2 & h2
 
-Rearrange heading. change logo. move navigation to bottom centered on large and medium view
+Rearrange heading. change logo. move navigation to bottom centered on large and medium view. 
+
+need to put background behind h2 & p (.hero.article).  need paragraph readable.

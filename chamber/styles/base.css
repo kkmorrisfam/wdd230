@@ -71,6 +71,7 @@ h3, h4, h5, h6 {
 
 p {
     color: var(--clr-paragraph);
+    padding: 25px;
 }
 
 .banner {
@@ -122,7 +123,7 @@ p {
 .heading {
     background-color: var(--clr-header);
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
 
@@ -133,6 +134,10 @@ p {
     /* height: auto; */
     border-radius: 50%;
     border-color: #000;
+}
+
+.heading .title {
+    display: flex;
 }
 
 .navigation ul {
@@ -213,6 +218,7 @@ main {
     position: relative; 
     height: 605px;
     width: 100%;
+    /* background-color: #7f75cea9; */
 }
 
 /* without this code, the hero image doesn't display correctly.
@@ -223,14 +229,15 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     /* height: auto; */
     /* margin: 0 auto; */
     width: 100%;
-    object-fit: cover;    
+    object-fit: cover; 
+    
 }
 
 .hero .welcome img {
     display: inline;
     /* height: 6rem; */
-    height: auto;
-    width: 25%;
+    height: 25%;
+    /* width: 25%; */
     max-width: 100px;
     
 }
@@ -245,6 +252,7 @@ with this code, the article image inherit's this size, unless I add .hero to tha
 
 .hero .welcome {
     margin: 0 auto;
+    /* background-color: rgba(113, 110, 154, 0.647) */
 }
 
 .hero article {
@@ -258,10 +266,21 @@ with this code, the article image inherit's this size, unless I add .hero to tha
 
 }
 
-
-p {
-    padding: 25px;
+.welcome h3 {
+    background-color: rgba(255, 235, 205, 0.852);
+    color: var(--clr-dark); 
+    width: 90%;
+    margin: 0 auto;
 }
+
+.welcome p {
+    /* background-color: rgb(113, 110, 154); */
+    background-color: rgba(255, 235, 205, 0.852);
+    color: var(--clr-dark); 
+    width: 90%;
+    margin: 0 auto;
+}
+
 
 /* .hero article img {
     width: 25%;
@@ -293,6 +312,12 @@ p {
     box-shadow: 0 0 10px #333;
     align-items: center;
     justify-items: center;
+    /* margin-top: 1rem; */
+}
+
+.card p{
+    text-align: center;
+    padding: 5px;
 }
 
 .card2 {

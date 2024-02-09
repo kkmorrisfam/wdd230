@@ -38,29 +38,21 @@
         /* top: 25%;    
 		left: 28%;		 */
 	}
-
-    .hero h3{
-		/* position: absolute;
-		width: 100%;
-		display: block;
-		text-align: center;
-		top: 100px; */
-        background-color: blanchedalmond;
-        color: var(--clr-dark);
-        width: 50%;
-        margin: 0 auto;
-	}
 	
-	.hero p {
+    .hero h3 {
+        width: 50%;
+    }
+
+	.hero p  {
 		/* position: absolute;
 		width: 100%;
 		display: block;
 		text-align: center;
 		top: 140px; */
-        background-color: blanchedalmond;
-        color: var(--clr-dark); 
+        /* background-color: blanchedalmond; */
+        /* color: var(--clr-dark);  */
         width: 50%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
 	}
 
     .info {       
