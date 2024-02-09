@@ -45,7 +45,8 @@
 		display: block;
 		text-align: center;
 		top: 100px; */
-        background-color: bisque;
+        background-color: blanchedalmond;
+        color: var(--clr-dark);
         width: 50%;
         margin: 0 auto;
 	}
@@ -57,6 +58,7 @@
 		text-align: center;
 		top: 140px; */
         background-color: blanchedalmond;
+        color: var(--clr-dark); 
         width: 50%;
         margin: 0 auto;
 	}
