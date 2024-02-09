@@ -172,6 +172,10 @@ p {
 	content: "🌞";
 }
 
+.heading button {
+    background-color: var(--clr-header);
+    border: none;
+}
 
 /* small view navigation */
 #menu {
