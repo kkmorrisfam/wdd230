@@ -2,8 +2,7 @@
 @media screen and (min-width: 900px) {
     
     .heading > * {
-        justify-content: space-between;
-        /* flex-wrap:nowrap; */
+        justify-content: space-between;        
         
     }
     .heading {
@@ -34,9 +33,6 @@
 		display: block;
 		text-align: center;
 		top: 100px;
-        
-        /* top: 25%;    
-		left: 28%;		 */
 	}
 	
     .hero h3 {
@@ -44,15 +40,7 @@
     }
 
 	.hero p  {
-		/* position: absolute;
-		width: 100%;
-		display: block;
-		text-align: center;
-		top: 140px; */
-        /* background-color: blanchedalmond; */
-        /* color: var(--clr-dark);  */
         width: 50%;
-        /* margin: 0 auto; */
 	}
 
     .info {       
@@ -61,8 +49,6 @@
     }
     .card:nth-child(3) {
 		grid-column: span 1;
-	}
-
-   
+	} 
     
 }

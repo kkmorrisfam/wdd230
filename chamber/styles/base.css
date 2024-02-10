@@ -34,7 +34,7 @@
 }
 
 .dark-mode {
-    /* primary and secondar affects h1; p; */
+    /* primary and secondary affects h1; p; */
     --clr-headings: var(--clr-light);
     --clr-paragraph: #bac2c2;
     --foreground: var(--clr-light);
@@ -55,7 +55,6 @@ h1 {
     font-family: var(--heading1-font);
     color: var(--clr-light);
     text-align: center;
-    /* text-wrap: balance; */
     font-size: 1.5rem;
 }
 
@@ -65,8 +64,7 @@ h2 {
 
 h3, h4, h5, h6 {
     color:var(--clr-headings);
-    font-family: var(--headings);
-    /* text-wrap: balance; */
+    font-family: var(--headings);    
 }
 
 p {
@@ -74,6 +72,9 @@ p {
     padding: 25px;
 }
 
+a {
+    text-decoration: none;
+}
 .banner {
     display: flex;
     flex-wrap: wrap; 
@@ -116,15 +117,9 @@ p {
     margin-inline: 10px;    
 }
 
-/* .social img:nth-child(3) {
-    margin-right: 4rem;
-} */
-
 .heading {
     background-color: var(--clr-header);
     display: flex;
-    /* flex-wrap: wrap; */
-
 }
 
 .heading img {
@@ -223,7 +218,6 @@ main {
     position: relative; 
     height: 605px;
     width: 100%;
-    /* background-color: #7f75cea9; */
 }
 
 /* without this code, the hero image doesn't display correctly.
@@ -286,17 +280,6 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     margin: 0 auto;
 }
 
-
-/* .hero article img {
-    width: 25%;
-    height: 15%;    
-    position: absolute;    -> this moves the img to the left, why?
-    float: right;   
-    margin: 10 1 1rem 1rem;  -> causes an error
-    border: 1px solid #49475B;   
-    box-shadow: 0 0 30px #695658;
-} */
-
 /* info section */
 
 .info {
@@ -337,6 +320,7 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     /* height: 100px; */
     /* width: 100px; */
     width: 40%;
+    max-width: 100px;
     height: auto;
     margin: 0 auto;
     /* justify-self: center; This doesn't work DevTools says it's parent is block????*/
@@ -347,6 +331,43 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     grid-template-columns: 1fr;
     gap: 2rem;
     /* margin: 1.2rem; */
+}
+
+.spotlight {
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+    /* border: 2px solid #000;     */
+}
+
+.spotlight img {
+    float: left;
+    width: 40%;
+    min-width: 300px;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+
+.spotlight h3 {
+    /* padding: 3rem; */
+    text-align: center;
+    margin-top: 4rem;
+}
+.spotlight p {
+    /* padding-top: 3rem; */
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /* margin: 3rem; */
+    line-height: 1.5rem;
+}
+
+/* I was trying to contain the buttom like the others */
+.external-btn {
+    /* display: flex; */
+    /* flex: 1; */
+    /* align-items: center; */
+    width: 40%;
+    max-width: 100px;
 }
 
 .text-right h3 {
@@ -362,7 +383,6 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     width: 100%;
     justify-self: center;
     align-self: center;
-
 }
 
 .weather img {

@@ -1,6 +1,7 @@
-Still need to fix dark mode for article heading and text on large view, when it covers the hero image.
-h2 & h2
 
 Rearrange heading. change logo. move navigation to bottom centered on large and medium view. 
+move lighthouse to center vertically?
 
-need to put background behind h2 & p (.hero.article).  need paragraph readable.
+find a business to spotlight
+
+-change dark background in darkmode to something more dark grey

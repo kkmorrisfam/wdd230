@@ -1,8 +1,6 @@
 @media screen and (min-width: 650px) {
 	h1 {
 		font-size: 2.5rem;
-		/* margin-left: 0; */
-		/* text-align: center; */
 	}
 	
 	h2 {
@@ -12,8 +10,7 @@
 	}
 
 	.heading {
-		justify-content: space-around;
-		/* flex-wrap: nowrap; */
+		justify-content: space-around;	
 	}
 
 	#menu {
@@ -27,24 +24,13 @@
 	}
 
 	.navigation ul li {
-		display: block;
-		/* flex: 1 1 100%; -duplicate from small view*/
+		display: block;		
 	}
 
     .navigation a {
         display: block;
-        /* duplicate from small view, even though display:none */
-        /* padding: .5rem;        
-        text-decoration: none;
-        color: white; */
     }
 
-	/* .hero article {
-		position: absolute;  
-		top: 25%;    
-		left: 20%;		
-	} */
-	
 	.info, .pair {
 		grid-template-columns: 1fr 1fr;
 
