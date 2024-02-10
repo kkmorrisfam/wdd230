@@ -172,9 +172,9 @@ p {
 	content: "🌞";
 }
 
-.heading button {
-    background-color: var(--clr-header);
-    border: none;
+.social button {
+    background-color: var(--clr-banner);
+    /* border: none; */
 }
 
 /* small view navigation */
