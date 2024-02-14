@@ -120,6 +120,8 @@ a {
 .heading {
     background-color: var(--clr-header);
     display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .heading img {
@@ -220,16 +222,9 @@ main {
     width: 100%;
 }
 
-/* without this code, the hero image doesn't display correctly.
-with this code, the article image inherit's this size, unless I add .hero to that code*/
 .hero img {          
-    /* display: block; */
-    /* width: 80%; */
-    /* height: auto; */
-    /* margin: 0 auto; */
     width: 100%;    
-    object-fit: cover; 
-    
+    object-fit: cover;     
 }
 
 .hero .welcome img {
@@ -270,10 +265,10 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     color: var(--clr-primary); 
     width: 90%;
     margin: 0 auto;
+    padding-top: 2rem;
 }
 
-.welcome p {
-    /* background-color: rgb(113, 110, 154); */
+.welcome p {    
     background-color: rgba(255, 235, 205, 0.852);
     color: var(--clr-dark); 
     width: 90%;
@@ -286,9 +281,6 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    /* align-items: center; */
-    /* justify-items: center; */
-    /* margin: 0.8rem;     */
 }
 
 .card {
@@ -363,11 +355,10 @@ with this code, the article image inherit's this size, unless I add .hero to tha
 
 /* I was trying to contain the buttom like the others */
 .external-btn {
-    /* display: flex; */
-    /* flex: 1; */
-    /* align-items: center; */
-    width: 40%;
-    max-width: 100px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+
 }
 
 .text-right h3 {
@@ -388,6 +379,28 @@ with this code, the article image inherit's this size, unless I add .hero to tha
 .weather img {
     width: 100%;
 }
+
+/* discovery page */
+
+.discover-main-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.community-images {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.community-images picture {
+    background-color: bisque;
+    border: 5px dotted black;
+    width: 600px;
+    height: 400px;
+}
+/* footer */
 
 footer {
     display: block;
