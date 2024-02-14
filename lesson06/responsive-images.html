@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 6 Responsive Images</title>
+    <meta name="author" content="Kerri Morris">
+    <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
 <body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/philadelphia-pennsylvania-temple-small2.webp" media="(max-width: 500px)">
+                <source srcset="images/philadelphia-pennsylvania-temple-medium3.webp" media="(max-width: 1000px)">
+                <img src="images/philadelphia-pennsylvania-temple-large.webp" alt="Philadelphia Pennsylvania Temple" width="1500" height="750"> 
+            </picture>
+        </div>
+    </main>
     
 </body>
 </html>
