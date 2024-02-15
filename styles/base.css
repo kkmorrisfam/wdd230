@@ -6,9 +6,28 @@
     padding: 0;
     box-sizing:border-box;
 }
+/* .protest-riot-regular {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  } */
 
 body {  
-    font-family: 'Roboto', Helvetica, sans-serif; /*look for different fonts....*/
+          
+    font-family: 'Roboto', Helvetica, sans-serif;
+     /*look for different fonts....*/
     font-size: 16px;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */    
     max-width: 800px;  
@@ -143,8 +162,10 @@ main {
 }
 
 .hero-label p {
-    text-align: center;    
+    text-align: center;   
+    font-family: 'Protest Riot', sans-serif; 
 }
+
 
 
 h2 {   
