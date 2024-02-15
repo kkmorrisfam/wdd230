@@ -28,7 +28,7 @@ https://kkmorrisfam.github.io/wdd230/ -->
 
 <body>
     <header>
-        <img src="images/profile-small.jpg" alt="Hello, my name is Kerri Morris">
+        <img src="images/profile-small.webp" alt="Hello, my name is Kerri Morris">
         <h1>Kerri Morris</h1>
     </header>
     <button id="menu"></button>
@@ -43,6 +43,18 @@ https://kkmorrisfam.github.io/wdd230/ -->
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <!-- with max-width, list small to large -->
+                <source srcset="images/philadelphia-pennsylvania-temple-small2.webp" media="(max-width: 400px)">
+                <source srcset="images/philadelphia-pennsylvania-temple-medium3.webp" media="(max-width: 650px)">
+                <img src="images/philadelphia-pennsylvania-temple-large.webp" alt="Philadelphia Pennsylvania Temple" width="1200" height="600"> 
+            </picture>
+            <article class="hero-label">
+                <h3>Philadelphia Pennsylvania<br>Temple</h3>
+            </article>
+        </div>
+        
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>

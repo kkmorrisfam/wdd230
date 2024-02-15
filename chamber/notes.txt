@@ -5,3 +5,16 @@ move lighthouse to center vertically?
 find a business to spotlight
 
 -change dark background in darkmode to something more dark grey
+
+problems I overcame with home page
+
+when adding css with picture and srcset, I added css to picture, but had a previous
+img css that was overriding the size.  I had to add an idenifier to previous img css.
+
+when trying to get the article with the temple title positioned, I had created the article
+next to the hero div, not inside as a child, so the next positioned ancestor was the main page
+
+when the image was overflowing the container.  I found that I was trying
+to add css to the child picture element, and it didn't affect it.  When I moved
+the css to the .hero img, then the css contained the image within the .hero container
+

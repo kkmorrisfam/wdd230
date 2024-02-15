@@ -30,7 +30,7 @@ h1 {
     margin-bottom: auto;
 }
 
-img {
+header img {
     width: 100px;
     height: auto;
     margin: 10px;
@@ -108,6 +108,45 @@ main {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+.hero {
+    position: relative;
+    width: 95%;
+    height: 350px;
+    margin: 0 auto;
+    /* width: 1500px; */
+    /* height: 750x; */
+}
+
+/* defining css with picture doesn't do anything */
+.heros picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-label {
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    /* background-color: #9f9ddaea; */
+    background: radial-gradient(#fff, #9f9ddaea);
+	border: 1px solid rgba(0,0,0,.75);
+    padding: 1rem;
+
+}
+
+.hero-label h3 {
+    text-align: center;
+    
+}
+
 
 h2 {   
     border-bottom: solid 1px rgba(0, 0, 0, 0.371);
