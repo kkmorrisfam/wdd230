@@ -136,15 +136,14 @@ main {
     top: 2px;
     left: 20px;
     /* background-color: #9f9ddaea; */
-    background: radial-gradient(#fff, #9f9ddaea);
+    background: radial-gradient(#fff, #d09ddaea);
 	border: 1px solid rgba(0,0,0,.75);
     padding: 1rem;
 
 }
 
-.hero-label h3 {
-    text-align: center;
-    
+.hero-label p {
+    text-align: center;    
 }
 
 
