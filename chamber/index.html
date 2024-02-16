@@ -40,12 +40,10 @@
                 <button id="dark-toggle"></button>
             </div>
         </div>
-        <div class="heading">
-            <!-- <img src="images/trees-up.jpg" alt="A view of forest trees looking up into the sky." width="201" height="151"> -->
-            <!-- <img src="images/trees-up.jpg" alt="A view of forest trees looking up into the sky."> -->
+        <div class="heading">            
             <div class="title">
                 <!-- <img src="images/battery-point-lighthouse.jpg" alt="Battery Point Lighthouse"> -->
-                <h1><img src="images/battery-point-lighthouse.jpg" alt="Battery Point Lighthouse">Crescent City Chamber of Commerce</h1>
+                <h1><img src="images/lighthouse-logo.webp" alt="Battery Point Lighthouse">Crescent City Chamber of Commerce</h1>
             </div>
             <button id="menu"></button>
             <nav class="navigation">
@@ -61,32 +59,37 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/hero-beach-sunset.jpg" alt="Beach at sunset: Hero Image" width="1210" height="605">
-            <!-- <img src="images/hero-beach-sunset.jpg" alt="Beach at sunset: Hero Image"> -->
+            <!-- <img src="images/hero-beach-sunset.jpg" alt="Beach at sunset: Hero Image" width="1210"   height="605"> -->
+            <!-- with max-width, list small to large -->
+            <picture>
+                <source media="(max-width: 450px)" srcset="images/wdd230-org-small.webp">
+                <source media="(max-width: 650px)" srcset="images/wdd230-org-medium2.webp">
+                <img src="images/wdd230-org-large.webp" alt="Collaboration meeting with three busniess people." width="1200" height="800">
+            </picture>
             <h2>Welcome to Crescent City and Del Norte County</h2>
             <article class="welcome card2">
-                <img src="images/chamber-logo.png" alt="chamber logo" width="179" height="181">
-                <!-- <img src="images/chamber-logo.png" alt="chamber logo"> -->
-                <h3>We are committed to strengthening our community.</h3>
-                <p>We actively champion and boost our local businesses by fostering communication, engaging in advocacy efforts, and forming valuable partnerships. 
-                </p>
+                <!-- <img src="images/chamber-logo.webp" alt="chamber logo" width="179" height="181"> -->
+                
+                <!-- <h3>We are committed to strengthening our community.</h3> -->
+                <!-- <p>We actively champion and boost our local businesses by fostering communication, engaging in advocacy efforts, and forming valuable partnerships. 
+                </p> -->
             </article>
         </div>
         <section class="info">
             <div class="card">
-                <img src="images/icon-directory-sml.png" alt="icon for directory" width="100" height="100">
+                <!-- <img src="images/icon-directory-sml.webp" alt="icon for directory"> -->
                 <h3>Find a member</h3>
                 <p>Discovery local businesses contributing to the strength of our economy by offering quality goods and services right her in our area!</p>
                 <div class="btn"><a href="directory.html">Directory Search</a></div>
             </div>
             <div class="card">
-                <img src="images/icon-member-sml.png" alt="icon for member">
+                <!-- <img src="images/icon-member-sml.webp" alt="icon for member"> -->
                 <h3>Become a Member</h3>
                 <p>Join us and help your business thrive and contribute to the success and prosperity of our local business community that we all share.</p>
                 <div class="btn"><a href="join.html">Join Us</a></div>
             </div>
             <div class="card">
-                <img src="images/icon-events-sml-1.png" alt="icon for events">
+                <!-- <img src="images/icon-events-sml.webp" alt="icon for events"> -->
                 <h3>Discover our Community</h3>
                 <p>Connect at our networking events and enhance your business through our engaging educational opportunities.</p>
                 <div class="btn"><a href="discover.html">Check us Out</a> </div>
@@ -100,7 +103,7 @@
                 <p>Current member spotlight information, about what they are up to...</p>
                 <div class="btn">Action Button</div> 
             </div>-->
-            <img src="images/smith-river-alliance.jpg" alt="Grant Werschkull & Patty McCleary with Smith River Alliance">
+            <!-- <img src="images/smith-river-alliance.webp" alt="Grant Werschkull & Patty McCleary with Smith River Alliance"> -->
             <h3>Business Spotlight</h3>
             <p>“We value the Chamber’s orientation toward travel and tourism which emphasizes recruiting our 'next visitor'.   Del Norte County is an extraordinary destination with uncommon attractions.  Our beautiful beaches and rugged coastline, Wild and Scenic Rivers, Redwood National and State Parks, and the backcountry lands of the vast Smith River National Recreation Area provide unmatched recreation and tourism opportunities. We’re grateful to the Chamber as a community leader and partner on the celebration of these world-class natural resources.”<br>     --Grant Werschkull & Patty McCleary, Smith River Alliance </p>
             <div class = "external-btn">
@@ -113,7 +116,7 @@
             <div class="weather card2">
                 <h3>Weather Placeholder</h3>
                 <!-- <img src="images/cc-weather-pic.jpg" alt="placeholder weather picture"> -->
-                <img src="images/cloud.png" alt="placeholder weather picture">
+                <!-- <img src="images/partly_cloudy.png" alt="placeholder weather picture"> -->
             </div>
             <div class="card2">
                 <h3>Additional Information</h3>

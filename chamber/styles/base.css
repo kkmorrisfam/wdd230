@@ -45,7 +45,7 @@
 body {
     font-family: var(--paragraph-font);
     margin: 0 auto;    
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 100%;
     Display: block;
     padding: 0.5rem;    
@@ -69,7 +69,8 @@ h3, h4, h5, h6 {
 
 p {
     color: var(--clr-paragraph);
-    padding: 25px;
+    padding: 15px; 
+    /* change in large view? */
 }
 
 a {
@@ -207,7 +208,7 @@ a {
     /* Can't use text-decoration unless I change specificity */
     /* text-decoration-line: underline;
     text-decoration-color: whitesmoke; */
-    padding: 10px
+    padding: 10px;
   }
 
   /* main section */
@@ -216,22 +217,33 @@ main {
     grid-template-columns: 1fr;
 }
 
-.hero {    
+.heros {    
     position: relative; 
-    height: 605px;
+    height: 605px;    
     width: 100%;
 }
 
-.hero img {          
+/* lesson 06 */
+.hero {    
+    position: relative;     
+    height: 500px;
+    width: 100%;
+}
+
+.heros img {         
     width: 100%;    
-    object-fit: cover;     
+    object-fit: cover;    
+}
+
+/* lesson 06 */
+.hero img {          
+    width: 100%;        
+    height: auto;
 }
 
 .hero .welcome img {
     display: inline;
-    /* height: 6rem; */
     height: 25%;
-    /* width: 25%; */
     max-width: 100px;
     
 }
@@ -377,7 +389,7 @@ main {
 }
 
 .weather img {
-    width: 100%;
+    width: 50px;
 }
 
 /* discovery page */
