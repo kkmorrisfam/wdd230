@@ -19,7 +19,9 @@ button.addEventListener("click", ()=> {
         input.focus();
         })
         
+        input.focus();
         input.value = "";
+        
     }
     // could add hint message if true to the box.
     else {
