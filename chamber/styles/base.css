@@ -69,7 +69,7 @@ h3, h4, h5, h6 {
 
 p {
     color: var(--clr-paragraph);
-    padding: 15px; 
+    padding: .9rem; 
     /* change in large view? */
 }
 
@@ -339,7 +339,7 @@ main {
 }
 
 .spotlight {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 2rem auto;
     /* border: 2px solid #000;     */
