@@ -389,8 +389,20 @@ main {
     align-self: center;
 }
 
+.weather h3 {
+    text-align: center;    
+}
 .weather img {
+    float: left;
     width: 50px;
+    /* padding: 2em; */
+}
+
+.weather p {
+    padding: 0;
+    padding-inline-start: 20px;
+    margin: 0;
+    text-align: left; 
 }
 
 /* discovery page */

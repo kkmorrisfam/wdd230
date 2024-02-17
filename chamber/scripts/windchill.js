@@ -1,4 +1,6 @@
-// with chatgpt
+
+
+// function with help from chatgpt
 
 function calculateWindChill(temperature, windSpeed) {
       // Check if temperature and wind speed meet the specification limits
