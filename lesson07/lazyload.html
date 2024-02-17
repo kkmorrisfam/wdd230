@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Example</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development">
+    <meta name="author" content="Kerri Morris">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Example</h1>
+    </header>
+    <main>
+        
+        <div>
+            <img loading="lazy" src="images/big-tree.jpg" alt="image 1" width="400" height="600">
+        </div>
+        <div>
+            <img loading="lazy" src="images/klamath-overlook.jpg" alt="image 2" width="400" height="600">
+        </div>
+        <div>
+            <img loading="lazy" src="images/lighthouse.jpg" alt="image 3" width="400" height="600">
+        </div>
+        <div>
+            <img loading="lazy" src="images/paul-bunyan.jpg" alt="image 4" width="400" height="600">
+        </div>
+        <div>
+            <img loading="lazy" src="images/sky-bridge.jpg" alt="image 5" width="400" height="600">
+        </div>
+        <div>
+            <img loading="lazy" src="images/smith-river.jpg" alt="image 6" width="400" height="600">
+        </div>            
+    </main>
+    <footer>
+        <p>&#169; <span id="year"></span><br>Kerri Morris<br>California</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing:border-box;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    border: 6px solid rgb(246, 155, 155);
+    display: flex;
+    flex-direction: column;
+    width: 416px;
+    margin: 0 auto;
+}
+
+div {
+    border: 3px solid navy;
+    /* max-height: 600px; */
+    /* max-width: 400px; */
+    /* width: 100%; */
+    /* object-fit: cover; */
+  
+}
+
+img {
+    /* padding: 2px; */
+    animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
