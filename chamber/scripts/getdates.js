@@ -31,12 +31,17 @@ console.log(dateVisited);
 // else if difference is less than 24hrs, display message, else display another message
 
 if (dateVisited == 0) {
-    document.querySelector("#message").textContent = "Welcome";
+    document.querySelector("#message").textContent = "Welcome! Let us know if you have any questions.";
 }
 else if ((dateNow - dateVisited) < msToDays) {
-    document.querySelector("message").textContent = "another message";
+    document.querySelector("#message").textContent = "Back so soon! Awesome!";
 } else  {
-    document.querySelector("message").textContent = "last message";
+    let days = (dateNow-dateVisited)/msToDays;
+    let word = "days";
+    if (days == 1) {
+        word = "day";
+    }
+    document.querySelector("#message").textContent = `You last visited ${days} ${word} ago.`;
 }
 
 
