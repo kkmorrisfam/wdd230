@@ -22,4 +22,10 @@ chaptersArray.forEach(chapter => {
   });
 
 
-  const displayList(item)
+  displayList
+
+// Function to set the chapter list in localStorage
+function setChapterList(chapters) {
+    localStorage.setItem('chapters', JSON.stringify(chapters));
+    }
+  
