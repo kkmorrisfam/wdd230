@@ -6,7 +6,7 @@
 	h2 {
 		font-size: 1.7rem;
 		text-align: center;
-		color: var(--clr-primary);
+		/* color: var(--clr-primary); */
 	}
 
 	.heading {
@@ -51,5 +51,18 @@
 	footer > * {
 		flex: 1;
 		justify-content: space-between;
+	}
+
+	/* Discovery Page */
+	.discover-main-container {
+		grid-template-columns: 2% 1fr 2fr 2%;		
+	}
+
+	.side-bar {
+		/* grid-column: 2/3; */
+	}
+
+	.community-images {
+		/* grid-column: 3/4; */
 	}
 }
