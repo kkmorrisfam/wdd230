@@ -12,10 +12,12 @@
     --clr-paragraph: #434345;
     --clr-accent: #90f6f3;    
     --clr-banner: #edae49;
+    
     --clr-header: #34542b;
     --clr-headings: var(--clr-primary);
     --foreground: var(--clr-dark);
     --background: var(--clr-light);
+    --clr-anchor:  #0814f9;
     
     /* fonts */
     --heading1-font: 'Lobster', sans-serif;
@@ -30,7 +32,7 @@
     --clr-paragraph: #bac2c2;
     --foreground: var(--clr-light);
     --background: var(--clr-dark);
-
+    --clr-anchor: var(--clr-banner);
 }
 
 body {
@@ -71,6 +73,7 @@ p {
 
 a {
     text-decoration: none;
+    color: var(--clr-anchor);
 }
 .banner {
     display: flex;
@@ -153,6 +156,7 @@ a {
 
 .navigation a:hover {
 	background-color: var(--clr-accent);
+    color: var(--clr-dark)
 	color: var(--background);
 	font-weight: 700;
 }
@@ -406,31 +410,60 @@ main {
 .discover-main-container {
     display: grid;
     grid-template-columns: 1fr;
-
+    gap: 2rem;
+    align-items: start;
 }
 
 #message {    
     font-family: var(--heading-font);
     color: var(--clr-paragraph);
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-style: italic;
+    text-align: center;
     /* color: var(--clr-headings); */
 }
-.community-images {
-    border: 5px solid black;
+.community-images-container {
+    /* border: 5px solid black; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
-.community-images picture {
-    background-color: bisque;
-    border: 5px dotted black;
-    /* width: 600px; */
-    /* height: 400px; */
+.community-images-container figure {
+    background-color: rgba(230, 230, 233, 0.701);
+    /* border: 5px dotted black;     */
+    max-width: 650px;
+    max-height: 430px;    
 }
+
+.community-images-container img {
+    width: 100%;    
+    height: 100%;
+    object-fit: contain;   
+    transition: transform .2s;
+    justify-content: center;
+}
+
+.community-images-container img:hover {
+    -ms-transform: scale(1.125); /* IE 9 */
+    -webkit-transform: scale(1.125); /* Safari 3-8 */
+    transform: scale(1.125); 
+}
+.community-images-container figcaption {
+    padding: 0;
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+}
+
 /* footer */
 
 footer {
     display: block;
+    background-color: var(--clr-header);
+}
+
+footer p {
+    color: var(--clr-light)
 }

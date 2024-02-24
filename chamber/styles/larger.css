@@ -54,5 +54,10 @@
     .spotlight {
         width: 80%;
     }
+
+    /* Discover Page */
     
+    .discover-main-container {
+		grid-template-columns: 10% 1fr 2fr 2%;		
+	}
 }
