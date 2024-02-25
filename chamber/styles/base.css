@@ -157,7 +157,7 @@ a {
 .navigation a:hover {
 	background-color: var(--clr-accent);
     color: var(--clr-dark);
-	color: var(--background);
+	/* color: var(--background); */
 	font-weight: 700;
 }
 
