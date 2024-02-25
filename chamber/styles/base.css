@@ -156,7 +156,7 @@ a {
 
 .navigation a:hover {
 	background-color: var(--clr-accent);
-    color: var(--clr-dark)
+    color: var(--clr-dark);
 	color: var(--background);
 	font-weight: 700;
 }
@@ -407,6 +407,11 @@ main {
 
 /* discovery page */
 
+.attraction h2 {
+    /* color:#0814f9; */
+    text-shadow: 2px 2px 4px #000000;
+    border-bottom: double;
+}
 .discover-main-container {
     display: grid;
     grid-template-columns: 1fr;
