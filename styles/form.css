@@ -17,3 +17,8 @@ input {
     margin-bottom: 1rem;
     padding: .6rem;
 }
+
+#thanks {
+    padding: 2rem;
+    margin: 5rem;
+}
