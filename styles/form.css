@@ -3,6 +3,7 @@
     --font-color: rgb(2, 2, 74); 
     --font-size: 1.2rem;
     --color-light: #e9f3f197;
+    --color-dark: #333;
     --margin: 1.2rem;
 }
 
@@ -18,14 +19,30 @@ form {
     margin: var(--margin);    
 }
 
+#formTitle {
+    background-color: var(--color-dark);
+    color: white;
+}
+
 #inputs {
     display: flex;
 	flex-direction: column;
 	position: relative;
 }
 
-label {
+#dataRange {
     display: block;
+    margin: 1rem auto;
+    text-align: center;
+}
+#rangeDiv {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+label {
+    /* display: block; */
     font-weight: 700;
     color: var(--font-color);
     font-size: var(--font-size);
@@ -38,9 +55,21 @@ input {
 	border-bottom: 1px solid navy;	
 }
 
+input:invalid {
+    background-color: rgb(250, 236, 249);
+    color: red;
+  }
+  
 input::placeholder {
     font-size: .7rem;
     font-style: italic;
+}
+
+#submitBtn {
+    display: block;
+    font-size: larger;
+    padding: .8rem 2.3rem;
+    margin: 1.1rem auto;
 }
 
 #thanks {

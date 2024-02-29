@@ -32,6 +32,6 @@ function checkSame() {
 	}
 }
 
-function nextInput {
-	password2.value=""
-}
+// function nextInput {
+// 	password2.value=""
+// }
