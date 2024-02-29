@@ -38,6 +38,11 @@ input {
 	border-bottom: 1px solid navy;	
 }
 
+input::placeholder {
+    font-size: .7rem;
+    font-style: italic;
+}
+
 #thanks {
     padding: 2.5rem;
     margin: 5rem;

@@ -17,7 +17,6 @@ const message = document.querySelector("#formMessage");
 
 password2.addEventListener("focusout", checkSame);
 
-// This should be refactored.
 function checkSame() {
 	if (password.value !== password2.value) {
 		message.textContent = "❗Passwords DO NOT MATCH!";
@@ -31,4 +30,8 @@ function checkSame() {
 		password2.style.backgroundColor = "#fff";
 		password2.style.color = "#000";
 	}
+}
+
+function nextInput {
+	password2.value=""
 }
