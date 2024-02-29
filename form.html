@@ -33,17 +33,18 @@
     <main> 
         <!-- username, password, password confirm, email, page rating, submit -->
         <form method="get" action="record.html">
-            <label for="username" >Username* </label>
-            <input type="text" name="username" id="username" required placeholder="Enter your username">
-            <div id="formMessage"></div>
-            <label for="password">Password* </label>            
-            <div id="passComment">(must be a minimum of 8 characters, including alpha and numeric values)</div>
-            <input type="password" name="password" id="password" required placeholder="Enter a password" pattern="[a-zA-Z0-9].{8,}">
-            <label for="password2">Confirm Password* </label>
-            <input type="password" name="password2" id="password2" required placeholder="Re-enter your password">
-            <label for="email">Please enter a valid email address*</label>
-            <input type="email" name="email" id="email" required placeholder="Enter your BYU-I email address" pattern="[a-zA-Z0-9._%+-]+byui\.edu$">
-            
+            <div id="inputs">
+                <label for="username" >Username* </label>
+                <input type="text" name="username" id="username" required placeholder="Enter your username">
+                <div id="formMessage"></div>
+                <label for="password">Password* </label>            
+                <div id="passComment">(must be a minimum of 8 characters, including alpha and numeric values)</div>
+                <input type="password" name="password" id="password" required placeholder="Enter a password" pattern="[a-zA-Z0-9].{8,}">
+                <label for="password2">Confirm Password* </label>
+                <input type="password" name="password2" id="password2" required placeholder="Re-enter your password">
+                <label for="email">Please enter a valid email address*</label>
+                <input type="email" name="email" id="email" required placeholder="Enter your BYU-I email address" pattern="[a-zA-Z0-9._%+-]+byui\.edu$">
+            </div>
             <label for="range">Page Rating</label>
             <div id="rangeDiv">1</div>
             <input type="range" name="range" id="range" min="1" max="10" value="1" step="1" list="rangeValues">

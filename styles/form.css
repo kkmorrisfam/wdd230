@@ -1,21 +1,41 @@
+:root {
+    --font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --font-color: rgb(2, 2, 74); 
+    --font-size: 1.2rem;
+    --color-light: #e9f3f197;
+    --margin: 1.2rem;
+}
+
+main {
+	margin: 20px auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: var(--color-light);
+	max-width: 500px;
+}
+
 form {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 1rem;
+    font-family: var(--font);
+    margin: var(--margin);    
+}
+
+#inputs {
+    display: flex;
+	flex-direction: column;
+	position: relative;
 }
 
 label {
     display: block;
     font-weight: 700;
+    color: var(--font-color);
+    font-size: var(--font-size);
 }
 
-/* input[type=text], input[type=range], input[type=password], input[type=email] {
-    margin-bottom: 1rem;
-    padding: .6rem;
-} */
-
 input {
-    margin-bottom: 1rem;
-    padding: .6rem;
+    margin-bottom: var(--margin);
+    padding: 1rem;
+    border: 0;
+	border-bottom: 1px solid navy;	
 }
 
 #thanks {
