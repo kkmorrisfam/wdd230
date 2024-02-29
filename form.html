@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerri Morris - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development | Kerri Morris course assignment portal for learning activities. ">
+    <meta name="author" content="Kerri Morris">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    
+</head>
+<body>
+    <header>
+        <img src="images/profile-small.webp" alt="Hello, my name is Kerri Morris">
+        <h1>Kerri Morris</h1>
+    </header>
+    <button id="menu" name="small menu" type="button"></button>
+    <nav class="navigation">
+        <ul>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p13#p13"
+                    target="_blank">Scripture</a></li>
+
+        </ul>
+    </nav>
+    <main> 
+        <!-- username, password, password confirm, email, page rating, submit -->
+        <form method="get" action="record.html">
+            <label for="username" >Username* </label>
+            <input type="text" name="username" id="username" required placeholder="Enter your username">
+            <div id="formMessage"></div>
+            <label for="password">Password* </label>            
+            <div id="passComment">(must be a minimum of 8 characters, including alpha and numeric values)</div>
+            <input type="password" name="password" id="password" required placeholder="Enter a password" pattern="[a-zA-Z0-9].{8,}">
+            <label for="password2">Confirm Password* </label>
+            <input type="password" name="password2" id="password2" required placeholder="Re-enter your password">
+            <label for="email">Please enter a valid email address*</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your BYU-I email address" pattern="[a-zA-Z0-9._%+-]+byui\.edu$">
+            
+            <label for="range">Page Rating</label>
+            <div id="rangeDiv">1</div>
+            <input type="range" name="range" id="range" min="1" max="10" value="1" step="1" list="rangeValues" required>
+            <datalist id="rangeValues">                    
+                <option value="1">1</option>
+                <option value="2">0</option>
+                <option value="3">0</option>
+                <option value="4">0</option>
+                <option value="5">0</option>
+                <option value="6">0</option>
+                <option value="7">0</option>
+                <option value="8">0</option>
+                <option value="9">0</option>
+                <option value="10">10</option>
+            </datalist>
+            <button id="submitBtn" type="submit">Sign Up</button>
+
+        </form>
+    </main>
+    <footer>
+        <p>&#169; <span id="year"></span><br>Kerri Morris<br>California</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/counter.js"></script>
+    <script src="scripts/form.js"></script>
+    
+</body>
+</html>

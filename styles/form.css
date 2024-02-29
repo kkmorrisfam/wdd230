@@ -1,0 +1,19 @@
+form {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+}
+
+/* input[type=text], input[type=range], input[type=password], input[type=email] {
+    margin-bottom: 1rem;
+    padding: .6rem;
+} */
+
+input {
+    margin-bottom: 1rem;
+    padding: .6rem;
+}
