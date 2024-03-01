@@ -197,6 +197,7 @@ h2 {
 
 .card ul li {
     list-style-type: none;
+    padding: .8rem;
 }
 
 .card p {

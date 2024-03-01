@@ -50,6 +50,9 @@
 		/* background-color: #9f9dda7b; */
 	}
 
+	.card ul li {
+		padding: .2rem;
+	}
     .map {
         grid-column: 1 /3;
     }
