@@ -462,7 +462,13 @@ main {
     font-size: 1.25rem;
 }
 
-/* footer */
+/* ------------------Join Page------------------- */
+main #joinMain {
+    display: grid;
+    
+}
+
+/* ------------------footer---------------------- */
 
 footer {
     display: block;

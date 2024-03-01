@@ -57,7 +57,12 @@
 
     /* Discover Page */
     
-    .discover-main-container {
+    main .discover-main-container {
 		grid-template-columns: 10% 1fr 2fr 2%;		
 	}
+
+    /* ------------------Join Page------------------- */
+	main .join-main-container {
+    	grid-template-columns: 5% 2fr 1fr 3%;    
+}
 }

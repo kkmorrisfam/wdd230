@@ -58,11 +58,12 @@ input {
 input:invalid {
     background-color: rgb(250, 236, 249);
     color: red;
-  }
+}
   
 input::placeholder {
-    font-size: .7rem;
+    font-size: .9rem;
     font-style: italic;
+    color: black;
 }
 
 #submitBtn {
