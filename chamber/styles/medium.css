@@ -62,12 +62,12 @@
 	}
 
 	/* Discovery Page */
-	.discover-main-container {
+	main .discover-main-container {
 		grid-template-columns:1rem 1fr 2fr 1rem;		
 	}
 
 	/* ------------------Join Page------------------- */
-	main .join-main-container {
+	.join-main-container {
     	grid-template-columns: 1rem 2fr 1fr 1rem;    
 }
 

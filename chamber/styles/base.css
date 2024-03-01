@@ -463,10 +463,10 @@ main {
 }
 
 /* ------------------Join Page------------------- */
-main #joinMain {
-    display: grid;
-    
+.join-main-container {
+    display: grid;    
 }
+
 
 /* ------------------footer---------------------- */
 
