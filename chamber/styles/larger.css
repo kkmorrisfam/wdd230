@@ -73,6 +73,15 @@
     
     textarea {
 		margin-left: 1rem;
+        max-width: 96%;
 	
 	}
+
+    .top input{
+        max-width: 100%;
+    }
+
+    .join-container h5 {
+        font-size: larger;
+    }
 }
