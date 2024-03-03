@@ -475,7 +475,7 @@ main {
 
 .required {
     text-align: right;
-    text-size: 7rem;
+    font-size: .7rem;
     color: red;
 }
 /* .form-join >* {
@@ -496,11 +496,10 @@ main {
 .form-join label {  
     display: block;
     padding-top: 1.2rem;
-    font-size: .8rem;
-    
+    font-size: .8rem;    
 }
 
-.top input {
+.top input, textarea {
     display: block;
     padding: 1rem;
     width: 100%;
@@ -510,26 +509,19 @@ main {
     color: #1e1d1d;
 }
 
+
 input:invalid {
     background-color: rgb(250, 236, 249);
     color: rgb(132, 0, 255);
 }
 
-
-input[type=textarea] {
-   
-    height: 6rem;
-}
-
 .form-join .btn {
     box-shadow: 0 0 5px #333;
     width: 100%;
-
 }
 
-.side input{
-    margin-right: 4px;
-    
+.side input {
+    margin-right: 4px;    
 }
 
 .benefits {

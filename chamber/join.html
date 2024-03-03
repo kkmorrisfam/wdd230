@@ -47,7 +47,7 @@
             <button id="menu"></button>
             <nav class="navigation">
                 <ul>
-                    <li><a href="index.html"">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="#" class="active">Membership</a></li>                    
@@ -60,8 +60,8 @@
     <main >
         <h2>Become a member today and unlock a world of benefits</h2>        
         
-        <section class="info">
-        </section>
+        <!-- <section class="info">
+        </section> -->
         <section class="join-container">
             <div></div>
             <div>
@@ -95,28 +95,30 @@
                         <legend>Choose Membership Type</legend>
                         
                         <label class="side" for="nprofit">
-                            <input <input type="radio" name="membership" value="non-profit" id="nprofit">
+                            <input type="radio" name="membership" value="non-profit" id="nprofit">
                             Non-Profit Membership [ex. 501(c)3]</label>
                         <label class="side" for="bronze">
-                            <input <input type="radio" name="membership" value="bronze" id="bronze">
+                            <input type="radio" name="membership" value="bronze" id="bronze">
                             $350 * Bronze Annual Membership</label> 
                         <label class="side" for="silver">
-                            <input <input type="radio" name="membership" value="silver" id="silver">
+                            <input type="radio" name="membership" value="silver" id="silver">
                             $450 * Silver AnnualMembership</label>
                         <label class="side" for="gold">
-                            <input <input type="radio" name="membership" value="gold" id="gold">
+                            <input type="radio" name="membership" value="gold" id="gold">
                             $600 * Gold Annual Membership</label>
                     </fieldset>
                     <fieldset>
                         <legend>Business Information</legend>
                         <label class="top" for="business">Business Name* 
                             <input type="text" name="business" id="business" placeholder="Enter Business Name" required></label>
-                        <label class="top" for="description">Business Description
-                            <input type="textarea" name="description" id="description" placeholder="Describe your business...">
-                        </label>
+                        <label class="top" for="description">Business Description</label>
+                            <textarea name="description" id="description"  rows="4" cols="50" 
+                            placeholder="Describe your business..."></textarea>
+                        
                         <input type="hidden" name="date-stamp" id="date-stamp">
                     </fieldset>
-                    <button class="btn" type="submit"><a href="thankyou.html"></a>Sign Me Up</button>                    
+                    <button class="btn" type="submit">Sign Me Up</button>                    
+                    <!-- <a href="thankyou.html"></a> -->
                 </form>
             </div>
             
