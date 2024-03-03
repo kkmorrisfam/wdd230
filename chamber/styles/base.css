@@ -405,7 +405,7 @@ main {
     text-align: left; 
 }
 
-/* discovery page */
+/* -------------Discovery page---------------- */
 
 .attraction h2 {
     /* color:#0814f9; */
@@ -463,10 +463,104 @@ main {
 }
 
 /* ------------------Join Page------------------- */
-.join-main-container {
-    display: grid;    
+.highlight {
+    font-size:larger;
+    font-weight: 700;
 }
 
+.join-container {
+    display:grid;
+    grid-template-columns: 1fr;    
+}
+
+.required {
+    text-align: right;
+    text-size: 7rem;
+    color: red;
+}
+/* .form-join >* {
+    padding: 1rem;
+
+} */
+
+.form-join legend {
+    padding: 0 .5rem;
+    color: grey;
+}
+
+.form-join fieldset {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-join label {  
+    display: block;
+    padding-top: 1.2rem;
+    font-size: .8rem;
+    
+}
+
+.top input {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border: solid 1px #999;
+    border-radius: 5px;
+    color: #1e1d1d;
+}
+
+input:invalid {
+    background-color: rgb(250, 236, 249);
+    color: rgb(132, 0, 255);
+}
+
+
+input[type=textarea] {
+   
+    height: 6rem;
+}
+
+.form-join .btn {
+    box-shadow: 0 0 5px #333;
+    width: 100%;
+
+}
+
+.side input{
+    margin-right: 4px;
+    
+}
+
+.benefits {
+    font-size:small;
+    font-weight: 600;
+}
+
+.level h4{
+    /* color: rgb(0, 128, 79); */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* ------------------Thanks Page------------------- */
+.thanks-container {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    line-height: normal;
+}
+
+.thanks-container h2 {
+    padding-top: 2rem;
+    text-align: center;
+}
+.thanks-container p {
+    text-align: center;
+    padding-bottom: 2rem;
+}
 
 /* ------------------footer---------------------- */
 

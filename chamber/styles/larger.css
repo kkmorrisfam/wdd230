@@ -55,14 +55,20 @@
         width: 80%;
     }
 
-    /* Discover Page */
+    /* ---------------Discover Page----------------- */
     
     .discover-main-container {
 		grid-template-columns: 10% 1fr 2fr 2%;		
 	}
 
     /* ------------------Join Page------------------- */
-	.join-main-container {
-    	grid-template-columns: 5% 2fr 1fr 3%;    
-}
+	.join-container {
+    	grid-template-columns: 5% 1fr 1fr 3%;    
+    }
+
+    .form-join label {          
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
+    
 }
