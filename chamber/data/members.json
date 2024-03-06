@@ -1,0 +1,77 @@
+{
+    "members": [
+      {
+        "name": "Trees of Mystery",
+        "address": "15500 US-101, Klamath, CA 95548",
+        "phone": "(800) 638-3389",
+        "website": "https://treesofmystery.net/",
+        "image": "TOM_logo_wide.png",
+        "membershipLevel": "Gold",
+        "category": "Tourist Attraction"
+      },
+      {
+        "name": "Walmart",
+        "address": "900 E Washington Blvd, Crescent City, CA 95531",
+        "phone": "(707) 464-1198",
+        "website": "https://www.walmart.com/store/1910-crescent-city-ca",
+        "image": "walmartLogo.svg",
+        "membershipLevel": "Silver",
+        "category": "Retail Business"
+      },
+      {
+        "name": "Wier’s Mortuary Chapel",
+        "address": "408 G Street, Crescent City, CA 95531",
+        "phone": "(707) 464-2011",
+        "website": "https://www.wiersmortuary.com/",
+        "image": "wierslogo.png",
+        "membershipLevel": "Bronze",
+        "category": "Funeral Home"
+      },
+      {
+        "name": "Marlos Restaurant",
+        "address": "383 M Street, Crescent City, CA 95531",
+        "phone": "(707) 465-8388",
+        "website": "https://marlosrestaurant.com",
+        "image": "marloslogo.png",
+        "membershipLevel": "Bronze",
+        "category": "Restaurant"
+      },
+      {
+        "name": "Pacific Coast Mortgage",
+        "address": "555 H Street, Crescent City, CA 95531",
+        "phone": "(510) 908-0616",
+        "website": "https://www.brandeestephens.com/",
+        "image": "pacificmortgagelogo.jpg",
+        "membershipLevel": "Silver",
+        "category": "Mortgage"
+      },
+      {
+        "name": "Orchad Marketing Company",
+        "address": "P.O. Box 1323",
+        "phone": "(707) 951-2402",
+        "website": "https://www.orchidmarketingco.com/",
+        "image": "123_logo.png",
+        "membershipLevel": "Bronze",
+        "category": "Marketing"
+      },
+      {
+        "name": "Elk Valley Casino",
+        "address": "2021 Elk Rnch Rd, Crescent City, CA 95531",
+        "phone": "(555) 789-0123",
+        "website": "https://www.elkvalleycasino.com",
+        "image": "123_logo.png",
+        "membershipLevel": "Gold",
+        "category": "Entertainment"
+      },
+      {
+        "name": "Historic Requa Inn",
+        "address": "2097 US-199, Crescent City, CA 95531",
+        "phone": "(707) 458-3041",
+        "website": "https://hiouchimotel.com/index.html",
+        "image": "123_logo.png",
+        "membershipLevel": "Bronze",
+        "category": "Lodging"
+      }
+    ]
+  }
+  

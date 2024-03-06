@@ -16,7 +16,7 @@ main {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1.1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1.1fr));
     gap: 5px;
     background-color: rgb(236, 236, 238);
     padding: 10px;
@@ -41,13 +41,9 @@ h1, h2, p {
 img {
     border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
-    /* width: 50%; */
-    height: auto;
-    /* height: 50%; */
-	max-width: 50%;
-    /* margin: 0 auto; */
-    align-items: center;
-
+    height: auto;    
+	max-width: 50%;   
+    padding: 5px;
 }
 
 section > * {
