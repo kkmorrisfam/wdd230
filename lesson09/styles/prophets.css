@@ -28,7 +28,10 @@ main {
 section{
     border: 1px solid rgb(246, 235, 235);
     background-color: rgb(165, 165, 167);
+    display: flex;
+    flex-direction: column;
     align-items: center;
+
 }
 
 h1, h2, p {
@@ -38,9 +41,12 @@ h1, h2, p {
 img {
     border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
-    height: 50%;
+    /* width: 50%; */
+    height: auto;
+    /* height: 50%; */
 	max-width: 50%;
-
+    /* margin: 0 auto; */
+    align-items: center;
 
 }
 
