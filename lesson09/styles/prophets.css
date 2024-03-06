@@ -1,0 +1,49 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 1000px;
+	background-color: #fff;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1.1fr));
+    gap: 5px;
+    background-color: rgb(236, 236, 238);
+    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+section{
+    border: 1px solid rgb(246, 235, 235);
+    background-color: rgb(165, 165, 167);
+    align-items: center;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+img {
+    border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+    height: 50%;
+	max-width: 50%;
+
+
+}
+
+section > * {
+	margin: 0.1rem;
+}
