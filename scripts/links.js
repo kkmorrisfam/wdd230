@@ -6,8 +6,8 @@ async function getLinks() {
     const data = await response.json();
     
     // console.log(data);
+    
     displayLinks(data);
-
 } 
 
 // const displayProphets = (prophets) => {
