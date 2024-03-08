@@ -33,18 +33,11 @@ function showGrid() {
 }
 
 function buildHTML(members) {
-    console.log("inside buildHTML 1");
+    console.log("inside buildHTML 1");        
     console.log(members);
-    const directory = document.getElementsByClassName("directory");
-    directory.innerHTML = ""; //clear hardcoded or other elements
 
-    console.log("inside buildHTML 2");
-    
-    // members.forEach((data) => {
-    members.array.forEach(element => {
-        
-    
-        console.log(element.name);
+    members.forEach((member) => {
+        console.log(member.name);
         let card = document.createElement("section");        
         card.classList.add("card");
         card.classList.add("business");
@@ -93,3 +86,6 @@ async function jsonFetch() {
 }
 
 jsonFetch();
+
+// const directory = document.getElementsByClassName("directory");
+//     directory.innerHTML = ""; //clear hardcoded or other elements    
