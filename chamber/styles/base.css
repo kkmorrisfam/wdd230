@@ -577,7 +577,9 @@ input:invalid {
     padding-bottom: 1rem;
     max-width: 120px;
     height: auto;
-    
+
+    width: 40%;
+    margin: 0 auto;
 }
 
 .business p {    
@@ -598,32 +600,30 @@ input:invalid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 5px;
-    /* align-items: center; */
+    /* margin: 0 auto; */
 }
 
-/* .grid div {
-    text-align: center;
-}
-
-.grid img {
-    border: 1px solid #fff;
-    box-shadow: 0 0 10px #333;;
-} */
 
 .grid .business-name {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 
-.list .business-name {
-    visibility: visible;
+.grid a {
+    text-align: center;
+
 }
+/* .list .business-name {
+    visibility: visible;
+
+} */
 
 .list {
     display: flex;
     flex-direction: column;
 }
 
-.list div {
+.list section {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
@@ -631,9 +631,13 @@ input:invalid {
 }
 
 .list img {
-    visibility: hidden;
+    /* visibility: hidden; This keeps the space for the image on the page, just not visible*/
+    display: none;
 }
 
+.list section:nth-child(even) {
+    background-color:rgba(230, 230, 233, 0.701);
+}
 
 /* ------------------footer---------------------- */
 

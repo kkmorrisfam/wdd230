@@ -82,11 +82,13 @@
 
 	.list div {		
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		margin: 1rem;
-		padding: 0.5rem;
+		padding: 0.8rem;
 	}
 	
-	
+	.business.card:nth-child(3) {				
+		grid-column: initial;
+	}	
 
 }

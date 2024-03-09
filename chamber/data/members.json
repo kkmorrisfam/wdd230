@@ -3,7 +3,7 @@
         "name": "Trees of Mystery",
         "address": "15500 US-101, Klamath, CA 95548",
         "phone": "(800) 638-3389",
-        "website": "https://treesofmystery.net/",
+        "website": "https://www.treesofmystery.net",
         "image": "images/trees-logo.png",
         "membershipLevel": "Gold",
         "category": "Tourist Attraction"
@@ -21,7 +21,7 @@
         "name": "Wier’s Mortuary Chapel",
         "address": "408 G Street, Crescent City, CA 95531",
         "phone": "(707) 464-2011",
-        "website": "https://www.wiersmortuary.com/",
+        "website": "https://www.wiersmortuary.com",
         "image": "images/wierslogo.png",
         "membershipLevel": "Bronze",
         "category": "Funeral Home"
@@ -30,7 +30,7 @@
         "name": "Marlos Restaurant",
         "address": "383 M Street, Crescent City, CA 95531",
         "phone": "(707) 465-8388",
-        "website": "https://marlosrestaurant.com",
+        "website": "https://www.marlosrestaurant.com",
         "image": "images/marlos-logo.png",
         "membershipLevel": "Bronze",
         "category": "Restaurant"
@@ -39,7 +39,7 @@
         "name": "Pacific Coast Mortgage",
         "address": "555 H Street, Crescent City, CA 95531",
         "phone": "(510) 908-0616",
-        "website": "https://www.brandeestephens.com/",
+        "website": "https://www.brandeestephens.com",
         "image": "images/pacific-mortgage-logo.jpg",
         "membershipLevel": "Silver",
         "category": "Mortgage"
@@ -48,7 +48,7 @@
         "name": "Orchad Marketing Company",
         "address": "P.O. Box 1323",
         "phone": "(707) 951-2402",
-        "website": "https://www.orchidmarketingco.com/",
+        "website": "https://www.orchidmarketingco.com",
         "image": "images/orchid-logo.jpg",
         "membershipLevel": "Bronze",
         "category": "Marketing"
@@ -66,7 +66,7 @@
         "name": "Hiouchi Motel",
         "address": "2097 US-199, Crescent City, CA 95531",
         "phone": "(707) 458-3041",
-        "website": "https://hiouchimotel.com/index.html",
+        "website": "https://www.hiouchimotel.com",
         "image": "images/hiouchi-motel-logo.png",
         "membershipLevel": "Bronze",
         "category": "Lodging"

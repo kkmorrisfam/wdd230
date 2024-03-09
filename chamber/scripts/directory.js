@@ -24,13 +24,33 @@ listBtn.addEventListener("click", ()=>{
 function showList() {
     container.classList.add("list");
     container.classList.remove("grid");
+
+    // Select all section elements with class "card" within the container
+    let cardSections = container.querySelectorAll('.card');
+
+    // Loop through each selected section and remove the "card" class
+    cardSections.forEach((section) => {
+        section.classList.remove('card');
+    });
+
+
     console.log("inside showList()")
 }
 
 function showGrid() {
     container.classList.add("grid");
     container.classList.remove("list");
+    
+     // Select all section elements within the container
+     let allSections = container.querySelectorAll('section');
+
+     // Loop through each selected section and add the "card" class
+     allSections.forEach((section) => {
+         section.classList.add('card');
+     });
+    
     console.log("inside showGrid()")
+
 }
 
 function buildHTML(members) {
@@ -47,7 +67,7 @@ function buildHTML(members) {
         let img = document.createElement("img");
         img.classList.add("logo");
         img.src = member.image;
-        
+        img.alt = `Logo for ${member.name}.`
         let div = document.createElement("div");
 
         let name = document.createElement("p");
@@ -59,12 +79,19 @@ function buildHTML(members) {
         let phone = document.createElement("p");
         phone.classList.add("phone");
         phone.innerHTML = `${member.phone}`;
-        let web = document.createElement("p");
-        web.classList.add("web");
-        web.innerHTML = `${member.website}`;
+
+        let websiteName = member.website;
+        let strippedUrl = websiteName.replace(/^https?:\/\//, '');
+        console.log(strippedUrl);
+
+        let web = document.createElement("a");
+        web.href = member.website;
+        web.target = "_blank";
+        web.textContent = strippedUrl;
+
         let mlevel = document.createElement("p");
         mlevel.classList.add("m-level");
-        mlevel.innerHTML = `<span class="emphasis">Membership Level:</span>  ${member.mlevel}`;
+        mlevel.innerHTML = `<span class="emphasis">Membership Level:</span>  ${member.membershipLevel}`;
         let category = document.createElement("p");
         category.classList.add("category");
         category.innerHTML = `<span class="emphasis">Category:</span>  ${member.category}`
