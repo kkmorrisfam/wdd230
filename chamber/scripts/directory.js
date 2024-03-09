@@ -47,6 +47,9 @@ function buildHTML(members) {
         let img = document.createElement("img");
         img.classList.add("logo");
         img.src = member.image;
+        
+        let div = document.createElement("div");
+
         let name = document.createElement("p");
         name.classList.add("business-name");
         name.innerHTML = `${member.name}`;
@@ -67,13 +70,13 @@ function buildHTML(members) {
         category.innerHTML = `<span class="emphasis">Category:</span>  ${member.category}`
         
         card.appendChild(img);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(web);
-        card.appendChild(mlevel);
-        card.appendChild(category);
-
+        div.appendChild(name);
+        div.appendChild(address);
+        div.appendChild(phone);
+        div.appendChild(web);
+        div.appendChild(mlevel);
+        div.appendChild(category);
+        card.appendChild(div);
         
         container.appendChild(card);
     });
