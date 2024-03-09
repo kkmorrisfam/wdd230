@@ -65,7 +65,7 @@ else if ((dateNow - dateVisited) < msToDays) {
 
 
 // 3. reset local storage with new date/time value
-localStorage.setItem("dateVisit-key", dateNow);
+localStorage.setItem("dateVisit-Key", dateNow);
 
 
 // Set date & time for Join Form *with help from ChatGPT

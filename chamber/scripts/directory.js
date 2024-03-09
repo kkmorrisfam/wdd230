@@ -1,6 +1,7 @@
-const url = "https://kkmorrisfam.github.io/wdd230/chamber/data/members.json";
+// const url = "https://kkmorrisfam.github.io/wdd230/chamber/data/members.json";
+const url = "data/members.json";
 
-const container = document.getElementsByClassName("directory");
+const container = document.querySelector(".directory");
 const gridBtn = document.getElementById("grid");
 const listBtn = document.getElementById("list");
 
@@ -35,8 +36,9 @@ function showGrid() {
 function buildHTML(members) {
     console.log("inside buildHTML 1");        
     console.log(members);
+    container.innerHTML="";
 
-    members.forEach((member) => {
+    members.forEach((member)=>{
         console.log(member.name);
         let card = document.createElement("section");        
         card.classList.add("card");
@@ -44,9 +46,9 @@ function buildHTML(members) {
         
         let img = document.createElement("img");
         img.classList.add("logo");
-
+        img.src = member.image;
         let name = document.createElement("p");
-        name.classList.add("buniness-name");
+        name.classList.add("business-name");
         name.innerHTML = `${member.name}`;
         let address = document.createElement("p");
         address.classList.add("address");
@@ -72,20 +74,25 @@ function buildHTML(members) {
         card.appendChild(mlevel);
         card.appendChild(category);
 
-        //could have used container
-        directory.appendChild(card);
+        
+        container.appendChild(card);
     });
 }
 
 async function jsonFetch() {
+    console.log('Fetching data...');
     const response = await fetch(url);
+    console.log('Data fetched successfully.');
+    console.log(response);
     const data = await response.json();
+    console.log('JSON data:', data.members);
     console.log('jsonFetch function: ' + JSON.stringify(data.members) );
     // return data;
-    buildHTML(data);
+    buildHTML(data.members);
 }
 
 jsonFetch();
 
 // const directory = document.getElementsByClassName("directory");
 //     directory.innerHTML = ""; //clear hardcoded or other elements    
+
