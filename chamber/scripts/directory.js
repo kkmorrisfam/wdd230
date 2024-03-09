@@ -95,4 +95,3 @@ jsonFetch();
 
 // const directory = document.getElementsByClassName("directory");
 //     directory.innerHTML = ""; //clear hardcoded or other elements    
-

@@ -573,12 +573,14 @@ input:invalid {
     margin: 0 auto;
 }
 
-.business img {
+.business .logo {
     padding-bottom: 1rem;
+    max-width: 120px;
+    height: auto;
+    
 }
 
-.business p {
-    /* line-height: 1; */
+.business p {    
     padding: 0;
     margin: 0;    
 }
@@ -591,6 +593,48 @@ input:invalid {
     font-style: italic;
     font-weight: 500;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    /* align-items: center; */
+}
+
+/* .grid div {
+    text-align: center;
+}
+
+.grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;;
+} */
+
+.grid .business-name {
+    visibility: hidden;
+}
+
+.list .business-name {
+    visibility: visible;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list div {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list img {
+    visibility: hidden;
+}
+
+
 /* ------------------footer---------------------- */
 
 footer {

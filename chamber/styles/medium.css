@@ -78,6 +78,13 @@
 		font-size: .9rem;
 	}
 
+	/*--------------------Directory Page----------------- */
+
+	.list div {		
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		margin: 1rem;
+		padding: 0.5rem;
+	}
 	
 	
 
