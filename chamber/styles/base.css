@@ -477,10 +477,6 @@ main {
     font-size: .7rem;
     /* color: red; */
 }
-/* .form-join >* {
-    padding: 1rem;
-
-} */
 
 .form-join legend {
     padding: 0 .5rem;
@@ -507,7 +503,6 @@ main {
     border-radius: 5px;
     color: #1e1d1d;
 }
-
 
 input:invalid {
     background-color: rgb(250, 236, 249);
@@ -564,10 +559,8 @@ input:invalid {
 }
 
 .directory {
-    padding-bottom: 1rem;
-}
-.directory {
     margin: 0 auto;
+    padding-bottom: 1rem;
 }
 
 .business .logo {
