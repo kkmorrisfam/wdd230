@@ -1,7 +1,7 @@
-// const url = "https://kkmorrisfam.github.io/wdd230/chamber/data/members.json";
-const url = "data/members.json";
+const url = "https://kkmorrisfam.github.io/wdd230/chamber/data/members.json";
+// const url = "data/members.json";
 
-const container = document.querySelector(".directory");
+// const container = document.querySelector(".directory");
 const gridBtn = document.getElementById("grid");
 const listBtn = document.getElementById("list");
 

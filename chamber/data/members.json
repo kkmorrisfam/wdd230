@@ -5,7 +5,7 @@
         "address2": "Klamath, CA 95548",
         "phone": "(800) 638-3389",
         "website": "https://www.treesofmystery.net",
-        "image": "images/trees-logo.png",
+        "image": "images/trees-logo.webp",
         "membershipLevel": "Gold",
         "category": "Tourist Attraction"
       },
@@ -25,7 +25,7 @@
         "address2": "Crescent City, CA 95531",
         "phone": "(707) 464-2011",
         "website": "https://www.wiersmortuary.com",
-        "image": "images/wierslogo.png",
+        "image": "images/wierslogo.webp",
         "membershipLevel": "Bronze",
         "category": "Funeral Home"
       },
@@ -35,7 +35,7 @@
         "address2": "Crescent City, CA 95531",
         "phone": "(707) 465-8388",
         "website": "https://www.marlosrestaurant.com",
-        "image": "images/marlos-logo.png",
+        "image": "images/marlos-logo.webp",
         "membershipLevel": "Bronze",
         "category": "Restaurant"
       },
@@ -45,7 +45,7 @@
         "address2": "Crescent City, CA 95531",
         "phone": "(510) 908-0616",
         "website": "https://www.brandeestephens.com",
-        "image": "images/pacific-mortgage-logo.jpg",
+        "image": "images/pacific-mortgage-logo.webp",
         "membershipLevel": "Silver",
         "category": "Mortgage"
       },
@@ -55,7 +55,7 @@
         "address2": "Crescent City, CA 95531",
         "phone": "(707) 951-2402",
         "website": "https://www.orchidmarketingco.com",
-        "image": "images/orchid-logo.jpg",
+        "image": "images/orchid-logo.webp",
         "membershipLevel": "Bronze",
         "category": "Marketing"
       },
@@ -75,7 +75,7 @@
         "address2": "Crescent City, CA 95531",
         "phone": "(707) 458-3041",
         "website": "https://www.hiouchimotel.com",
-        "image": "images/hiouchi-motel-logo.png",
+        "image": "images/hiouchi-motel-logo.webp",
         "membershipLevel": "Bronze",
         "category": "Lodging"
       }
