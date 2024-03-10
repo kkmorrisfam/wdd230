@@ -63,8 +63,11 @@ function buildHTML(members) {
         let img = document.createElement("img");
         img.classList.add("logo");
         img.src = member.image;
-        img.alt = `Logo for ${member.name}.`;
-        
+        // img.alt = `Logo for ${member.name}.`;
+        img.setAttribute("alt", `Logo for ${member.name}.`)
+        img.setAttribute("width", 150);
+        img.setAttribute("height", 100);
+
         let hr = document.createElement("hr");
         
         let div = document.createElement("div");
