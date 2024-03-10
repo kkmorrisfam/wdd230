@@ -324,13 +324,10 @@ main {
 }
 
 .info img {
-    /* height: 100px; */
-    /* width: 100px; */
     width: 40%;
     max-width: 100px;
     height: auto;
-    margin: 0 auto;
-    /* justify-self: center; This doesn't work DevTools says it's parent is block????*/
+    margin: 0 auto;  
 }
 
 .pair {
@@ -575,12 +572,12 @@ input:invalid {
 
 .business .logo {
     padding-bottom: 1rem;
-    max-width: 120px;
+    /* max-width: 120px; */
     height: auto;
-
-    width: 40%;
+    width: 90%;
     margin: 0 auto;
 }
+
 
 .business p {    
     padding: 0;
@@ -603,20 +600,22 @@ input:invalid {
     /* margin: 0 auto; */
 }
 
+/* auto-fit is not working, only creating one column */
+.grid .card {
+    display: flex;
+    flex-direction: column;
+}
 
 .grid .business-name {
     /* visibility: hidden; */
     display: none;
 }
 
+
 .grid a {
+    display: grid;
     text-align: center;
-
 }
-/* .list .business-name {
-    visibility: visible;
-
-} */
 
 .list {
     display: flex;
@@ -638,6 +637,7 @@ input:invalid {
 .list section:nth-child(even) {
     background-color:rgba(230, 230, 233, 0.701);
 }
+
 
 /* ------------------footer---------------------- */
 

@@ -84,4 +84,14 @@
     .join-container h5 {
         font-size: larger;
     }
+
+    /* ------------------Directory Page----------- */
+    .list div {		
+		display: grid;
+		grid-template-columns: 1.1fr 1fr 1fr 1fr 1fr;
+		margin: 1rem;
+		padding: 0.8rem;
+	}
+
+
 }

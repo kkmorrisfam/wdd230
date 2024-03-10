@@ -1,7 +1,8 @@
     {"members": [
       {
         "name": "Trees of Mystery",
-        "address": "15500 US-101, Klamath, CA 95548",
+        "address1": "15500 US-101,",
+        "address2": "Klamath, CA 95548",
         "phone": "(800) 638-3389",
         "website": "https://www.treesofmystery.net",
         "image": "images/trees-logo.png",
@@ -10,7 +11,8 @@
       },
       {
         "name": "Walmart",
-        "address": "900 E Washington Blvd, Crescent City, CA 95531",
+        "address1": "900 E Washington Blvd",
+        "address2": "Crescent City, CA 95531",
         "phone": "(707) 464-1198",
         "website": "https://www.walmart.com/store/1910-crescent-city-ca",
         "image": "images/walmart-logo.svg",
@@ -19,7 +21,8 @@
       },
       {
         "name": "Wier’s Mortuary Chapel",
-        "address": "408 G Street, Crescent City, CA 95531",
+        "address1": "408 G Street",
+        "address2": "Crescent City, CA 95531",
         "phone": "(707) 464-2011",
         "website": "https://www.wiersmortuary.com",
         "image": "images/wierslogo.png",
@@ -28,7 +31,8 @@
       },
       {
         "name": "Marlos Restaurant",
-        "address": "383 M Street, Crescent City, CA 95531",
+        "address1": "383 M Street",
+        "address2": "Crescent City, CA 95531",
         "phone": "(707) 465-8388",
         "website": "https://www.marlosrestaurant.com",
         "image": "images/marlos-logo.png",
@@ -37,7 +41,8 @@
       },
       {
         "name": "Pacific Coast Mortgage",
-        "address": "555 H Street, Crescent City, CA 95531",
+        "address1": "555 H Street",
+        "address2": "Crescent City, CA 95531",
         "phone": "(510) 908-0616",
         "website": "https://www.brandeestephens.com",
         "image": "images/pacific-mortgage-logo.jpg",
@@ -46,7 +51,8 @@
       },
       {
         "name": "Orchad Marketing Company",
-        "address": "P.O. Box 1323",
+        "address1": "P.O. Box 1323",
+        "address2": "Crescent City, CA 95531",
         "phone": "(707) 951-2402",
         "website": "https://www.orchidmarketingco.com",
         "image": "images/orchid-logo.jpg",
@@ -55,7 +61,8 @@
       },
       {
         "name": "Elk Valley Casino",
-        "address": "2021 Elk Rnch Rd, Crescent City, CA 95531",
+        "address1": "2021 Elk Rnch Rd",
+        "address2": "Crescent City, CA 95531",
         "phone": "(555) 789-0123",
         "website": "https://www.elkvalleycasino.com",
         "image": "images/elk-valley-logo.webp",
@@ -64,13 +71,13 @@
       },
       {
         "name": "Hiouchi Motel",
-        "address": "2097 US-199, Crescent City, CA 95531",
+        "address1": "2097 US-199", 
+        "address2": "Crescent City, CA 95531",
         "phone": "(707) 458-3041",
         "website": "https://www.hiouchimotel.com",
         "image": "images/hiouchi-motel-logo.png",
         "membershipLevel": "Bronze",
         "category": "Lodging"
       }
-    ]
-  
+    ]  
   }

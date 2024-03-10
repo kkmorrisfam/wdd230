@@ -82,7 +82,7 @@
 
 	.list div {		
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1.1fr 1fr 1fr 1fr;
 		margin: 1rem;
 		padding: 0.8rem;
 	}
@@ -91,4 +91,5 @@
 		grid-column: initial;
 	}	
 
+	
 }
