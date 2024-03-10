@@ -62,10 +62,10 @@ function buildHTML(members) {
         let img = document.createElement("img");
         img.classList.add("logo");
         img.src = member.image;
-        img.alt = `Logo for ${member.name}.`
+        img.alt = `Logo for ${member.name}.`;
         
-        // let hr = document.createElement("hr");
-
+        let hr = document.createElement("hr");
+        
         let div = document.createElement("div");
         // let div2 = document.createElement("div");
 
@@ -91,14 +91,14 @@ function buildHTML(members) {
 
         let mlevel = document.createElement("p");
         mlevel.classList.add("m-level");
-        mlevel.innerHTML = `<span class="emphasis">Membership Level:</span><br>${member.membershipLevel}`;
+        mlevel.innerHTML = `<hr><span class="emphasis">Membership Level:</span><br>${member.membershipLevel}`;
         let category = document.createElement("p");
         category.classList.add("category");
         // category.innerHTML = `<span class="emphasis">Category:</span>  ${member.category}`
         category.innerHTML = `<span class="emphasis">${member.category}</span>`;
 
         card.appendChild(img);
-        // card.appendChild(hr);
+        card.appendChild(hr);
         div.appendChild(name);
         div.appendChild(address);
         div.appendChild(phone);

@@ -575,6 +575,9 @@ input:invalid {
     /* max-width: 120px; */
     height: auto;
     width: 90%;
+    /* max-height: 45%; */
+    /* width: auto; */
+
     margin: 0 auto;
 }
 
@@ -638,7 +641,14 @@ input:invalid {
     background-color:rgba(230, 230, 233, 0.701);
 }
 
+.grid hr {
+    /* flex-grow: 1; */
+    width: 100%;
+}
 
+.list hr {
+    display: none;
+}
 /* ------------------footer---------------------- */
 
 footer {
