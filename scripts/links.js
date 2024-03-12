@@ -5,7 +5,7 @@ async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
     
-    console.log(data);
+    // console.log(data);
     
     displayLinks(data);
 } 
@@ -22,16 +22,16 @@ function displayLinks(weeks) {
     
 
     weeks.lessons.forEach((week) => {        
-        console.log(week.lesson);
-        console.log(week.links);
+        // console.log(week.lesson);
+        // console.log(week.links);
         let li = document.createElement("li");
         
         li.innerHTML = `${week.lesson}: `;
-        console.log(li);
+        // console.log(li);
 
         week.links.forEach((list) => {
-            console.log(list.url);
-            console.log(list.title);
+            // console.log(list.url);
+            // console.log(list.title);
             
             let a = document.createElement("a");
             
