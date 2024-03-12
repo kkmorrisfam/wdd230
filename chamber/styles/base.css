@@ -92,9 +92,12 @@ a {
     padding: .9rem;
     margin: .9rem; 
     background-color: var(--clr-primary);   
-    color: var(--clr-light);
+    /* color: var(--clr-light); */
 }
 
+.banner .btn a {
+    color: var(--clr-light);
+}
 
 .btn {
     background-color: var(--clr-accent);
@@ -221,16 +224,16 @@ main {
 
 .hero {    
     position: relative; 
-    /* height: 605px;     */
+    height: 605px;    
     width: 100%;
     overflow: hidden;
 }
 
 /* lesson 06 */
-.heros {    
+/* .heros {    
     position: relative;        
     width: 100%;
-}
+} */
 
 .hero img {         
     /* width: auto; */
@@ -241,11 +244,11 @@ main {
 }
 
 /* lesson 06 */
-.heros img {          
+/* .heros img {          
     width: 100%;        
     height: auto;
     object-fit: cover;
-}
+} */
 
 .hero .welcome img {
     display: inline;
