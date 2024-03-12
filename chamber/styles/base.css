@@ -223,6 +223,7 @@ main {
     position: relative; 
     /* height: 605px;     */
     width: 100%;
+    overflow: hidden;
 }
 
 /* lesson 06 */
@@ -232,9 +233,11 @@ main {
 }
 
 .hero img {         
-    width: auto;
+    /* width: auto; */
+    width: 100%;
     height: 100%;    
-    object-fit: cover;    
+    object-fit: cover; 
+    max-width: 100%;   
 }
 
 /* lesson 06 */
