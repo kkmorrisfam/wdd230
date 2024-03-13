@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+Double+Pica+SC&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+Double+Pica+SC&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" href="images/favicon.ico">
     <!-- Facebook meta information -->
@@ -28,21 +30,26 @@
     <meta name="twitter:image" content="https://kkmorrisfam.github.io/wdd230/chamber/images/crescent-city-pier.jpg">
     <!-- <meta name="twitter:card" content=""> -->
 </head>
+
 <body>
     <header>
         <div class="banner">
             <div class="btn"><a href="#">Join Now</a></div>
             <div class="social">
-                <a href="https://www.linkedin.com/company/del-norte-county/" target="_blank"><img src="images/linked-in.png" alt="linked-in icon"></a>
-                <a href="https://twitter.com/DelNorteCounty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter-x.png" alt="X formerly twitter icon"></a>
-                <a href="https://www.facebook.com/visitdelnortecounty/" target="_blank"><img src="images/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com/company/del-norte-county/" target="_blank"><img
+                        src="images/linked-in.png" alt="linked-in icon"></a>
+                <a href="https://twitter.com/DelNorteCounty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank"><img src="images/twitter-x.png" alt="X formerly twitter icon"></a>
+                <a href="https://www.facebook.com/visitdelnortecounty/" target="_blank"><img src="images/facebook.png"
+                        alt="facebook icon"></a>
                 <button id="dark-toggle"></button>
             </div>
         </div>
-        <div class="heading">            
+        <div class="heading">
             <div class="title">
                 <!-- <img src="images/battery-point-lighthouse.jpg" alt="Battery Point Lighthouse"> -->
-                <h1><img src="images/lighthouse-logo.webp" alt="Battery Point Lighthouse">Crescent City Chamber of Commerce</h1>
+                <h1><img src="images/lighthouse-logo.webp" alt="Battery Point Lighthouse">Crescent City Chamber of
+                    Commerce</h1>
             </div>
             <button id="menu"></button>
             <nav class="navigation">
@@ -50,16 +57,16 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="#" class="active">Membership</a></li>                    
-                </ul>                
+                    <li><a href="#" class="active">Membership</a></li>
+                </ul>
             </nav>
             <!-- <button id="dark-toggle"></button> -->
         </div>
     </header>
 
-    <main >
-        <h2>Become a member today and unlock a world of benefits</h2>        
-        
+    <main>
+        <h2>Become a member today and unlock a world of benefits</h2>
+
         <!-- <section class="info">
         </section> -->
         <section class="join-container">
@@ -67,39 +74,37 @@
             <div>
                 <h3>Join the crescent City Chamber of Commerce today!</h3>
                 <!-- <h5>Ready to elevate your business and be a part of something bigger? </h5> -->
-                    
+
                 <form method="get" action="thankyou.html" class="form-join">
                     <fieldset>
                         <legend>Applicant Information</legend>
-                            <div class="required">*indicates required field</div>
-                            <label class="top" for="fname">First Name* 
-                                <input type="text" name="fname" id="fname" required
-                                placeholder="First Name"></label>
-                            <label class="top" for="lname">Last Name* 
-                                <input type="text" name="lname" id="lname" required
-                                placeholder="Last Name"></label>
-                            <label class="top" for="position">Title or Position* 
-                                <input type="text" name="position"  id="position" required 
-                                pattern="[a-zA-Z\- ]{7,}" 
+                        <div class="required">*indicates required field</div>
+                        <label class="top" for="fname">First Name*
+                            <input type="text" name="fname" id="fname" required placeholder="First Name"></label>
+                        <label class="top" for="lname">Last Name*
+                            <input type="text" name="lname" id="lname" required placeholder="Last Name"></label>
+                        <label class="top" for="position">Title or Position*
+                            <input type="text" name="position" id="position" required pattern="[a-zA-Z\- ]{7,}"
                                 title="Please enter at least seven alphanumeric characters, hyphens, or spaces."
                                 placeholder="Title or position with organization"></label>
-                            <label class="top" for="email">Email* 
-                                <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
-                            <label class="top" for="phone">Mobile Phone* 
+                        <label class="top" for="email">Email*
+                            <input type="email" name="email" id="email" placeholder="someone@gmail.com"
+                                required></label>
+                        <label class="top" for="phone">Mobile Phone*
                             <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>
-                        
-                            <!-- <label class="top" for="url">Website 
+
+                        <!-- <label class="top" for="url">Website 
                                 <input type="url" name="url" id="url" placeholder="http://"></label>                         -->
                     </fieldset>
                     <fieldset>
                         <legend>Choose Membership Type</legend>
-                        
+
                         <label class="side" for="nprofit">
                             <input type="radio" name="membership" value="non-profit" id="nprofit">
                             Non-Profit Membership [ex. 501(c)3]</label>
                         <label class="side" for="bronze">
                             <input type="radio" name="membership" value="bronze" id="bronze">
-                            $350 * Bronze Annual Membership</label> 
+                            $350 * Bronze Annual Membership</label>
                         <label class="side" for="silver">
                             <input type="radio" name="membership" value="silver" id="silver">
                             $450 * Silver AnnualMembership</label>
@@ -109,19 +114,20 @@
                     </fieldset>
                     <fieldset>
                         <legend>Business Information</legend>
-                        <label class="top" for="business">Business Name* 
-                            <input type="text" name="business" id="business" placeholder="Enter Business Name" required></label>
+                        <label class="top" for="business">Business Name*
+                            <input type="text" name="business" id="business" placeholder="Enter Business Name"
+                                required></label>
                         <label class="top" for="description">Business Description</label>
-                            <textarea name="description" id="description"  rows="4" cols="50" 
+                        <textarea name="description" id="description" rows="4" cols="50"
                             placeholder="Describe your business..."></textarea>
-                        
+
                         <input type="hidden" name="date-stamp" id="date-stamp">
                     </fieldset>
-                    <button class="btn" type="submit">Sign Me Up</button>                    
+                    <button class="btn" type="submit">Sign Me Up</button>
                     <!-- <a href="thankyou.html"></a> -->
                 </form>
             </div>
-            
+
             <div class="form-message">
                 <!-- 
                 <p>Be Informed: As a Chamber member, you're the first to receive crucial news and data for informed business decisions.</p>
@@ -130,42 +136,48 @@
                 <p>Boost Visibility: Stand out in the community with enhanced visibility for your business. Build trust and become a recognizable name.</p>
                 <p>Networking Opportunities: Forge valuable connections with fellow businesses and community members. Grow together, thrive together.</p>
                 <p>Ready to elevate your business and be a part of something bigger? Join the Crescent City Chamber of Commerce today!</p>-->
-                
+
                 <h3>Choose a membership level</h3>
-                <p class="benefits"><span class="highlight">Basic Benefits for Chamber Members:</span> Networking Groups • Forums • Chamber Committees • 
-                    Print Directory Listing • Workshops • Legislative Advocacy • Community Connections and Business Credibility by Association 
-                    • Business advising, publications and community marketing partnerships • Job Postings • Economic development assistance </p>
-                 <div class="card level">
+                <p class="benefits"><span class="highlight">Basic Benefits for Chamber Members:</span> Networking Groups
+                    • Forums • Chamber Committees •
+                    Print Directory Listing • Workshops • Legislative Advocacy • Community Connections and Business
+                    Credibility by Association
+                    • Business advising, publications and community marketing partnerships • Job Postings • Economic
+                    development assistance </p>
+                <div class="card level">
                     <h4>Non-Profit<br>(no fee)</h4>
                     <p><span class="highlight">Non-Profit</span><br>
                         Basic Benefits, plus*: Website Business Directory Listing Page for Non-Profit Businesses</p>
-                </div>     
+                </div>
                 <div class="card level">
                     <h4>Bronze<br>$350</h4>
                     <p><span class="highlight"> Bronze Membership</span><br>
-                        Basic Benefits, plus*: Website Business Directory Listing Page; Limited to businesses with 7 or less</p>
+                        Basic Benefits, plus*: Website Business Directory Listing Page; Limited to businesses with 7 or
+                        less</p>
                 </div>
                 <div class="card level">
                     <h4>Silver<br>$450</h4>
                     <p><span class="highlight">Silver Membership</span><br>
-                        Basic Benefits, plus*: Business Directory Logo with Listing, with Additional Category Listing, 
+                        Basic Benefits, plus*: Business Directory Logo with Listing, with Additional Category Listing,
                         90-Day Standard Ad, Event Discount of 10%</p>
                 </div>
                 <div class="card level">
                     <h4>Gold<br>$600</h4>
                     <p><span class="highlight">Gold Membership</span><br>
-                        Basic Benefits, plus*: Business Directory Logo with Listing, with Additional Category Listing, “Chamber News” Newsletter Ad Standard Size
-                    Event Discount of 25%</p>
+                        Basic Benefits, plus*: Business Directory Logo with Listing, with Additional Category Listing,
+                        “Chamber News” Newsletter Ad Standard Size
+                        Event Discount of 25%</p>
                 </div>
-                <h5>Be Informed | Connections Matter | Advocate for Change | 
+                <h5>Be Informed | Connections Matter | Advocate for Change |
                     Boost Visibility | Networking Opportunities
                 </h5>
-                <h5>Ready to elevate your business and be a part of something bigger? Join the Crescent City Chamber of Commerce today!</h5>
+                <h5>Ready to elevate your business and be a part of something bigger? Join the Crescent City Chamber of
+                    Commerce today!</h5>
             </div>
             <div></div>
         </section>
     </main>
-    <footer>        
+    <footer>
         <p>Crecent City Chamber of Commerce<br>1001 Front St,<br> Crescent City, CA 95531<br>(707) 464-3174
         </p>
         <p>&#169; <span id="year"></span><br>Kerri Morris<br>WDD 230 Web Development Project Winter 2024</p>
@@ -175,6 +187,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/timestamps.js"></script>
 </body>
 
 </html>

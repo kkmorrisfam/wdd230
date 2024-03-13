@@ -92,19 +92,6 @@
         ]
     },
     {
-        "lesson":"07",
-        "links": [
-            {
-                "url":"lesson07/lazyload.html",
-                "title":"Lazy Loading"
-            },
-            {
-                "url":"lesson07/bom.html",
-                "title":"BOM Local Storage"
-            }
-        ]
-    },
-    {
         "lesson":"08",
         "links": [
             {

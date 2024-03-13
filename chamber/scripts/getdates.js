@@ -69,11 +69,11 @@ localStorage.setItem("dateVisit-Key", dateNow);
 
 
 // Set date & time for Join Form *with help from ChatGPT
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the hidden input element
-    let timestampInput = document.getElementById('time-stamp');
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Get the hidden input element
+//     let timestampInput = document.getElementById('time-stamp');
 
-    // Set its value to the current date/time in milliseconds
-    timestampInput.value = Date.now();
-  });
+//     // Set its value to the current date/time in milliseconds
+//     timestampInput.value = Date.now();
+//   });
 // document.querySelector(#time-stamp).textContent = dateNow;
