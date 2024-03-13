@@ -70,3 +70,5 @@ function capitalizeWords(phrase) {
 }
 
 apiFetch();
+
+// https://api.openweathermap.org/data/2.5/forecast?lat=41.75&lon=-124.20&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c

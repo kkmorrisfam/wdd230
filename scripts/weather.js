@@ -18,9 +18,8 @@ async function apiFetch() {
             let icon = data.weather[0].icon;
             console.log(data.weather[0].icon);
             console.log(`https://openweathermap.org/img/wn/${icon}.png`);
-
             
-            // displayResults(data);
+            displayResults(data);
 
         } else {
             throw(Error(await response.text()))
@@ -29,3 +28,35 @@ async function apiFetch() {
         console.log("caught error:  " + error);
     }
 }
+
+function displayResults(data){ 
+    let phrase = data.weather[0].description;
+    let weatherDescription = capitalizeWords(phrase);
+    let icon = data.weather[0].icon;
+    
+    currentTemp.innerHTML = `${(data.main.temp).toFixed(0)}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    
+    let desc = weatherDescription;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    caption.textContent = `${desc}`;
+}
+
+
+//with help from ChatGPT
+function capitalizeWords(phrase) {
+    // Split the phrase into an array of words
+    let words = phrase.split(" ");
+
+    // Capitalize the first letter of each word
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+
+    // Join the words back together into a single string
+    return words.join(" ");
+}
+
+
+apiFetch();

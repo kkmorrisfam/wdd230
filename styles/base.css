@@ -207,6 +207,27 @@ h2 {
     line-height: 1.5;
 }
 
+.card:nth-of-type(2) {
+    background-color: #9cc1c7;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    
+}
+
+.card:nth-of-type(2) h4 {
+    padding: 1.5rem;
+}
+
+#weather-icon {
+    /* align-items: center;     */
+    padding: .8rem;
+}
+
+#numberVisitsPlaceholder {
+    padding: 1rem;
+}
+
 .map {    
     width: auto;
     
