@@ -77,3 +77,5 @@ localStorage.setItem("dateVisit-Key", dateNow);
 //     timestampInput.value = Date.now();
 //   });
 // document.querySelector(#time-stamp).textContent = dateNow;
+
+document.querySelector("#date-stamp").value="test value";

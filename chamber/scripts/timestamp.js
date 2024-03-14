@@ -8,8 +8,12 @@
 //     console.log("timestamp" + timestampElement);
 //   });
 
-  const dateNow = Date.now();
-  const timestampElement = document.getElementById('date-stamp');
+console.log("timestamp.js: ");
 
-  timestampElement.value = dateNow;
-  console.log("timestamp:  " + timestampElement);
+const dateStamp = Date.now();
+const timestampElement = document.getElementById('date-stamp');
+console.log(dateStamp);
+  timestampElement.value = dateStamp;
+// timestampElement.textContent = dateNow;
+console.log("test");
+console.log("timestamp:  " + timestampElement);

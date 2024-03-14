@@ -4,14 +4,9 @@ const linksURL = "https://kkmorrisfam.github.io/wdd230/data/links.json";
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    
-    // console.log(data);
-    
+   
     displayLinks(data);
 } 
-
-// const displayProphets = (prophets) => {
-//     prophets.forEach((prophet) => {
 
 function displayLinks(weeks) {
     const activities = document.querySelector(".activities");
@@ -21,17 +16,12 @@ function displayLinks(weeks) {
     const ul = document.createElement("ul");
     
 
-    weeks.lessons.forEach((week) => {        
-        // console.log(week.lesson);
-        // console.log(week.links);
+    weeks.lessons.forEach((week) => {               
         let li = document.createElement("li");
         
         li.innerHTML = `${week.lesson}: `;
-        // console.log(li);
-
+        
         week.links.forEach((list) => {
-            // console.log(list.url);
-            // console.log(list.title);
             
             let a = document.createElement("a");
             
@@ -49,5 +39,5 @@ function displayLinks(weeks) {
 }
 
 getLinks();
-// displayLinks();
+
 
