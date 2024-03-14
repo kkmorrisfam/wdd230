@@ -92,13 +92,6 @@
             </div>
         </section>
         <section class="spotlight">
-            <!-- <img src="images/happy-client.jpg" alt="Woman in an office as a happy client" width="1368" height="912">
-            <img src="images/happy-client.jpg" alt="Woman in an office as a happy client">
-            <div>
-                <h3>Company Spotlight</h3>
-                <p>Current member spotlight information, about what they are up to...</p>
-                <div class="btn">Action Button</div> 
-            </div>-->
             <img src="images/smith-river-alliance.webp" alt="Grant Werschkull & Patty McCleary with Smith River Alliance">
             <h3>Business Spotlight</h3>
             <p>“We value the Chamber’s orientation toward travel and tourism which emphasizes recruiting our 'next visitor'.   Del Norte County is an extraordinary destination with uncommon attractions.  Our beautiful beaches and rugged coastline, Wild and Scenic Rivers, Redwood National and State Parks, and the backcountry lands of the vast Smith River National Recreation Area provide unmatched recreation and tourism opportunities. We’re grateful to the Chamber as a community leader and partner on the celebration of these world-class natural resources.”<br>     --Grant Werschkull & Patty McCleary, Smith River Alliance </p>
@@ -108,14 +101,21 @@
                 </div> 
             </div>
         </section>
-        <section class="pair flex">
+        <section class="pair">
             <div class="weather">
-                <h3>Weather for Crescent City, California</h3>
-                <!-- <img src="images/cc-weather-pic.jpg" alt="placeholder weather picture"> -->
-                <img src="images/partly_cloudy.png" alt="placeholder weather picture">
-                <p>It's <span id="temp"></span>&deg;F outside today</p>
-                <p>with a wind speed of <span id="windspeed"></span> mph</p>
-                <p>Windchill: <span id="windchill"></span></p>
+                <h3>Weather for Crescent City, California</h3>                
+                <img src="images/partly_cloudy.png" alt="placeholder weather picture" id="weather-icon" width="50" height="50">                
+                
+                <h4 id="temp"></h4>
+                <h4 id="weather-caption"></h4>
+                
+                <div>                    
+                    <p>Wind: <span id="windspeed"></span> mph</p>
+                    <p>Windchill: <span id="windchill"></span></p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                </div>
+                <div id="forcast">Forcast list here...                    
+                </div>
             </div>
             <div class="card2">
                 <h3>Did you know?</h3>
@@ -125,8 +125,7 @@
         </section>
 
     </main>
-    <footer>
-        <!-- The footer area must contain contact information and some additional development information including: your full name, the fact that this is a project for WDD 230, and the last modification date of the page, which is driven dynamically through JavaScript. -->
+    <footer>       
         <p>Crecent City Chamber of Commerce<br>1001 Front St,<br> Crescent City, CA 95531<br>(707) 464-3174
 
         </p>
@@ -138,6 +137,7 @@
     <script src="scripts/navigation.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/forcast.js"></script>
 </body>
 
 </html>
