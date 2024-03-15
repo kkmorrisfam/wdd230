@@ -8,7 +8,7 @@ const weatherCaption = document.querySelector("#weather-caption");
 const todayTemp = document.querySelector("#temp");
 const windSpeed = document.querySelector("#windspeed");
 const windChill = document.querySelector("#windchill");
-const forcastDiv = document.querySelector("#forcast");
+const forcastDiv = document.querySelector("#forecast");
 
 // Get current timestamp
 const now = Math.floor(Date.now() / 1000); // Convert milliseconds to seconds
@@ -45,8 +45,8 @@ function displayForecast(data) {
     // Json data gives forcast objects in 3 hour increments
     const nextThreeDaysForecast = data.list.filter((item, index) => {
         const itemTimestamp = item.dt;
-        return (index % 8 === 0) && (itemTimestamp > now && itemTimestamp <= now + (86400 * 3)); // 86400 seconds in a day
-        // return itemTimestamp 
+        return (index % 8 === 0) && (itemTimestamp > now && itemTimestamp <= now + (86400 * 3)); // 86400 seconds in a day, 8 3hr blocks to 24hr period
+       
     });
 
     // Create new array with filtered data for each forecast item
@@ -62,22 +62,47 @@ function displayForecast(data) {
 
     console.log("forcast data: ");
     console.log(forecastData);
+    forcastDiv.innerHTML="";
 
     //set DOM elements
-    forecastData.foreach( element => 
-        console.log("element:")
-        console.log(element) 
-        );
+    forecastData.forEach((key) => {
+        console.log("element:");        
+        console.log(key.temp) ;
+        //id=forcast; clear innerHTML; create p element, create img
+        //set img src (key.weatherIcon), alt, set innerHTML of p to key.temp, key.description
+        let p = document.createElement("p");
+        // let img = document.createElement("img");
+        let iconsrc = `https://openweathermap.org/img/wn/${key.weatherIcon}.png`;
+        let forecastDesc = capitalizeWords(key.description);
+        p.innerHTML=`<img src="${iconsrc}" alt="${key.description} image">  ${key.temp.toFixed(0)}&deg;F  ${forecastDesc}`;
+        console.log(p);
+        forcastDiv.appendChild(p);
+
+    });
 
     
 }
+
+function capitalizeWords(phrase) {
+    // Split the phrase into an array of words
+    let words = phrase.split(" ");
+
+    // Capitalize the first letter of each word
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+
+    // Join the words back together into a single string
+    return words.join(" ");
+}
+
 
 apiFetchForecast();
 
 console.log("inside forecast");
 
 
-// ideas from chapGPT
+
 
 
 

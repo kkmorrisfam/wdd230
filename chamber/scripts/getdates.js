@@ -54,7 +54,8 @@ if (dateVisited == 0) {
 }
 else if ((dateNow - dateVisited) < msToDays) {
     document.querySelector("#message").textContent = "Back so soon! Awesome!";
-} else  {
+} 
+else  {
     let days = Math.floor((dateNow-dateVisited)/msToDays);    
     let word = "days";
     if (days == 1) {

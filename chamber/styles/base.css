@@ -401,6 +401,7 @@ main,
 .weather h3 {
     text-align: center;    
 }
+
 .weather img {
     float: left;
     width: 50px;
@@ -409,7 +410,7 @@ main,
 
 .weather p {
     padding: 0;
-    padding-inline-start: 20px;
+    /* padding-inline-start: 20px; */
     margin: 0;
     text-align: left; 
 }
@@ -429,8 +430,9 @@ main,
     flex: 1;
 }
 
-.forcast ul li {
-    list-style: none;
+#forecast img {
+    float: left;
+    max-width: 1rem;
 }
 
 /* -------------Discovery page---------------- */
