@@ -53,7 +53,7 @@
             </nav>            
         </div>
     </header>
-    <main>
+    <main>        
         <div class="hero">
             <img src="images/hero-beach-sunset.webp" alt="Beach at sunset: Hero Image" width="1210"   height="605">
             <!-- with max-width, list small to large -->
@@ -71,6 +71,13 @@
                 </p>
             </article>
         </div>
+        <article class="ad card2">
+            <img src="images/chamber-bldg.webp" alt="Chamber of Commerce Building" width="447" height="216">
+            <h3>Join us for our Meet and Greet</h3>
+            <p><span class="emphasis">Location: </span>Crescent City Chamber, 1001 Front St, Crescent City</p>
+            <p><span class="emphasis">When: </span>Wednesday at 7:00 PM</p>
+
+        </article>
         <section class="info">
             <div class="card">
                 <img src="images/icon-directory-sml.webp" alt="icon for directory">
@@ -104,17 +111,24 @@
         <section class="pair">
             <div class="weather">
                 <h3>Weather for Crescent City, California</h3>                
-                <img src="images/partly_cloudy.png" alt="placeholder weather picture" id="weather-icon" width="50" height="50">                
-                
-                <h4 id="temp"></h4>
-                <h4 id="weather-caption"></h4>
-                
-                <div>                    
-                    <p>Wind: <span id="windspeed"></span> mph</p>
-                    <p>Windchill: <span id="windchill"></span></p>
-                    <p>Humidity: <span id="humidity"></span></p>
-                </div>
-                <div id="forcast">Forcast list here...                    
+                <div class="flex">
+                    <div>
+                        <img src="images/partly_cloudy.png" alt="placeholder weather picture" id="weather-icon" width="50" height="50">                
+                        
+                        <h4 id="temp"></h4>
+                        <h4 id="weather-caption"></h4>
+                    </div>
+                    <div>                    
+                        <p>Wind: <span id="windspeed"></span> mph</p>
+                        <p>Windchill: <span id="windchill"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                    </div>
+                    <div id="forcast">Forcast list here...
+                        <p><img src="">🌞 62f Sunny</p>                         
+                        <p><img src="">🌞 62f Sunny</p>                         
+                        <p><img src="">🌞 62f Sunny</p>                       
+                                            
+                    </div>
                 </div>
             </div>
             <div class="card2">
@@ -137,7 +151,7 @@
     <script src="scripts/navigation.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
-    <script src="scripts/forcast.js"></script>
+    <script src="scripts/forecast.js"></script>
 </body>
 
 </html>

@@ -217,9 +217,13 @@ a {
   }
 
   /* main section */
-main {
+main,
+.info,
+.pair,
+.discover-main-container {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 .hero {    
@@ -298,11 +302,11 @@ main {
 
 /* info section */
 
-.info {
+/* .info {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-}
+} */
 
 .card {
     display: flex;
@@ -336,12 +340,12 @@ main {
     margin: 0 auto;  
 }
 
-.pair {
+/* .pair {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    /* margin: 1.2rem; */
-}
+
+} */
 
 .spotlight {
     width: 100%;
@@ -410,6 +414,25 @@ main {
     text-align: left; 
 }
 
+/* if this works, merge with .navigation ul... */
+.flex {    
+    display: flex;
+    flex-direction: row;   
+    gap: .5rem;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.flex div {
+    /* flex: 1 1 100%; */
+    /* flex-grow: 1; */
+    flex: 1;
+}
+
+.forcast ul li {
+    list-style: none;
+}
+
 /* -------------Discovery page---------------- */
 
 .attraction h2 {
@@ -418,9 +441,9 @@ main {
     border-bottom: double;
 }
 .discover-main-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* gap: 2rem; */
     align-items: start;
 }
 
@@ -549,6 +572,7 @@ input:invalid {
     padding-top: 2rem;
     text-align: center;
 }
+
 .thanks-container p {
     text-align: center;
     padding-bottom: 2rem;
@@ -580,15 +604,24 @@ input:invalid {
     margin: 0 auto;
 }
 
-
+.ad p,
 .business p {    
     padding: 0;
     margin: 0;    
 }
 
+.ad span,
 .business-name {
     font-weight: 700;
 }
+
+.ad {
+    background-color: var(--clr-banner);
+    position: absolute;
+    width: 80%;    
+    visibility: hidden;
+}
+
 
 .emphasis {
     font-style: italic;
@@ -603,6 +636,7 @@ input:invalid {
 }
 
 /* auto-fit is not working, only creating one column */
+.list,
 .grid .card {
     display: flex;
     flex-direction: column;
@@ -613,16 +647,15 @@ input:invalid {
     display: none;
 }
 
-
 .grid a {
     display: grid;
     text-align: center;
 }
 
-.list {
+/* .list {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .list section {
     display: grid;
