@@ -4,14 +4,15 @@
 
 const url = "http://api.openweathermap.org/data/2.5/forecast?lat=41.75&lon=-124.20&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
 const weatherIcon = document.querySelector("#weather-icon");
-const weatherCaption = document.querySelector("#weather-caption");
-const todayTemp = document.querySelector("#temp");
-const windSpeed = document.querySelector("#windspeed");
-const windChill = document.querySelector("#windchill");
+// const weatherCaption = document.querySelector("#weather-caption");
+// const todayTemp = document.querySelector("#temp");
+
 const forcastDiv = document.querySelector("#forecast");
 
 // Get current timestamp
 const now = Math.floor(Date.now() / 1000); // Convert milliseconds to seconds
+
+console.log("inside forecast");
 
 async function apiFetchForecast() {
     try{
@@ -80,7 +81,9 @@ function displayForecast(data) {
 
     });
 
-    
+
+    // calculateWindChill(temperatureInput, windSpeedInput);
+
 }
 
 function capitalizeWords(phrase) {
@@ -99,7 +102,8 @@ function capitalizeWords(phrase) {
 
 apiFetchForecast();
 
-console.log("inside forecast");
+
+// console.log("inside forecast");
 
 
 

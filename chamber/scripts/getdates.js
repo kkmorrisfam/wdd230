@@ -10,13 +10,19 @@ const options = {
 // milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
 // equals 24 hours.
 const msToDays = 84600000;
+
+//format: 1710560536058
 let dateNow = Date.now();
 
+//format: Fri Mar 15 2024 20:39:08 GMT-0700 (Pacific Daylight Time)
 let todaysDate =  new Date();
+
 let lastModified = new Date(document.lastModified);
 
-
+console.log("dateNow");
 console.log(dateNow);
+console.log("todaysDate");
+console.log(todaysDate);
 document.querySelector("#year").textContent = todaysDate.getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modification: ${lastModified.toLocaleDateString("en-UK", options)}`;
 
@@ -26,8 +32,9 @@ document.querySelector('#lastModified').textContent = `Last Modification: ${last
 
 // 1. return local storage item, or if empty, assign variable with empty array
 let dateVisited = Number(window.localStorage.getItem("dateVisit-Key")) || 0;
-// console.log(dateVisited);
-// console.log(`dateVisited ${dateVisited}`);
+
+console.log(dateVisited);
+console.log(`dateVisited ${dateVisited}`);
 //test numbers:
 // yesterday
 // dateVisited = (dateNow - msToDays);
@@ -54,6 +61,9 @@ if (dateVisited == 0) {
 }
 else if ((dateNow - dateVisited) < msToDays) {
     document.querySelector("#message").textContent = "Back so soon! Awesome!";
+    console.log("back so soon");
+    console.log(dateNow);
+    console.log(dateVisited);
 } 
 else  {
     let days = Math.floor((dateNow-dateVisited)/msToDays);    
