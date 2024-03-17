@@ -17,6 +17,7 @@ const now = Math.floor(Date.now() / 1000); // Convert milliseconds to seconds
 async function apiFetchForecast() {
     try{
         const response = await fetch(url);
+        console.log(response);
         if (response.ok) {
             const data = await response.json();
             // console.log("fetch data: " + data);
