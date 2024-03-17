@@ -607,24 +607,50 @@ input:invalid {
     margin: 0 auto;
 }
 
-.ad p,
+#ad-btn::before {
+	content: "✖";  
+    background: none;  
+}
+
+#ad p,
 .business p {    
     padding: 0;
     margin: 0;    
 }
 
-.ad span,
+#ad span,
 .business-name {
     font-weight: 700;
 }
 
-.ad {
+#ad {
     background-color: var(--clr-banner);
-    position: absolute;
-    width: 80%;    
+    position: fixed;
+    top: 250px;
+    right: 10px;
+    width: 35%;
+    height: 50%;    
+    /* visibility: hidden; */
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
     visibility: hidden;
 }
 
+#ad img {
+    width: 50%;
+    height: auto;
+}
+
+#ad-btn {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
 
 .emphasis {
     font-style: italic;

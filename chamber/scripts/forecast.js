@@ -3,7 +3,7 @@
 // 41.75426851631069, -124.20396839360089
 
 const url = "http://api.openweathermap.org/data/2.5/forecast?lat=41.75&lon=-124.20&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
-const weatherIcon = document.querySelector("#weather-icon");
+// const weatherIcon = document.querySelector("#weather-icon");
 // const weatherCaption = document.querySelector("#weather-caption");
 // const todayTemp = document.querySelector("#temp");
 
@@ -11,7 +11,7 @@ const forcastDiv = document.querySelector("#forecast");
 
 // Get current timestamp
 const now = Math.floor(Date.now() / 1000); // Convert milliseconds to seconds
-
+// console.log(now);
 console.log("inside forecast");
 
 async function apiFetchForecast() {
@@ -53,7 +53,7 @@ function displayForecast(data) {
     // Create new array with filtered data for each forecast item
     // could just use the above data
     const forecastData = nextThreeDaysForecast.map(item => {
-        console.log(nextThreeDaysForecast);
+        // console.log(nextThreeDaysForecast);
         return {
             temp: item.main.temp,
             weatherIcon: item.weather[0].icon,
@@ -61,14 +61,14 @@ function displayForecast(data) {
         };
     });
 
-    console.log("forcast data: ");
-    console.log(forecastData);
+    // console.log("forcast data: ");
+    // console.log(forecastData);
     forcastDiv.innerHTML="";
 
     //set DOM elements
     forecastData.forEach((key) => {
-        console.log("element:");        
-        console.log(key.temp) ;
+        // console.log("element:");        
+        // console.log(key.temp) ;
         //id=forcast; clear innerHTML; create p element, create img
         //set img src (key.weatherIcon), alt, set innerHTML of p to key.temp, key.description
         let p = document.createElement("p");
@@ -76,7 +76,7 @@ function displayForecast(data) {
         let iconsrc = `https://openweathermap.org/img/wn/${key.weatherIcon}.png`;
         let forecastDesc = capitalizeWords(key.description);
         p.innerHTML=`<img src="${iconsrc}" alt="${key.description} image">  ${key.temp.toFixed(0)}&deg;F  ${forecastDesc}`;
-        console.log(p);
+        // console.log(p);
         forcastDiv.appendChild(p);
 
     });

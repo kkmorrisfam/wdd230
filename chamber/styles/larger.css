@@ -43,10 +43,17 @@
         width: 50%;
 	}
 
+    #ad {        
+        width: 25%;
+        height: 50%;  
+    }
+    
     .info {       
         grid-template-columns: 1fr 1fr 1fr;     
 
     }
+
+
     .card:nth-child(3) {
 		grid-column: span 1;
 	} 

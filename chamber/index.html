@@ -64,6 +64,7 @@
             </picture> -->
             <h2>Welcome to Crescent City and Del Norte County</h2>
             <article class="welcome card2">
+                <!-- <button  -->
                 <img src="images/chamber-logo.webp" alt="chamber logo" width="179" height="181">
                 
                 <h3>We are committed to strengthening our community.</h3>
@@ -71,7 +72,8 @@
                 </p>
             </article>
         </div>
-        <article class="ad card2">
+        <article class="card2" id="ad">
+            <button id="ad-btn"></button>
             <img src="images/chamber-bldg.webp" alt="Chamber of Commerce Building" width="447" height="216">
             <h3>Join us for our Meet and Greet</h3>
             <p><span class="emphasis">Location: </span>Crescent City Chamber, 1001 Front St, Crescent City</p>
@@ -119,8 +121,8 @@
                         <h4 id="weather-caption"></h4>
                     </div>
                     <div>                    
-                        <p>Wind: <span id="windspeed"></span> mph</p>
-                        <p>Windchill: <span id="windchill"></span></p>
+                        <p>Wind: <span id="windspeed"></span></p>
+                        <p><span id="windchill"></span></p>
                         <p>Humidity: <span id="humidity"></span></p>
                     </div>
                     <div id="forecast">Forcast list here...
@@ -151,7 +153,8 @@
     <script src="scripts/navigation.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
-    <!-- <script src="scripts/forecast.js"></script>     -->
+    <script src="scripts/forecast.js"></script>    
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
