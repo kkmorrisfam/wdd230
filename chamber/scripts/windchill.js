@@ -7,7 +7,7 @@ const humidityElement = document.querySelector("#humidity");
 
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=41.75&lon=-124.20&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
 
-console.log("inside windchill");
+// console.log("inside windchill");
 
 async function apiFetch() {
   try{

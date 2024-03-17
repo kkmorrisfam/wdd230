@@ -38,6 +38,17 @@
     .navigation a {
         display: block;
     }
+	
+	#ad {        
+        width: 35%;
+        height: 50%;  
+    }
+    
+	#ad img {
+		width: 50%;
+		/* height: auto; */
+	}
+	
 
 	.info, .pair {
 		grid-template-columns: 1fr 1fr;

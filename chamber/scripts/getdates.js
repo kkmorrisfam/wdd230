@@ -19,10 +19,10 @@ let todaysDate =  new Date();
 
 let lastModified = new Date(document.lastModified);
 
-console.log("dateNow");
-console.log(dateNow);
-console.log("todaysDate");
-console.log(todaysDate);
+// console.log("dateNow");
+// console.log(dateNow);
+// console.log("todaysDate");
+// console.log(todaysDate);
 document.querySelector("#year").textContent = todaysDate.getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modification: ${lastModified.toLocaleDateString("en-UK", options)}`;
 
@@ -33,8 +33,8 @@ document.querySelector('#lastModified').textContent = `Last Modification: ${last
 // 1. return local storage item, or if empty, assign variable with empty array
 let dateVisited = Number(window.localStorage.getItem("dateVisit-Key")) || 0;
 
-console.log(dateVisited);
-console.log(`dateVisited ${dateVisited}`);
+// console.log(dateVisited);
+// console.log(`dateVisited ${dateVisited}`);
 //test numbers:
 // yesterday
 // dateVisited = (dateNow - msToDays);

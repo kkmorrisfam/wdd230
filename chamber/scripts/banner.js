@@ -6,9 +6,9 @@ const adArticle = document.querySelector("#ad");
 const adBtn = document.querySelector("#ad-btn");
 const newDate = new Date();
 
-// let dayOfWeek = newDate.getDay();
-let dayOfWeek = 1;
-console.log(dayOfWeek);
+let dayOfWeek = newDate.getDay();
+// let dayOfWeek = 4;
+// console.log(dayOfWeek);
 
 //only need to close banner if it's showing
 adBtn.addEventListener("click", () => {
@@ -20,11 +20,11 @@ adBtn.addEventListener("click", () => {
 //if day of week is 1,2 or 3 for Mon, Tues or Wed
 if ((dayOfWeek > 0) && (dayOfWeek < 4)) {
     //show banner
-   console.log("inside if = yes");
+//    console.log("inside if = yes");
     adArticle.classList.add("show");   
     adArticle.classList.remove("hide"); 
 } else {
-    console.log("inside if = no");
+    // console.log("inside if = no");
     adArticle.classList.add("hide");
     adArticle.classList.remove("show");
 }

@@ -12,7 +12,7 @@ const forcastDiv = document.querySelector("#forecast");
 // Get current timestamp
 const now = Math.floor(Date.now() / 1000); // Convert milliseconds to seconds
 // console.log(now);
-console.log("inside forecast");
+// console.log("inside forecast");
 
 async function apiFetchForecast() {
     try{
@@ -103,7 +103,7 @@ function capitalizeWords(phrase) {
 apiFetchForecast();
 
 
-// console.log("inside forecast");
+
 
 
 

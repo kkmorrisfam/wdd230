@@ -628,9 +628,10 @@ input:invalid {
     position: fixed;
     top: 250px;
     right: 10px;
-    width: 35%;
+    width: 40%;
     height: 50%;    
-    /* visibility: hidden; */
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
 }
 
 .show {
@@ -642,7 +643,7 @@ input:invalid {
 }
 
 #ad img {
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 
