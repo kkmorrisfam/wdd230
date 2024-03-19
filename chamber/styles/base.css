@@ -91,8 +91,7 @@ a {
 .banner .btn {
     padding: .9rem;
     margin: .9rem; 
-    background-color: var(--clr-primary);   
-    /* color: var(--clr-light); */
+    background-color: var(--clr-primary);       
 }
 
 .banner .btn a {
@@ -109,6 +108,10 @@ a {
     border-radius: 1rem;
 }
 
+.btn a {
+    color: var(--clr-primary);
+}
+
 
 .social {
     display: flex;    
@@ -116,7 +119,6 @@ a {
     margin-inline-end: 3rem;  
 }
 .social img {
-    /* if I make size relative, it doesn't look right */
     width: 30px;
     height: 30px;
     margin-inline: 10px;    
@@ -126,14 +128,11 @@ a {
     background-color: var(--clr-header);
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .heading img {
     width: 4.8rem;
     height: 3.2rem;
-    /* max-width: 2rem; */
-    /* height: auto; */
     border-radius: 50%;
     border-color: #000;
 }
@@ -162,13 +161,11 @@ a {
 .navigation a:hover {
 	background-color: var(--clr-accent);
     color: var(--clr-dark);
-	/* color: var(--background); */
 	font-weight: 700;
 }
 
 #dark-toggle::before {
-	content: "🌘";
-    
+	content: "🌘";    
 }
 
 #dark-toggle.dark-mode::before {
@@ -176,8 +173,7 @@ a {
 }
 
 .social button {
-    background-color: var(--clr-banner);
-    /* border: none; */
+    background-color: var(--clr-banner);    
 }
 
 /* small view navigation */
@@ -207,13 +203,8 @@ a {
 	display: block;
 }
 
-.active {
-    /* background-color:var(--yellow); */
+.active {    
     border: 2px solid black;
-    /* outline: rgb(224, 100, 100) solid 10px; */
-    /* Can't use text-decoration unless I change specificity */
-    /* text-decoration-line: underline;
-    text-decoration-color: whitesmoke; */
     padding: 10px;
   }
 
@@ -234,12 +225,6 @@ main,
     overflow: hidden;
 }
 
-/* lesson 06 */
-/* .heros {    
-    position: relative;        
-    width: 100%;
-} */
-
 .hero img {         
     /* width: auto; */
     width: 100%;
@@ -247,13 +232,6 @@ main,
     object-fit: cover; 
     max-width: 100%;   
 }
-
-/* lesson 06 */
-/* .heros img {          
-    width: 100%;        
-    height: auto;
-    object-fit: cover;
-} */
 
 .hero .welcome img {
     display: inline;
@@ -272,18 +250,15 @@ main,
 
 .hero .welcome {
     margin: 0 auto;
-    /* background-color: rgba(113, 110, 154, 0.647) */
 }
 
 .hero article {
-    /* background: rgba(200, 218, 247, 0.8);      */
     position: absolute;  
     width: 100%;
     margin: 0 auto;
     display: block;
     text-align: center;
     top: 100px;
-
 }
 
 .welcome h3 {
@@ -302,12 +277,6 @@ main,
 }
 
 /* info section */
-
-/* .info {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-} */
 
 .card {
     display: flex;
@@ -341,18 +310,10 @@ main,
     margin: 0 auto;  
 }
 
-/* .pair {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-
-} */
-
 .spotlight {
     width: 100%;
     height: auto;
-    margin: 2rem auto;
-    /* border: 2px solid #000;     */
+    margin: 2rem auto;    
 }
 
 .spotlight img {
@@ -369,10 +330,8 @@ main,
     margin-top: 4rem;
 }
 .spotlight p {
-    /* padding-top: 3rem; */
     padding-left: 3rem;
     padding-right: 3rem;
-    /* margin: 3rem; */
     line-height: 1.5rem;
 }
 
@@ -391,8 +350,6 @@ main,
 }
 
 .text-right img {
-    /* height: 300px; */
-    /* width: auto; */
     height: auto;
     width: 100%;
     justify-self: center;
@@ -403,32 +360,43 @@ main,
     text-align: center;    
 }
 
+.weather h4 {
+    text-align: right;
+}
+
+.flex:nth-child(2) p {
+    text-align: center;
+}
+
 .weather img {
     float: left;
     width: 50px;
-    /* padding: 2em; */
 }
 
 .weather p {
     padding: 0;
-    /* padding-inline-start: 20px; */
     margin: 0;
     text-align: left; 
 }
 
-/* if this works, merge with .navigation ul... */
+
 .flex {    
     display: flex;
     flex-direction: row;   
     gap: .5rem;
     flex-wrap: wrap; 
     align-items: center;
+    background-color: var(--clr-banner);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #333;
 }
 
-.flex div {
-    /* flex: 1 1 100%; */
-    /* flex-grow: 1; */
+.flex div {    
     flex: 1;
+}
+
+.flex p {
+    color: var(--clr-headings);
 }
 
 #forecast img {
@@ -438,8 +406,7 @@ main,
 
 /* -------------Discovery page---------------- */
 
-.attraction h2 {
-    /* color:#0814f9; */
+.attraction h2 { 
     text-shadow: 2px 2px 4px #000000;
     border-bottom: double;
 }
@@ -512,12 +479,13 @@ main,
 
 .form-join legend {
     padding: 0 .5rem;
-    /* color: rgb(32, 32, 32); */
+    color: var(--clr-paragraph);
 }
 
 .form-join fieldset {
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
+    color: var(--clr-paragraph);
 }
 
 .form-join label {  
@@ -618,6 +586,9 @@ input:invalid {
     margin: 0;    
 }
 
+#ad p {
+    color: var(--clr-headings)
+}
 #ad span,
 .business-name {
     font-weight: 700;
