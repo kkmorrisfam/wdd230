@@ -14,15 +14,7 @@ async function apiFetch() {
       const response = await fetch(weatherURL);
       if (response.ok) {
           const data = await response.json();
-          // console.log(data);
-          // console.log(data.weather[0].description);
-          // console.log(data.main.temp);
-          // let icon = data.weather[0].icon;
-          // console.log(data.weather[0].icon);
-          // console.log(`https://openweathermap.org/img/wn/${icon}.png`);     
-
           displayResults(data);
-
       } else {
           throw(Error(await response.text()))
       }
@@ -36,21 +28,13 @@ function displayResults(data){
   let weatherDescription = capitalizeWords(phrase);
   let icon = data.weather[0].icon;
   
-  // console.log("data.weather[0].description");
-  // console.log(phrase);
-
   tempElement.innerHTML = `${(data.main.temp).toFixed(0)}&deg;F`;
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  
-  // let desc = weatherDescription;
+
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', weatherDescription);
   weatherCaption.textContent = `${weatherDescription}`;
   humidityElement.textContent = `${data.main.humidity}`;
-
-  // console.log(data.main.temp);
-  // console.log(data.wind.speed);
-
 
   windspeedElement.innerHTML = calculateWindChill(data.main.temp, data.wind.speed);
 }
@@ -72,33 +56,12 @@ function calculateWindChill(temperature, windSpeed) {
       }
     }
 
-    // Example usage:
-    // Replace these values with the actual temperature and wind speed from API or Webside display?
-    // let temperatureInput = 42;
-    // let windSpeedInput = 5;
-
-    // Call the function with the provided inputs
-    // calculateWindChill(temperature, windSpeed);
-
-    // document.getElementById("windchill").innerHTML = calculateWindChill(temperatureInput, windSpeedInput);
-    // tempElement.innerHTML = temperatureInput;
-    // windSpeedElement.innerHTML = windSpeedInput;
-
-    
+   
 function capitalizeWords(phrase) {
   // Split the phrase into an array of words
   let words = phrase.split(" ");
-  // console.log(words);
 
-  // Capitalize the first letter of each word
-  // for (let i = 0; i < words.length; i++) {
-  //     words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
-  // }
-
-  //also works with map function
   let capitalizedPhrase = words.map((word) =>  word.charAt(0).toUpperCase() + word.slice(1));
-  // console.log(capitalizedPhrase);
-
 
   // Join the words back together into a single string
   return capitalizedPhrase.join(" ");

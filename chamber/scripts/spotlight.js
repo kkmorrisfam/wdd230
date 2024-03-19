@@ -42,9 +42,11 @@ function displaySpotlight(data) {
     img.src = data.spotlight[randomIndex].image;
     img.alt = data.spotlight[randomIndex].img_description;
     img.setAttribute("loading", "lazy");
+    img.classList.add("spot-image");
 
     logo.src = data.spotlight[randomIndex].business_logo;
     logo.alt = data.spotlight[randomIndex].business_name;
+    logo.classList.add("logo");
     
     p.textContent = data.spotlight[randomIndex].synopsis;    
     anchor.setAttribute("href", data.spotlight[randomIndex].website);

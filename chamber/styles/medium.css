@@ -49,6 +49,9 @@
 		/* height: auto; */
 	}
 	
+	.spotlight img {
+        width:50%;
+    }
 
 	.info, .pair {
 		grid-template-columns: 1fr 1fr;

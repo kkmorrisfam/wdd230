@@ -12,8 +12,8 @@ console.log("timestamp.js: ");
 
 const dateStamp = Date.now();
 const timestampElement = document.getElementById('date-stamp');
-console.log(dateStamp);
+// console.log(dateStamp);
   timestampElement.value = dateStamp;
-// timestampElement.textContent = dateNow;
-console.log("test");
-console.log("timestamp:  " + timestampElement);
+
+// console.log("test");
+// console.log("timestamp:  " + timestampElement);

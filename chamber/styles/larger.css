@@ -58,8 +58,12 @@
 		grid-column: span 1;
 	} 
 
-    .spotlight {
+    /* .spotlight {
         width: 80%;
+    } */
+
+    .spotlight img {
+        max-width:50%;
     }
 
     /* ---------------Discover Page----------------- */

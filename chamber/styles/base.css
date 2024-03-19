@@ -317,7 +317,7 @@ main,
     margin: 2rem auto;    
 }
 
-.spotlight img {
+.spotlight.spot-img {
     float: left;
     width: 40%;
     min-width: 300px;
@@ -325,8 +325,12 @@ main,
     margin-top: 2rem;
 }
 
-.spotlight h3 {
-    /* padding: 3rem; */
+.spotlight.logo{
+    float: right;
+}
+
+/* only used currently if json file information doesn't work */
+.spotlight h3 {    
     text-align: center;
     margin-top: 4rem;
 }
@@ -573,13 +577,9 @@ input:invalid {
 }
 
 .business .logo {
-    padding-bottom: 1rem;
-    /* max-width: 120px; */
+    padding-bottom: 1rem;    
     height: auto;
     width: 90%;
-    /* max-height: 45%; */
-    /* width: auto; */
-
     margin: 0 auto;
 }
 
