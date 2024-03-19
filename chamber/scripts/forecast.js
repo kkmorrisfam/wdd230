@@ -26,6 +26,7 @@ async function apiFetchForecast() {
 
 function displayForecast(data) {
 
+    
     // Filter forecast data for the next three days using seconds in a day, and gets the 
     // data for every 24 hours from the first forcast dt item.  Could change this to get a 
     // specific time of date
@@ -60,7 +61,6 @@ function displayForecast(data) {
         p.innerHTML=`<img src="${iconsrc}" alt="${key.description} image">  ${key.temp.toFixed(0)}&deg;F  ${forecastDesc}`;
         // console.log(p);
         forcastDiv.appendChild(p);
-
     });
 
 

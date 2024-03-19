@@ -110,6 +110,7 @@ a {
 
 .btn a {
     color: var(--clr-primary);
+    font-size: larger;
 }
 
 
@@ -410,10 +411,7 @@ main,
     text-shadow: 2px 2px 4px #000000;
     border-bottom: double;
 }
-.discover-main-container {
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
-    /* gap: 2rem; */
+.discover-main-container {    
     align-items: start;
 }
 
@@ -466,6 +464,17 @@ main,
     font-weight: 700;
 }
 
+.join-welcome {
+    /* width: 80% auto; invalid?*/
+    padding: 0;
+    margin: 0;
+}
+.join-welcom p {
+    padding: 0;
+    margin: 0;
+}
+
+
 .join-container {
     display:grid;
     grid-template-columns: 1fr;    
@@ -473,8 +482,7 @@ main,
 
 .required {
     text-align: right;
-    font-size: .7rem;
-    /* color: red; */
+    font-size: .7rem;    
 }
 
 .form-join legend {

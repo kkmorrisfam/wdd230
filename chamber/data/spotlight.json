@@ -1,0 +1,27 @@
+{"spotlight": [
+    {
+        "image" : "images/walmart.webp",
+        "img_description" : "Walmart Employee serving the community",
+        "business_name" : "Walmart",
+        "business_logo" : "images/walmart-logo.svg",
+        "synopsis" : "Walmart.com serves as the digital gateway for Walmart's commitment to supporting the Crescent City community in California. As one of the world's largest retail corporations, Walmart's online platform offers residents of Crescent City access to a wide range of essential products and services conveniently delivered to their doorstep. Beyond providing everyday necessities, Walmart is dedicated to giving back to the community through various initiatives, including charitable donations, local employment opportunities, and support for community events. By shopping on Walmart.com, residents not only enjoy the convenience of online shopping but also contribute to Walmart's efforts to make a positive impact on Crescent City, fostering a stronger and more vibrant community for all.",
+        "website" : "https://www.walmart.com/store/1910-crescent-city-ca"
+    },
+    {
+        "image" : "images/elk-valley.webp",
+        "img_description" : "Elk Valley Casino Image",
+        "business_name" : "Elk Valley Casino",
+        "business_logo" : "images/elk-valley-logo.webp",
+        "synopsis" : "Elk Valley Casino is a premier entertainment destination located in Crescent City, California. Boasting a diverse array of gaming options, dining experiences, and live entertainment, Elk Valley Casino offers visitors an exciting and vibrant atmosphere to enjoy a variety of activities. From state-of-the-art slot machines and table games to thrilling promotions and tournaments, there's something for every gaming enthusiast. The casino also features a range of dining options, including a full-service restaurant serving delicious meals and refreshing beverages. Additionally, visitors can enjoy live music and events throughout the week, adding to the lively ambiance of the venue. With its commitment to providing exceptional entertainment and hospitality, Elk Valley Casino is a must-visit destination for locals and tourists alike seeking fun and excitement in Northern California.",
+        "website" : "https://www.elkvalleycasino.com/"
+    },
+    {
+        "image" : "images/trees-mystery.webp",
+        "img_description" : "Trees of Mystery image",
+        "business_name" : "Trees of Mystery",
+        "business_logo" : "images/trees-logo.webp",
+        "synopsis" : "Trees of Mystery is a renowned tourist attraction located in Klamath, California. Established in 1946, Trees of Mystery offers visitors a unique experience amidst the beauty of nature and towering redwoods. The attraction features a collection of ancient redwood trees, including the famous \"Cathedral Tree\" and \"Grandfather Tree,\" which captivate visitors with their towering height and majestic presence. Visitors can explore enchanting forest trails, learn about the cultural significance of redwoods to the Native American tribes of the region, and enjoy breathtaking views from the SkyTrail gondola ride. With its rich history, stunning natural landscapes, and educational opportunities, Trees of Mystery provides an unforgettable adventure for nature enthusiasts and families alike.",
+        "website" : "https://www.treesofmystery.net"
+    }
+]
+}

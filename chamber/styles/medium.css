@@ -85,6 +85,11 @@
     	margin: 2rem 0;
 	}
 
+	.join-welcome {
+		width: 50% auto;
+	}
+	
+
 	.required {
 		font-size: .9rem;
 	}
