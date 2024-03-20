@@ -32,7 +32,7 @@ function displaySpotlight(data) {
 
     //build html for chosen index
     let img = document.createElement("img");
-    // let h3 = document.createElement("h3");
+    let h3 = document.createElement("h3");
     let logo = document.createElement("img");
     let p = document.createElement("p");
     let anchor = document.createElement("a");
@@ -45,7 +45,7 @@ function displaySpotlight(data) {
     img.classList.add("images");
     img.setAttribute("loading", "lazy");
     
-
+    h3.textContent= "Business Spotlight";
     logo.src = data.spotlight[randomIndex].business_logo;
     logo.alt = data.spotlight[randomIndex].business_name;
     logo.classList.add("logo");
@@ -61,8 +61,11 @@ function displaySpotlight(data) {
     divChild.appendChild(anchor);
     divParent.appendChild(divChild);
 
-    spotlightSection.appendChild(img);
+    spotlightSection.appendChild(h3);
     spotlightSection.appendChild(logo);    
+    spotlightSection.appendChild(img);
+    
+    
     
     spotlightSection.appendChild(p);
     spotlightSection.appendChild(divParent);

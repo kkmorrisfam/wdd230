@@ -50,8 +50,8 @@
 	}
 	
 	.spot-image{
-		float: left;
-        width:50%;
+		/* float: left; */
+        width:75%;
     }
 
 	.spotlight .logo{

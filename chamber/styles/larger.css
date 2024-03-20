@@ -64,11 +64,11 @@
 
     
     .spot-image {
-        max-width:50%;
+        max-width:25%;
     }
 
     .spotlight .logo {
-        float: right;
+        /* float: right; */
         max-width: 35%;
         padding-left: .5rem;
     }

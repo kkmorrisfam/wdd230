@@ -4,6 +4,7 @@ const windspeedElement = document.querySelector("#windspeed");
 const weatherIcon = document.querySelector("#weather-icon");
 const weatherCaption = document.querySelector("#weather-caption");
 const humidityElement = document.querySelector("#humidity");
+const weatherDate = document.querySelector("#weather-date");
 
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=41.75&lon=-124.20&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
 
@@ -26,11 +27,13 @@ async function apiFetch() {
 function displayResults(data){ 
   let phrase = data.weather[0].description;
   let weatherDescription = capitalizeWords(phrase);
-  let icon = data.weather[0].icon;
   
   tempElement.innerHTML = `${(data.main.temp).toFixed(0)}&deg;F`;
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-
+  console.log(data.dt);
+  let newDateString = getDate(data.dt);
+  console.log(newDateString);
+  weatherDate.textContent = newDateString;
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', weatherDescription);
   weatherCaption.textContent = `${weatherDescription}`;
@@ -67,4 +70,9 @@ function capitalizeWords(phrase) {
   return capitalizedPhrase.join(" ");
 }
 
+function getDate(timestamp) {
+  const myDate = new Date(timestamp * 1000);
+  let dateString = myDate.toDateString();
+  return dateString;
+}
 apiFetch();

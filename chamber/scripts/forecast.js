@@ -7,7 +7,7 @@ const url = "http://api.openweathermap.org/data/2.5/forecast?lat=41.75&lon=-124.
 const forcastDiv = document.querySelector("#forecast");
 
 // Get current timestamp
-const now = Math.floor(Date.now() / 1000); // Convert milliseconds to seconds
+const now = Math.floor(Date.now() / 1000); // Convert milliseconds to seconds, round down to interger
 
 async function apiFetchForecast() {
     try{
@@ -33,14 +33,18 @@ function displayForecast(data) {
     // Json data gives forcast objects in 3 hour increments
     const nextThreeDaysForecast = data.list.filter((item, index) => {
         const itemTimestamp = item.dt;        
-        return (index % 8 === 0) && (itemTimestamp > now && itemTimestamp <= now + (86400 * 3)); // 86400 seconds in a day, 8 3hr blocks to 24hr period
+        // console.log(getDayOfWeek(itemTimestamp));
+        return (index % 8 === 0) && ((itemTimestamp > (now + 86400)) && itemTimestamp <= now + (86400 * 4)); // 86400 seconds in a day, 8 3hr blocks to 24hr period
        
     });
 
     // Create new array with filtered data for each forecast item
     // could just use the above data
     const forecastData = nextThreeDaysForecast.map(item => {       
+        let weekday = getDayOfWeek(item.dt);
+        console.log(weekday);
         return {
+            day : getDayOfWeek(item.dt),
             temp: item.main.temp,
             weatherIcon: item.weather[0].icon,
             description: item.weather[0].description
@@ -58,7 +62,7 @@ function displayForecast(data) {
         
         let iconsrc = `https://openweathermap.org/img/wn/${key.weatherIcon}.png`;
         let forecastDesc = capitalizeWords(key.description);
-        p.innerHTML=`<img src="${iconsrc}" alt="${key.description} image">  ${key.temp.toFixed(0)}&deg;F  ${forecastDesc}`;
+        p.innerHTML=`<img src="${iconsrc}" alt="${key.description} image">${key.day} - ${key.temp.toFixed(0)}&deg;F  ${forecastDesc}`;
         // console.log(p);
         forcastDiv.appendChild(p);
     });
@@ -81,6 +85,12 @@ function capitalizeWords(phrase) {
     return words.join(" ");
 }
 
+function getDayOfWeek(day) {    
+    let newDay = new Date(day*1000);
+    let days = ['Sun','Mon','Tues','Wed','Thur','Fri','Sat'];
+    let weekday = days[newDay.getDay()];
+    return weekday;
+}
 
 apiFetchForecast();
 

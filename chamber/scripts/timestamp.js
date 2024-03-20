@@ -8,7 +8,7 @@
 //     console.log("timestamp" + timestampElement);
 //   });
 
-console.log("timestamp.js: ");
+// console.log("timestamp.js: ");
 
 const dateStamp = Date.now();
 const timestampElement = document.getElementById('date-stamp');

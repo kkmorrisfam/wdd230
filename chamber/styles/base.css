@@ -317,10 +317,15 @@ main,
     margin: 0 auto;    
 }
 
+.spotlight h3 {
+    font-size: xx-large;
+}
+
 .spot-image {    
+    float: left;
     width: 75%;
     min-width: 300px;
-    margin: 3rem;
+    margin: 2rem;
     margin-top: 2rem;
 }
 
@@ -369,19 +374,20 @@ main,
     text-align: right;
 }
 
-.flex:nth-child(2) p {
+/* .flex:nth-child(2) p {
     text-align: center;
-}
+} */
 
 .weather img {
     float: left;
-    width: 50px;
+    width: 100px;
+    height: auto;
 }
 
 .weather p {
     padding: 0;
     margin: 0;
-    text-align: left; 
+    text-align: center; 
 }
 
 .images {
@@ -394,27 +400,34 @@ main,
     flex-direction: row;   
     gap: .5rem;
     flex-wrap: wrap; 
+    /* flex: 1 0 0; */
     align-items: center;
     background-color: var(--clr-banner);
     border-radius: 5px;
     box-shadow: 0 0 5px #333;
 }
 
+
 .flex div {    
-    flex: 1;
+    flex: 0 1 auto;
+    /* text-align: center; */
 }
 
+#temp {
+    font-size: larger;
+    font-weight: 600;
+}
 .flex p {
     color: var(--clr-headings);
 }
 
 #forecast img {
     float: left;
-    max-width: 1rem;
+    max-width: 3rem;
 }
 
 /* -------------Discovery page---------------- */
-
+.spotlight h3,
 .attraction h2 { 
     text-shadow: 2px 2px 4px #000000;
     border-bottom: double;
@@ -703,7 +716,7 @@ input:invalid {
 footer {
     display: block;
     background-color: var(--clr-header);
-    width: 100%;
+    /* width: 100%; */
 }
 
 footer p {
