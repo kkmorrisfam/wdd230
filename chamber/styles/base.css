@@ -314,19 +314,19 @@ main,
 .spotlight {
     width: 100%;
     height: auto;
-    margin: 2rem auto;    
+    margin: 0 auto;    
 }
 
-.spotlight.spot-img {
-    float: left;
-    width: 40%;
+.spot-image {    
+    width: 75%;
     min-width: 300px;
-    padding: 3rem;
+    margin: 3rem;
     margin-top: 2rem;
 }
 
-.spotlight.logo{
-    float: right;
+.spotlight .logo{
+    padding-left: 3rem;
+    max-width: 55%;
 }
 
 /* only used currently if json file information doesn't work */
@@ -384,6 +384,10 @@ main,
     text-align: left; 
 }
 
+.images {
+    border-radius: 5px;
+    box-shadow: 0 0 5px #333;
+}
 
 .flex {    
     display: flex;
@@ -577,9 +581,13 @@ input:invalid {
 }
 
 .business .logo {
-    padding-bottom: 1rem;    
-    height: auto;
     width: 90%;
+    
+}
+
+.logo {
+    padding-bottom: 1rem;    
+    height: auto;   
     margin: 0 auto;
 }
 
@@ -695,6 +703,7 @@ input:invalid {
 footer {
     display: block;
     background-color: var(--clr-header);
+    width: 100%;
 }
 
 footer p {

@@ -41,8 +41,10 @@ function displaySpotlight(data) {
     
     img.src = data.spotlight[randomIndex].image;
     img.alt = data.spotlight[randomIndex].img_description;
-    img.setAttribute("loading", "lazy");
     img.classList.add("spot-image");
+    img.classList.add("images");
+    img.setAttribute("loading", "lazy");
+    
 
     logo.src = data.spotlight[randomIndex].business_logo;
     logo.alt = data.spotlight[randomIndex].business_name;

@@ -49,11 +49,19 @@
 		/* height: auto; */
 	}
 	
-	.spotlight img {
+	.spot-image{
+		float: left;
         width:50%;
     }
 
-	.info, .pair {
+	.spotlight .logo{
+   
+		padding-left: 1.5rem;
+	}
+	
+
+	.info, 
+	.pair {
 		grid-template-columns: 1fr 1fr;
 
 	}

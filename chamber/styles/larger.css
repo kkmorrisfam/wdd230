@@ -62,8 +62,15 @@
         width: 80%;
     } */
 
-    .spotlight img {
+    
+    .spot-image {
         max-width:50%;
+    }
+
+    .spotlight .logo {
+        float: right;
+        max-width: 35%;
+        padding-left: .5rem;
     }
 
     /* ---------------Discover Page----------------- */
