@@ -410,7 +410,7 @@ main,
 
 .flex div {    
     flex: 0 1 auto;
-    /* text-align: center; */
+    padding: .7rem;
 }
 
 #temp {
@@ -421,8 +421,12 @@ main,
     color: var(--clr-headings);
 }
 
+#forecast {
+    display: inline-grid;
+}
+
 #forecast img {
-    float: left;
+    
     max-width: 3rem;
 }
 
@@ -490,7 +494,7 @@ main,
     padding: 0;
     margin: 0;
 }
-.join-welcom p {
+.join-welcome p {
     padding: 0;
     margin: 0;
 }
