@@ -9,7 +9,7 @@
 		justify-content: space-between;
 	}
     
-    .navigation ul {
+    /* .navigation ul {
         flex-direction: row;
     }
 
@@ -19,7 +19,7 @@
 
     .navigation a {
         display: block;   
-    }
+    } */
 
     .social img {
         width: 2rem;

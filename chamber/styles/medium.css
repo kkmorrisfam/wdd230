@@ -9,8 +9,7 @@
 	
 	h2 {
 		font-size: 2rem;
-		text-align: center;
-		/* color: var(--clr-primary); */
+		text-align: center;		
 	}
 
 	h3, h4 {
@@ -26,6 +25,7 @@
 		display: block;
 		display: none; 
 	}
+
 
 	.navigation ul {
 		flex-direction: row;
@@ -93,11 +93,11 @@
 		
     	grid-template-columns: 1rem 2fr 1fr 1rem;    
 		grid-gap: 2rem;
-    	margin: 2rem 0;
+    	/* margin: 2rem 0; */
 	}
 
 	.join-welcome {
-		width: 50%;
+		width: 75%;
 	}
 	
 

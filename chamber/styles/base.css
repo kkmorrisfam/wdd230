@@ -219,6 +219,10 @@ main,
     gap: 2rem;
 }
 
+.directory-main-container {
+    gap: 0;
+}
+
 .hero {    
     position: relative; 
     height: 605px;    
@@ -280,14 +284,14 @@ main,
 /* info section */
 
 .card {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     border: solid black 1px;
     border-radius: 5px;
-    padding: 1rem;
+    /* padding: 1rem; */
     box-shadow: 0 0 10px #333;
-    align-items: center;
-    justify-items: center;
+    /* align-items: center; */
+    /* justify-items: center; */
     margin-top: 1rem;
 }
 
@@ -296,6 +300,7 @@ main,
     padding: 5px;
 }
 
+.card,
 .card2 {
     display: flex;
     flex-direction: column;    
@@ -489,14 +494,14 @@ main,
     font-weight: 700;
 }
 
-.join-welcome {
-    /* width: 80% auto; invalid?*/
+.join-welcome {    
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
+
 .join-welcome p {
     padding: 0;
-    margin: 0;
+    margin: 0 ;
 }
 
 
@@ -556,8 +561,7 @@ input:invalid {
     font-weight: 600;
 }
 
-.level h4{
-    /* color: rgb(0, 128, 79); */
+.level h4{   
     padding: 0;
     margin: 0;
     text-align: center;
