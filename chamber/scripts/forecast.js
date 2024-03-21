@@ -14,7 +14,7 @@ async function apiFetchForecast() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-        
+            
             displayForecast(data);
         } else {
             throw(Error(await response.text()))
@@ -33,7 +33,7 @@ function displayForecast(data) {
     // Json data gives forcast objects in 3 hour increments
     const nextThreeDaysForecast = data.list.filter((item, index) => {
         const itemTimestamp = item.dt;        
-        // console.log(getDayOfWeek(itemTimestamp));
+        
         return (index % 8 === 0) && ((itemTimestamp > (now + 86400)) && itemTimestamp <= now + (86400 * 4)); // 86400 seconds in a day, 8 3hr blocks to 24hr period
        
     });
@@ -42,7 +42,7 @@ function displayForecast(data) {
     // could just use the above data
     const forecastData = nextThreeDaysForecast.map(item => {       
         let weekday = getDayOfWeek(item.dt);
-        console.log(weekday);
+       
         return {
             day : getDayOfWeek(item.dt),
             temp: item.main.temp,
@@ -63,7 +63,7 @@ function displayForecast(data) {
         let iconsrc = `https://openweathermap.org/img/wn/${key.weatherIcon}.png`;
         let forecastDesc = capitalizeWords(key.description);
         p.innerHTML=`<img src="${iconsrc}" alt="${key.description} image">${key.day} - ${key.temp.toFixed(0)}&deg;F  ${forecastDesc}`;
-        // console.log(p);
+      
         forcastDiv.appendChild(p);
     });
 

@@ -1,6 +1,6 @@
 const urlSpotlight = "data/spotlight.json";
 const spotlightSection = document.querySelector(".spotlight");
-console.log("inside spotlight.js");
+
 
 async function jsonSpotlightFetch() {
     try{
@@ -8,8 +8,6 @@ async function jsonSpotlightFetch() {
         if (response.ok) {
             const data = await response.json();
         
-            console.log(data);
-            
             displaySpotlight(data);
         } else {
             throw(Error(await response.text()))
@@ -22,14 +20,11 @@ async function jsonSpotlightFetch() {
 function displaySpotlight(data) {
     spotlightSection.innerHTML = "";
     
-    let length = data.spotlight.length;
-    console.log(length);
+    let length = data.spotlight.length;    
 
     //get random index in json data array; get count?
     let randomIndex = getRandomNumber(0, length);
-    console.log(randomIndex);
-    // console.log(data.spotlight[0].synopsis);
-
+   
     //build html for chosen index
     let img = document.createElement("img");
     let h3 = document.createElement("h3");

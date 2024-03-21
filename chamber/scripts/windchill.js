@@ -8,7 +8,6 @@ const weatherDate = document.querySelector("#weather-date");
 
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=41.75&lon=-124.20&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
 
-// console.log("inside windchill");
 
 async function apiFetch() {
   try{
@@ -30,9 +29,9 @@ function displayResults(data){
   
   tempElement.innerHTML = `${(data.main.temp).toFixed(0)}&deg;F`;
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  console.log(data.dt);
+  
   let newDateString = getDate(data.dt);
-  console.log(newDateString);
+  
   weatherDate.textContent = newDateString;
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', weatherDescription);
@@ -50,11 +49,11 @@ function calculateWindChill(temperature, windSpeed) {
         const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
         
         // Display the calculated wind chill
-        // console.log("Wind Chill: " + windChill.toFixed(2) + " °F");
+        
         return `Windchill: ${windChill.toFixed(2)}`;
       } else {
         // Display "N/A" if conditions are not met
-        // console.log("N/A");
+        
         return("N/A");
       }
     }
