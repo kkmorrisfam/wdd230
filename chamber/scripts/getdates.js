@@ -9,7 +9,7 @@ const options = {
 
 // milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
 // equals 24 hours.
-const msToDays = 84600000;
+const msToDays = 86400000;
 
 //format: 1710560536058
 let dateNow = Date.now();

@@ -74,6 +74,11 @@
 		grid-column: span 2;
 	}
 	
+	.weather h4 {
+		font-size:medium;	
+	}
+	
+
 	footer {
 		Display:flex;
 	}

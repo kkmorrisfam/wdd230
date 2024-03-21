@@ -53,7 +53,8 @@ function displayForecast(data) {
 
     //clear filler data
     forcastDiv.innerHTML="";
-    forcastDiv.innerHTML="<h5>Three Day Forcast</h5>"
+    forcastDiv.innerHTML="<h4>Three Day Forcast</h4>"
+    // forcastDiv.textContent = "Three Day Forcast";
     //set DOM elements
     forecastData.forEach((key) => {    
         //id=forcast; clear innerHTML; create p element, create img
@@ -66,10 +67,6 @@ function displayForecast(data) {
       
         forcastDiv.appendChild(p);
     });
-
-
-    // calculateWindChill(temperatureInput, windSpeedInput);
-
 }
 
 function capitalizeWords(phrase) {
