@@ -7,8 +7,6 @@ const adBtn = document.querySelector("#ad-btn");
 const newDate = new Date();
 
 let dayOfWeek = newDate.getDay();
-// let dayOfWeek = 4;
-// console.log(dayOfWeek);
 
 //only need to close banner if it's showing
 adBtn.addEventListener("click", () => {

@@ -7,16 +7,13 @@ const options = {
     year: "numeric"
 };
 
-// milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
-// equals 24 hours.
-const msToDays = 86400000;
 
-//format: 1710560536058
-let dateNow = Date.now();
 
 //format: Fri Mar 15 2024 20:39:08 GMT-0700 (Pacific Daylight Time)
 let todaysDate =  new Date();
 
+// The lastModified property of the Document interface returns a string containing the date and local time on which the current 
+// document was last modified.
 let lastModified = new Date(document.lastModified);
 
 document.querySelector("#year").textContent = todaysDate.getFullYear();
