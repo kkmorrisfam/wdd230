@@ -117,6 +117,7 @@ function buildTripleSpot(data) {
         img.setAttribute("alt", `Logo for ${member.name}.`)
         img.setAttribute("width", 150);
         img.setAttribute("height", 100);
+        img.setAttribute("loading", "lazy");
 
         let hr = document.createElement("hr");
         
