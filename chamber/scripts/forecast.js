@@ -2,7 +2,7 @@
 // <!-- api key:  421d590c51cdfab0417e68811f51ac9c -->
 // 41.75426851631069, -124.20396839360089
 
-const url = "http://api.openweathermap.org/data/2.5/forecast?lat=41.75&lon=-124.20&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
+const url = "https://api.openweathermap.org/data/2.5/forecast?lat=41.75&lon=-124.20&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
 
 const forcastDiv = document.querySelector("#forecast");
 
