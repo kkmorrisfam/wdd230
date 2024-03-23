@@ -142,6 +142,10 @@ a {
     display: flex;
 }
 
+.title img {
+    margin: 1rem;
+}
+
 .navigation ul {
     list-style: none;
     display: flex;
