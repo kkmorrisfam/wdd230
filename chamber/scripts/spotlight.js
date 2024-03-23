@@ -1,7 +1,10 @@
-const urlSpotlight = "data/spotlight.json";
+
+const urlSpotlight = "data/spotlight.json";  //json file for single spotlight
+const urlTripleSpot = "data/members.json";  //json file for triple spotlight cards
 const spotlightSection = document.querySelector(".spotlight");
+const tripleSpotSection = document.querySelector(".triple-spotlight");
 
-
+//retrieve single business spotlight
 async function jsonSpotlightFetch() {
     try{
         const response = await fetch(urlSpotlight);
@@ -14,6 +17,25 @@ async function jsonSpotlightFetch() {
         }     
     } catch (error) {
         console.log("caught error jsonSpotlightFetch():  " + error);
+    }
+}
+
+
+//retrieve spotlights for cards
+async function jsonSpotlightCardsFetch() {
+    try{
+        const response = await fetch(urlTripleSpot);
+        if (response.ok) {
+            const data = await response.json();
+            
+            console.log(response);
+            console.log(data);
+            buildTripleSpot(data);
+        } else {
+            throw(Error(await response.text()))
+        }     
+    } catch (error) {
+        console.log("caught error jsonSpotlightCardsFetch():  " + error);
     }
 }
 
@@ -40,7 +62,7 @@ function displaySpotlight(data) {
     img.classList.add("images");
     img.setAttribute("loading", "lazy");
     
-    h3.textContent= "Business Spotlight";
+    h3.textContent= "Local Businesses Spotlight";
     logo.src = data.spotlight[randomIndex].business_logo;
     logo.alt = data.spotlight[randomIndex].business_name;
     logo.classList.add("logo");
@@ -59,16 +81,96 @@ function displaySpotlight(data) {
     spotlightSection.appendChild(h3);
     spotlightSection.appendChild(logo);    
     spotlightSection.appendChild(img);
-    
-    
-    
+            
     spotlightSection.appendChild(p);
     spotlightSection.appendChild(divParent);
 
 }
 
+function buildTripleSpot(data) {
+
+    tripleSpotSection.innerHTML="";
+    console.log(data);
+    let filteredMembers = data.members.filter(member => {
+        return (member.membershipLevel=="Gold") || (member.membershipLevel=="Silver");
+    });
+
+    // let filteredMembers = filterMembers(data);
+    console.log(filteredMembers);
+    
+     // Shuffle array
+    const shuffled = filteredMembers.sort(() => 0.5 - Math.random());
+
+    // Get sub-array of first 3 elements after shuffled
+    let selectedMembers = shuffled.slice(0, 3);
+    console.log(selectedMembers);
+
+    selectedMembers.forEach((member)=>{
+        
+        let card = document.createElement("section");        
+        card.classList.add("card");
+        card.classList.add("business");
+        
+        let img = document.createElement("img");
+        img.classList.add("logo");
+        img.src = member.image;
+        
+        img.setAttribute("alt", `Logo for ${member.name}.`)
+        img.setAttribute("width", 150);
+        img.setAttribute("height", 100);
+
+        let hr = document.createElement("hr");
+        
+        let div = document.createElement("div");
+        
+
+        let name = document.createElement("p");
+        name.classList.add("business-name");
+        name.innerHTML = `${member.name}`;
+        let address = document.createElement("p");
+        address.classList.add("address");
+        address.innerHTML = `${member.address1}<br>${member.address2}`;
+        let phone = document.createElement("p");
+        phone.classList.add("phone");
+        phone.innerHTML = `${member.phone}`;
+        
+        let web = document.createElement("a");
+        web.href = member.website;
+        web.target = "_blank";
+
+        web.textContent = "Visit Website";
+
+        let mlevel = document.createElement("p");
+        mlevel.classList.add("m-level");
+        mlevel.innerHTML = `<hr><span class="emphasis">Membership Level:</span><br>${member.membershipLevel}`;
+        let category = document.createElement("p");
+        category.classList.add("category");
+
+        category.innerHTML = `<span class="emphasis">${member.category}</span>`;
+
+        card.appendChild(img);
+        card.appendChild(hr);
+        div.appendChild(name);
+        div.appendChild(address);
+        div.appendChild(phone);
+        div.appendChild(web);
+        div.appendChild(mlevel);
+        div.appendChild(category);
+        card.appendChild(div);
+        
+        tripleSpotSection.appendChild(card);
+    });
+}
+
+
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
+// function filterMembers(data) {
+//     return data.members.filter(member => member.membershipLevel === "Silver" || member.membershipLevel === "Gold");
+// }
+
 jsonSpotlightFetch();
+
+jsonSpotlightCardsFetch();

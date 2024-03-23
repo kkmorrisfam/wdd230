@@ -74,6 +74,7 @@
 		grid-column: span 2;
 	}
 	
+	
 	.weather h4 {
 		font-size:medium;	
 	}
@@ -123,5 +124,7 @@
 		grid-column: initial;
 	}	
 
-	
+	.triple-spotlight .card:nth-child(3) {
+		grid-column: span 2;
+	}	
 }
