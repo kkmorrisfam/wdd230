@@ -328,7 +328,7 @@ main,
 
 .spot-image {    
     float: left;
-    width: 75%;
+    width: 85%;
     min-width: 300px;
     margin: 2rem;
     margin-top: 2rem;
@@ -349,6 +349,11 @@ main,
     padding-right: 3rem;
     line-height: 1.5rem;
 }
+
+.featured {
+    text-align: center;
+}
+
 
 /* I was trying to contain the buttom like the others */
 .external-btn {

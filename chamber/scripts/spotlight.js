@@ -64,7 +64,7 @@ function displaySpotlight(data) {
     img.classList.add("images");
     img.setAttribute("loading", "lazy");
     
-    h3.textContent= "Local Businesses Spotlight";
+    h3.textContent= "Business Spotlight";
     logo.src = data.spotlight[randomIndex].business_logo;
     logo.alt = data.spotlight[randomIndex].business_name;
     logo.classList.add("logo");
@@ -103,7 +103,7 @@ function buildTripleSpot(data) {
 
     // Get sub-array of first 3 elements after shuffled
     let selectedMembers = shuffled.slice(0, 3);
-    
+
     selectedMembers.forEach((member)=>{
         
         let card = document.createElement("section");        

@@ -9,18 +9,7 @@
 		justify-content: space-between;
 	}
     
-    /* .navigation ul {
-        flex-direction: row;
-    }
-
-    .navigation ul li {
-        display: block;    
-    }
-
-    .navigation a {
-        display: block;   
-    } */
-
+    
     .social img {
         width: 2rem;
         height: 2rem;
@@ -58,9 +47,13 @@
 		grid-column: span 1;
 	} 
 
-    /* .spotlight {
+    .triple-spotlight .card:nth-child(3) {
+		grid-column: span 1;
+	}
+
+    .spotlight {
         width: 80%;
-    } */
+    }
 
     
     .spot-image {
