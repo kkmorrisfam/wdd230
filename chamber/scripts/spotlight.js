@@ -1,3 +1,7 @@
+//there are two different functions here, because I misunderstood the directions initially 
+//to select one business to spotlight from two to three business in another json file.
+//I decided to leave the first in place and add the second one which lists three business
+//randomly chosen from the members.json file.
 
 const urlSpotlight = "data/spotlight.json";  //json file for single spotlight
 const urlTripleSpot = "data/members.json";  //json file for triple spotlight cards
@@ -28,8 +32,6 @@ async function jsonSpotlightCardsFetch() {
         if (response.ok) {
             const data = await response.json();
             
-            console.log(response);
-            console.log(data);
             buildTripleSpot(data);
         } else {
             throw(Error(await response.text()))
@@ -90,21 +92,18 @@ function displaySpotlight(data) {
 function buildTripleSpot(data) {
 
     tripleSpotSection.innerHTML="";
-    console.log(data);
+    
     let filteredMembers = data.members.filter(member => {
         return (member.membershipLevel=="Gold") || (member.membershipLevel=="Silver");
     });
 
-    // let filteredMembers = filterMembers(data);
-    console.log(filteredMembers);
-    
+    // Code help found on Stack Overflow    
      // Shuffle array
     const shuffled = filteredMembers.sort(() => 0.5 - Math.random());
 
     // Get sub-array of first 3 elements after shuffled
     let selectedMembers = shuffled.slice(0, 3);
-    console.log(selectedMembers);
-
+    
     selectedMembers.forEach((member)=>{
         
         let card = document.createElement("section");        
