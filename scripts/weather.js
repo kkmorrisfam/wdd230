@@ -12,12 +12,12 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
-            console.log(data.weather[0].description);
-            console.log(data.main.temp);
-            let icon = data.weather[0].icon;
-            console.log(data.weather[0].icon);
-            console.log(`https://openweathermap.org/img/wn/${icon}.png`);
+            // console.log(data);
+            // console.log(data.weather[0].description);
+            // console.log(data.main.temp);
+            // let icon = data.weather[0].icon;
+            // console.log(data.weather[0].icon);
+            // console.log(`https://openweathermap.org/img/wn/${icon}.png`);
             
             displayResults(data);
 
