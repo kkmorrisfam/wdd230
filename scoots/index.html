@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="styles/larger.css">
 <!-- *** Add google fonts and images for facebook and twitter -->
     <!--Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <!-- Facebook meta information -->
     <meta property="og:title" content="~Scoots~ Motor Scooter Rental Company">
@@ -27,13 +30,57 @@
 </head>
 <body>
     <header>
+        <div id = "weather-banner">
+            <button id="banner-btn"></button>
+            <p>For Today, the High is 105</p>
+        </div>
+        <img src="images/logo_scoots.webp">
+        <button id="small-menu" aria-label="small navigation menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li ><a href="#" class = "active">Home</a></li>
+                <li><a href="rental.html">Rentals</a></li>            
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
 
     </header>
-    <main>
+    <main class="home-main">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 450px)" srcset="images/hero-small2.jpg">
+                <source media="(max-width: 650px)" srcset="images/hero-medium2.jpg">
+                <!-- width="1268" height="675" -->
+                <img src="images/hero-large.jpg" alt="Two tourists on scooters in Cozumel Mexico" >  
+            </picture>
+        </div>
+
 
     </main>
-    <footer>
-        
+    <footer class="flex">
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="rental.html">Rentals</a></li>            
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <h4>Location 1</h4>
+                <p>123 Center Street</p>
+                <p>Cozumel, Mexico</p>
+            </div>
+            <div>
+                <h4>Location 2</h4>
+                <p>123 Center Street</p>
+                <p>Cozumel, Mexico</p>
+            </div>
+        </div>
+        <div></div>
     </footer>
 </body>
 </html>

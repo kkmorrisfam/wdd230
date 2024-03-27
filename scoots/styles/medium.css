@@ -1,0 +1,42 @@
+@media screen and (min-width: 650px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    #small-menu {
+        display: block;
+        display: none;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+    }
+
+    .navigation ul li {
+        display: block;
+    }
+
+    .navigation a {
+        display: block;        
+    }
+
+    .hero img {
+        width: 1089;
+        height: 590;
+    }
+
+
+}
