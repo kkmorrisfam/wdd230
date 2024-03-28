@@ -16,6 +16,10 @@
         font-size: 1.7rem;
     }
 
+    .flex {
+        flex-direction: row;        
+    }
+
     #small-menu {
         display: block;
         display: none;
@@ -33,10 +37,31 @@
         display: block;        
     }
 
+    /* ---------------Home---------------------- */
     .hero img {
         width: 1089;
         height: 590;
     }
 
+
+    /* ---------------Rental------------------- */
+
+    /* -------------Reservation---------------- */
+
+    /* --------------Contact------------------- */
+
+    /* ---------------Footer------------------- */
+    
+    footer {
+        text-align: left;
+    }
+
+    .footer-info {
+        text-align: right;
+    }
+
+    .social {
+        justify-content: right;
+    }
 
 }
