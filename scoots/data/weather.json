@@ -1,0 +1,46 @@
+{
+    "coord": {
+      "lon": -86.94,
+      "lat": 20.5
+    },
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 68.94,
+      "feels_like": 68.95,
+      "temp_min": 68.94,
+      "temp_max": 68.94,
+      "pressure": 1018,
+      "humidity": 73,
+      "sea_level": 1018,
+      "grnd_level": 1018
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 10.18,
+      "deg": 78,
+      "gust": 13.89
+    },
+    "clouds": {
+      "all": 0
+    },
+    "dt": 1711767978,
+    "sys": {
+      "type": 2,
+      "id": 2042794,
+      "country": "MX",
+      "sunrise": 1711712592,
+      "sunset": 1711756873
+    },
+    "timezone": -18000,
+    "id": 3530103,
+    "name": "San Miguel de Cozumel",
+    "cod": 200
+  }

@@ -85,8 +85,18 @@ a:hover {
     flex-direction: column;
 }
 
+.grid-grow,
 .grid {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    border: 2px solid purple;
+}
+
+.grid-grow {
+    border: 2px dotted green;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* -------------Header---------------------------------------- */
@@ -165,9 +175,9 @@ header img {
 }
 
 /* ---------------Home---------------------- */
-.grid.home-main {
-    grid-gap: 1rem;
 
+.hero {
+    position: relative;
 }
 
 .hero img {
@@ -175,6 +185,12 @@ header img {
     height: 100%;
     object-fit: cover;
 
+}
+.hero h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 20px;
 }
 
 /* ---------------Rental------------------- */

@@ -33,7 +33,7 @@
     <header>
         <div id = "weather-banner">
             <button id="banner-btn"></button>
-            <p>For Today, the High is 105</p>
+            <p>For Today, the High <span id="todays-high"></span></p>
         </div>
         <img src="images/logo_scoots.webp">
         <button id="small-menu" aria-label="small navigation menu"></button>
@@ -49,27 +49,42 @@
 
     </header>
     <main class="home-main">
-        <div class="hero">
-            <h1>Who We Are</h1>
+        <div class="hero">            
             <picture>
                 <source media="(max-width: 450px)" srcset="images/hero-closer.webp">
                 <source media="(max-width: 650px)" srcset="images/hero-medium2.webp">                
                 <img src="images/hero-large.webp" alt="Two tourists on scooters in Cozumel Mexico" >  
             </picture>
+            <h1>Who We Are</h1>
         </div>
         <div class="grid">
             <section class="pair">
                 <h2>What We Do</h2>
-                <div class="shop-summary">
+                <div class="shop-summary grid-grow">
                     <div class="card">Card Div</div>
-                    <div class="card">Card Div</div>>
+                    <div class="card">Card Div</div>
             </section>
             <section class="weather">
-
+                <h3>Weather for Cozumel, Mexico</h3>                
+                <div class="flex">
+                    <div>
+                        <p id="weather-date">today's date</p>
+                        <img src="images/partly_cloudy.png" alt="placeholder weather picture" id="weather-icon" width="50" height="50">                                                                
+                        <p id="current-temp"></p>
+                    </div>    
+                    <div>
+                        <p id="weather-caption"></p>
+                        <p>Feels Like: <span id="feels-like"></span></p>                        
+                        <p>Current Humidity: <span id="humidity"></span></p>
+                        <p>Tomorrow's High: <span id="forecast"></span>                        
+                        </p>
+                        
+                    </div>
+                </div>                   
             </section>
             <section class="pair"></section>
                 <h2>Location Summary</h2>
-                <div class="weather-location">
+                <div class="location grid-grow">
                     <div class="card">
                         Card Div                    
                     </div>
