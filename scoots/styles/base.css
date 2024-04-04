@@ -49,12 +49,10 @@ body {
     background-color: var(--clr-foreground);    
 }
 
-
 h1 {
     color: var(--clr-headings);
     font-family: var(--font-heading1);
 }
-
 
 h2,
 h3 {
@@ -235,6 +233,29 @@ header img {
 .form-contact {
     display: block;
 } */
+
+.main-contain-container {
+    position: relative;
+}
+
+.location-container {
+    /* text-align: center; */
+    margin: 0 auto;
+    
+}
+
+.contact-container h2,
+.location-container h2 
+/* .main-contain-container h2  */
+{
+    text-align: center;
+}
+
+.contact-container {
+    margin: 0 auto;
+    position: sticky;
+}
+
 .form-contact label {
     display: block;
 }
@@ -249,7 +270,7 @@ header img {
     padding: 1rem;
     width: 100%;
     max-width: 500px;
-    border: solid 1px #999;
+    /* border: solid 1px #999; */
     border-radius: 5px;
     color: #1e1d1d;
 }
