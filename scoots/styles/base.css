@@ -222,6 +222,41 @@ header img {
 
 /* ---------------Rental------------------- */
 
+.main-contain-container div {
+    border: solid blueviolet;
+}
+
+#rental-table {
+    background-color: #c2cfcc;
+    margin: auto;
+}
+
+caption {
+    background-color: black;
+    color: white;
+}
+
+th {
+    text-wrap: wrap;
+    padding: .5rem .4rem;
+}
+td {
+    padding: .5rem .7rem;
+}
+
+td:nth-child(2) {
+    column-width: 10ch;
+}
+
+.table-container {
+    /* max-width: 100%; */
+    width: clamp(400px 75% 700px);
+    overflow-x: scroll;
+    border: 3px solid red;
+}
+
+
+
 /* -------------Reservation---------------- */
 
 /* --------------Contact------------------- */
@@ -325,4 +360,5 @@ footer > * {
     width: 30px;
     height: 30px;       
 }
+
 

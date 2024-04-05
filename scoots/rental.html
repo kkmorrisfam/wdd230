@@ -30,10 +30,10 @@
 </head>
 <body>
     <header>
-        <div id = "weather-banner">
+        <!-- <div id = "weather-banner">
             <button id="banner-btn"></button>
             <p>For Today, the High <span id="todays-high"></span></p>
-        </div>
+        </div> -->
         <img src="images/logo_scoots.webp">
         <button id="small-menu" aria-label="small navigation menu"></button>
         <nav class="navigation">
@@ -45,16 +45,54 @@
             </ul>
         </nav>
     </header>
-    <main class="rental-main-container">
-        <h2>Rental Options</h2>
-        <p>Advertisement for rental options</p>
+    <main class="main-rental-container">
+        <h2>Rental Options at ~Scoots~</h2>
+        <p>We offer Scooters, ATV's and Jeeps. </p>
         
-        <div class="rental-container">
-            <div class="rent-img"></div>
-            <div class="rent-description"></div>
-
+        <div class="grid-grow">
+            <div class="rent-img">Image</div>
+            <div class="rent-description">Rental Info</div>
         </div>
-
+        <div class="table-container">
+            <table id="rental-table">
+                <caption>
+                    Max Rental Pricing
+                </caption>
+                <thead>
+                    <tr>
+                        <th colspan="2"></th>
+                        <th colspan="2">Reservation</th>
+                        <th colspan="2">Walk-In</th>
+                    </tr>
+                    <tr>
+                        <th>Rental Type</th>
+                        <th>Max. Persons</th>
+                        <th>Half Day (3hrs)</th>
+                        <th>Full Day</th>
+                        <th>Half Day (3hrs)</th>
+                        <th>Full Day</th>
+                    </tr>
+                </thead>  
+                <tbody id="table-body">
+                    <tr>
+                        <td data-cell="Rental Type">~Honda Metro Scooter</td>
+                        <td data-cell="Max. Persons">1</td>
+                        <td data-cell="Reserve Half Day (3hrs)">$20</td>
+                        <td data-cell="Reserve Full Day">$30</td>
+                        <td data-cell="Walk-in Half-Day (3hrs)">$25</td>
+                        <td data-cell="Walk-in Full Day">$35</td>
+                    </tr>
+                    <tr>
+                        <td data-cell="Rental Type">~Honda Metro Scooter</td>
+                        <td data-cell="Max. Persons">1</td>
+                        <td data-cell="Reserve Half Day (3hrs)">$20</td>
+                        <td data-cell="Reserve Full Day">$30</td>
+                        <td data-cell="Walk-in Half-Day (3hrs)">$25</td>
+                        <td data-cell="Walk-in Full Day">$35</td>
+                    </tr>
+                </tbody>         
+            </table>
+        </div>
     </main>
     <footer class="flex">
         <div class="footer-nav">
@@ -91,7 +129,8 @@
             <p>&#169; <span id="year"></span>Kerri Morris</p>
         </div>
     </footer>
-    <script src="scripts/weather.js"></script>
+    <!-- <script src="scripts/weather.js"></script> -->
     <script src="scripts/navigation.js"></script>
+    <script src="scripts/rental.js"></script>
 </body>
 </html>
