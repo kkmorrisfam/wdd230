@@ -12,8 +12,15 @@
         margin: 0 auto;
     }
 
+    /* -----------Home__________________ */
     .hero img {
        width: 1268;
        height: 675; 
     }
+
+    /* -----------Rental----------------- */
+    .table-container {
+        width: 80%;
+    }
+
 }
