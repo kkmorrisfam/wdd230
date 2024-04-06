@@ -1,6 +1,7 @@
 {"rentals": [
     {
         "type" : "~Honda Metro Scooter",
+        "description" : "Honda Metropolitan (49cc)",
         "capacity" : 1,
         "reservation" : [
             {
@@ -18,6 +19,7 @@
     },
     {
         "type" : "~Honda Dio Scooter",
+        "description" : "Honda Dio (110cc)",
         "capacity" : 2,
         "reservation" : [
             {
@@ -35,6 +37,7 @@
     },
     {
         "type" : "~Honda PCX150 Scooter",
+        "description" : "Honda PCX150 (149cc)",
         "capacity" : 2,
         "reservation" : [
             {
@@ -52,6 +55,7 @@
     },
     {
         "type" : "Honda Pioneer ATV",
+        "description" : "Honda Pioneer 1000 Side-by-Side ATV",
         "capacity" : 4,
         "reservation" : [
             {
@@ -69,6 +73,7 @@
     },
     {
         "type" : "Jeep Wrangler - 2 door",
+        "description" : "Jeep Wrangler - 2 door - open air - manuel",
         "capacity" : 4,
         "reservation" : [
             {
@@ -85,7 +90,8 @@
         "image" : "images/jeep-2p-sm.webp"        
     }, 
     {
-        "type" : "Jeep Wrangler 4-door, with a/c",
+        "type" : "Jeep Wrangler - 4 door",
+        "description" : "Jeep Wrangler - 4 door - manuel with A/C",
         "capacity" : 5,
         "reservation" : [
             {

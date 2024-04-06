@@ -7,6 +7,7 @@ async function jsonFetch() {
             const data = await response.json();
             console.log(data);
             displayTable(data);
+            displayCards(data);
         } else{
             throw(Error(await response.text()))
         }
@@ -51,8 +52,38 @@ function displayTable(data) {
         tbody.appendChild(tr);
 
     });
+}//end displayTable()
 
+function displayCards(data) {
+    const cardContainer = document.getElementById('rent-card-fill');
+    cardContainer.innerHTML="";
 
-}
+    data.rentals.forEach(rental=> {
+        let divCard = document.createElement("div");
+        divCard.setAttribute("class", "rent-card");
+        let img = document.createElement("img");
+        img.src = rental.image;
+        img.setAttribute("class", "rent-img");
+        img.setAttribute("alt", rental.type);
+        img.setAttribute("load", "lazy");
+        let divContent = document.createElement("div");
+        divContent.setAttribute("class", "img-desc");
+        let h3 = document.createElement("h3");
+        h3.textContent = rental.description;
+        let p1 = document.createElement("p");
+        p1.textContent = `${rental.capacity} person`;
+        let p2 = document.createElement("p");
+        p2.textContent = `Reserve for half-day ($${rental.reservation[0].half_day}) or full day ($${rental.reservation[0].full_day})`;
+
+        divContent.appendChild(h3);
+        divContent.appendChild(p1);
+        divContent.appendChild(p2);
+        divCard.appendChild(img);
+        divCard.appendChild(divContent);
+        cardContainer.appendChild(divCard);
+    });
+
+}//end displayCards()
+
 
 jsonFetch();

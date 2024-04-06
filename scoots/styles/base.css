@@ -226,6 +226,51 @@ header img {
     border: solid blueviolet;
 }
 
+.main-rental-container h2,
+.main-rental-container p,
+.main-rental-container h3 {
+    text-align: center;
+}
+
+.rent-card {
+    aspect-ratio : 1/1.5;
+    display: grid;
+    
+}
+
+.rent-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    aspect-ratio : 1 /1.25;
+}
+
+.img-desc {
+    
+    align-self : end;
+    text-align: center;
+    background-color: var(--clr-dark2);    
+    min-height: 6.5rem;
+    
+}
+
+.img-desc h3,
+.img-desc p {
+    color: var(--clr-light1);
+}
+
+.services-container {
+    background-color: var(--clr-light3);
+    margin: 3rem auto;
+    border: 2px solid var(--clr-medium1);
+    padding: 1rem;
+}
+
+.services-container li {
+    list-style-position: inside;
+    /* list-style-type: circle; */
+}
+
 #rental-table {
     background-color: var(--clr-light2);
     margin: auto;
@@ -234,6 +279,7 @@ header img {
 caption {
     background-color: black;
     color: white;
+    padding: 1rem;
 }
 
 th {
@@ -265,6 +311,17 @@ tr:nth-of-type(2n){
 
 /* -------------Reservation---------------- */
 
+.reservation-hero h1 {
+    top: 0px;
+    text-align: left;
+    left: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.reservation-hero h2 {
+    text-align: center;
+}
 /* --------------Contact------------------- */
 
 /* .contact-container {
