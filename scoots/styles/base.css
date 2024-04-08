@@ -94,11 +94,11 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 
 .grid-grow {
-    border: 2px dotted green;
+    /* border: 2px dotted green; */
     margin: 0 auto;
     width: 100%;
 }
@@ -379,9 +379,68 @@ tr:nth-of-type(2n){
 
 .reservation-hero h2 {
     text-align: center;
+    padding: 1rem;
 }
 
+.reserve-pair h3 {
+    text-align: center;
+}
 
+#veh-quantity1,
+#veh-quantity2,
+#veh-quantity3,
+#veh-quantity4,
+#veh-quantity5,
+#veh-quantity6 {
+    width: 5ch;
+    text-align: right;
+    padding: 0;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: var(--clr-accent3);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+.reserve-grid {
+    position: relative;      
+}
+
+.reserve-grid > * {
+    padding: 1rem;
+}
+
+.reserve-grid .card:nth-child(2) {
+    position: sticky;
+    align-self: start;
+    top:0;
+    left: 0;
+}
+
+.reserve-pair p {
+    padding: 1rem;
+}
+
+.submitBtn {
+    border: none;
+    background-color: var(--clr-accent1);
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
 /* --------------Contact------------------- */
 
 /* .contact-container {
@@ -444,7 +503,19 @@ tr:nth-of-type(2n){
 }
 
 
+/* ----------Thank You_____________________ */
+.thanks h1 {
+    text-align: center;
+    padding: 2rem;
+}
 
+.thanks p {
+    width: 80%;
+    margin: 1rem auto;
+}
+.thanks span {
+    font-weight: 700;
+}
 /* ---------------Footer------------------- */
 
 footer {

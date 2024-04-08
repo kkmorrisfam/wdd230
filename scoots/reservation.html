@@ -48,132 +48,150 @@
             <h1>Discover the Island</h1>
             <h2>Make Reservations Today!</h2>
         </div>
-        <div class="grid">
-            <section class="pair">
-                <h2>Save Money by Reserving Your Ride Today</h2>
-                <div class="grid-grow">
-                    <div class="card">
-                        <form method="get" action "thankyou.html" class="form-reserve grid">
-                            <div class="required">*indicates required field</div>
-                            <fieldset>
-                                <legend>Rental Type</legend>
-                                <div class="flex">
-                                    <div>
-                                    <label for="vehicle1">
-                                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Honda Metro Scooter">
-                                        ~Honda Metro Scooter
-                                    </label>
-                                    <label for="vehicle2">
-                                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Honda Metro Scooter">
-                                        ~Honda Metro Scooter
-                                    </label>
-                                    <label for="vehicle3">
-                                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Honda Metro Scooter">
-                                        ~Honda Metro Scooter
-                                    </label>
-                                    <label for="vehicle4">
-                                        <input type="checkbox" id="vehicle4" name="vehicle4" value="Honda Metro Scooter">
-                                        ~Honda Metro Scooter
-                                    </label>
-                                    <label for="vehicle5">
-                                        <input type="checkbox" id="vehicle5" name="vehicle5" value="Honda Metro Scooter">
-                                        ~Honda Metro Scooter
-                                    </label>
-                                    <label for="vehicle6">
-                                        <input type="checkbox" id="vehicle6" name="vehicle6" value="Honda Metro Scooter">
-                                        ~Honda Metro Scooter
-                                    </label>
-                                    </div>
-                                        <label for="veh-quantity1">
-                                            <input type="number" id="veh-quantity1" name="veh-quantity1" value="1"
-                                        </label>
-                                    <div>
-                                </div>
-
-                                </div>
-                            </fieldset>
-                            
-                            <label for="fname" class="top">First Name
-                                <input type="text" name="fname" id="fname" required placeholder="First Name">
-                            </label>
-                            <label for="lname" class="top">Last Name
-                                <input type="text" name="lname" id="lname" placeholder="Last Name" required>
-                            </label>
-                            <label for="email" class="top">Email
-                                <input type="email" name="email" id="email" placeholder="email" required>
-                            </label>
-                            <label for="phone" class="top">Telephone number
-                                <input type="tel" name="phone" id="phone" placeholder="telephone number">
-                            </label>
-                            <fieldset>
-                                <legend>Reservation Information</legend>
-                                <label for="start-date" class="top">Pick-up Date/Time
-                                    <input type="datetime-local" name="start-date" id="start-date">
-                                </label>
-                                <label for="end-date" class="top">Drop-off Date/Time
-                                    <input type="datetime-local" name="end-date" id="end-date">
-                                </label>
-                                <label for="passengers" class="top">Number of Passengers
-                                    <input type="number" name="passengers" id="passengers" value="1">
-                                </label>                                
-                                <label for="location" class="top">Location Pick-up
-                                    <input list="location" name="location" id="location">
-                                    <datalist id="location">
-                                        <option value="By the Ferry Dock"></option>
-                                        <option value="By the Cruise Dock"></option>
-                                    </datalist>
-                                </label>
-                                <label for="touring-with" class="top">Hotel Name or Address or Cruise Ship Name
-                                    <input type="text" name="touring-with" id="touring-with">
-                                </label>
-                                <label for="comments">Additional Comments (special accommodation request, drop-off request)
-                                    <textarea rows="4" cols="50" name="comments" placeholder="Enter comments here...">
-                                    </textarea>                                        
-                                </label>
-
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="card">Card Div</div>
-            </section>
-            <section class="weather">
-                <h3>Weather for Cozumel, Mexico</h3>                
-                <div class="flex">
-                    <div>
-                        <p id="weather-date">today's date</p>
-                        <img src="images/partly_cloudy.png" alt="placeholder weather picture" id="weather-icon" width="50" height="50">                                                                
-                        <p id="current-temp"></p>
-                    </div>    
-                    <div>
-                        <p id="weather-caption"></p>
-                        <p>Feels Like: <span id="feels-like"></span></p>                        
-                        <p>Current Humidity: <span id="humidity"></span></p>
-                        <p>Tomorrow's High: <span id="forecast"></span>                        
-                        </p>
+        <section class="pair reserve-pair">
+            <h3>Save Money by Reserving Your Ride with ~Scoots~</h3>
+            <p>Choose from our range of motor scooters, jeeps, and side-by-side ATVs to make your Cozumel adventure unforgettable.</p>
+            <div class="grid-grow reserve-grid">
+                <div class="card">
+                    <form method="get" action "thankyou.html">
+                        <div class="required">*indicates required field</div>
+                        <fieldset>
+                            <legend>Rental Type</legend>
+                            <table>
+                                <col width="300">
+                                    <col width="20">
+                                <thead>
+                                    <th>Vehicle Choice</th>
+                                    <th>Quantity</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><label for="vehicle1" class="col1">
+                                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Honda Metro Scooter">
+                                            ~Honda Metro Scooter
+                                        </label></td>
+                                        <td><label for="veh-quantity1" class="col2">
+                                            <input type="number" id="veh-quantity1" name="veh-quantity1" value="0"
+                                        </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="vehicle2">
+                                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Honda Metro Scooter">
+                                            ~Honda Dio Scooter
+                                        </label></td>
+                                        <td><label for="veh-quantity2">
+                                            <input type="number" id="veh-quantity2" name="veh-quantity2" value="0"
+                                        </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="vehicle3">
+                                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Honda Metro Scooter">
+                                            ~Honda PCX150 Scooter
+                                        </label></td>
+                                        <td><label for="veh-quantity3">
+                                            <input type="number" id="veh-quantity3" name="veh-quantity3" value="0"
+                                        </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="vehicle4">
+                                            <input type="checkbox" id="vehicle4" name="vehicle4" value="Honda Metro Scooter">
+                                            Honda Pioneer ATV
+                                        </label></td>
+                                        <td><label for="veh-quantity4">
+                                            <input type="number" id="veh-quantity4" name="veh-quantity4" value="0"
+                                        </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="vehicle5">
+                                            <input type="checkbox" id="vehicle5" name="vehicle5" value="Honda Metro Scooter">
+                                            Jeep Wrangler(2-door)
+                                        </label></td>
+                                        <td><label for="veh-quantity5">
+                                            <input type="number" id="veh-quantity5" name="veh-quantity5" value="0"
+                                        </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="vehicle6">
+                                            <input type="checkbox" id="vehicle6" name="vehicle6" value="Honda Metro Scooter">
+                                            Jeep Wrangler(4-door)
+                                        </label></td>
+                                        <td><label for="veh-quantity6">
+                                            <input type="number" id="veh-quantity6" name="veh-quantity6" value="0"
+                                        </label></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                                </fieldset>
                         
-                    </div>
-                </div>                   
-            </section>
-            <section class="pair"></section>
-                <h2>Location Summary</h2>
-                <div class="location grid-grow">
-                    <div class="card">
-                        Card Div                    
-                    </div>                       
-                    <div class="card">
-                        Card Div
-                    </div>
-            </section>
-        </div>
+                        <label for="fname" class="top">First Name*
+                            <input type="text" name="fname" id="fname" required placeholder="First Name">
+                        </label>
+                        <label for="lname" class="top">Last Name*
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                        </label>
+                        <label for="email" class="top">Email*
+                            <input type="email" name="email" id="email" placeholder="email" required>
+                        </label>
+                        <label for="phone" class="top">Telephone number
+                            <input type="tel" name="phone" id="phone" placeholder="telephone number">
+                        </label>
+                        <fieldset>
+                            <legend>Reservation Information</legend>
+                            <label for="start-date" class="top">Pick-up Date/Time
+                                <input type="datetime-local" name="start-date" id="start-date">
+                            </label>
+                            <label for="end-date" class="top">Drop-off Date/Time
+                                <input type="datetime-local" name="end-date" id="end-date">
+                            </label>
+                            <label for="passengers" class="top">Number of Passengers
+                                <input type="number" name="passengers" id="passengers" value="1">
+                            </label>                                
+                            <label for="location" class="top">Location Pick-up
+                                <input list="location" name="location" id="location">
+                                <datalist id="location">
+                                    <option value="By the Ferry Dock"></option>
+                                    <option value="By the Cruise Dock"></option>
+                                </datalist>
+                            </label>
+                            <label for="touring-with" class="top">Hotel Name or Address or Cruise Ship Name
+                                <input type="text" name="touring-with" id="touring-with">
+                            </label>
+                            <label for="comments">Additional Comments (special accommodation request, drop-off request)
+                                <textarea rows="4" cols="50" name="comments" placeholder="Enter comments here...">
+                                </textarea>                                        
+                            </label>
 
-
+                        </fieldset>
+                        <input type="submit" value="Reserve Now" class="submitBtn">
+                        <p>By submitting this form, you agree to be contacted in the next 24 hours by email.  We will confirm your reservation request and collect the $50 security deposit.</p>
+                    </form>
+                </div>
+                <div class="card">
+                    <h3>Rental Agreement Information</h3>
+                    
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at the time of rental.</li>
+                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insruance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2 + day rentals.</li>
+                        <li>Payment accepted via Google Pay, Apple Pay, cash, credit card, debit card or Venmo</li>
+                        <li>Rentals may be returned to either physical location.</li>
+                    </ul>
+                    
+        
+                </div>
+        </section>
     </main>
     <footer class="flex">
         <div class="footer-nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="rental.html">Rentals</a></li>            
-                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="#">Reservations</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="https://www.visitcozumel.com.mx/" target ="_blank">Visit Cozumel</a></li>                
             </ul>
