@@ -72,6 +72,7 @@ p {
     color: var(--clr-paragraph);
 }
 
+
 a {
     color: var(--clr-anchor);
     text-decoration: none;
@@ -219,6 +220,13 @@ header img {
 
 /* ---------------Home---------------------- */
 
+.card p {
+    padding: .7rem;
+}
+.pair h2 {
+    padding: .7rem;
+}
+
 .hero {
     position: relative;
 }
@@ -249,7 +257,17 @@ header img {
 .summary img {
     max-width: 90%;
     height: auto;
+    margin-left: 3rem;
+    
+}
 
+.card img {
+    border-radius: 10px;
+}
+
+.tinted {
+    background-color: var(--clr-light4);
+    border-radius: 10px;
 }
 
 .weather {
@@ -290,26 +308,28 @@ header img {
     text-align: center;
 }
 
+p.title {
+    padding-bottom: 2rem;
+}
+
 .rent-card {
-    aspect-ratio : 1/1.5;
-    display: grid;
-    
+    aspect-ratio : 1/.75;
+    display: grid;    
 }
 
 .rent-img {
     width: 100%;
     height: auto;
     object-fit: contain;
-    aspect-ratio : 1 /1.25;
+    aspect-ratio : 1 /.7
 }
 
-.img-desc {
-    
+.img-desc {    
     align-self : end;
     text-align: center;
     background-color: var(--clr-dark2);    
     min-height: 6.5rem;
-    
+    /box-shadow: 0 .25rem 1rem rgba(0 0 0 /.1);    
 }
 
 .img-desc h3,
@@ -357,11 +377,8 @@ tr:nth-of-type(2n){
     background-color: var(--clr-light3);
 }
 
-.table-container {
-    /* max-width: 100%; */
-    width: clamp(400px 75% 700px);
-    overflow-x: scroll;
-    border: 3px solid red;
+.table-container {        
+    overflow-x: scroll;    
     margin: auto;
 }
 
@@ -415,7 +432,7 @@ form legend {
 }
 
 .reserve-grid > * {
-    padding: 1rem;
+    padding: 1.1rem;
 }
 
 .reserve-grid .card:nth-child(2) {
@@ -529,6 +546,7 @@ footer {
 footer > * {
     padding: 2rem;
 }
+
 .footer-nav a {
     color: var(--clr-paragraph);    
 }

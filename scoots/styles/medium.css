@@ -16,6 +16,7 @@
         font-size: 1.7rem;
     }
 
+    
     .flex {
         flex-direction: row;        
     }
@@ -60,6 +61,14 @@
         width: 80%;
     }
 
+    .card p {
+        padding: 1.2rem;
+    }
+    
+    .summary img {        
+        margin-left: .5rem;        
+    }
+
     /* ---------------Rental------------------- */
 
     th {
@@ -77,7 +86,8 @@
     
     /* -------------Reservation---------------- */
 
-    .reserve-grid .card:nth-child(2) p {
+    /* .reserve-grid .card:nth-child(2) p */
+    .reserve-pair p {
         padding: 1.5rem;
     }
     
