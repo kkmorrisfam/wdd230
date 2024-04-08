@@ -24,6 +24,11 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .cta {
+        padding: .5rem 3rem;
+        
+    }
+
     #small-menu {
         display: block;
         display: none;
@@ -47,6 +52,13 @@
         height: 590;
     }
 
+    .hero button {
+        top: 100px;
+    }
+
+    .weather {
+        width: 80%;
+    }
 
     /* ---------------Rental------------------- */
 

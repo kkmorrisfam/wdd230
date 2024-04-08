@@ -14,8 +14,22 @@
 
     /* -----------Home__________________ */
     .hero img {
-       width: 1268;
-       height: 675; 
+       max-width: 1268;
+       max-height: 675; 
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        /* outline: 2px solid black; */
+        /* text-shadow: 2px 2px var(--clr-accent3); */
+    }
+
+    .hero button {
+        top: 170px;
+    }
+    
+    .weather {
+        width: 50%;
     }
 
     /* -----------Rental----------------- */
