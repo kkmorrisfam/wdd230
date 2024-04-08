@@ -81,10 +81,7 @@ a {
 a:hover {
     color: var(--clr-accent2);
 }
-/* 
-img {
-    width: 100%;
-} */
+
 .flex {
     display: flex;
     flex-direction: column;
@@ -95,11 +92,11 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    /* border: 2px solid purple; */
+
 }
 
 .grid-grow {
-    /* border: 2px dotted green; */
+
     margin: 0 auto;
     width: 100%;
 }
@@ -115,9 +112,7 @@ header {
 #weather-banner {
     background-color: var(--clr-light2);
     color: black;
-    /* width: 65%; */
     text-align: right;
-    /* padding-right: 2rem; */
     padding: .5rem 2rem;
 }
 
@@ -128,7 +123,6 @@ header {
 
 #banner-btn {    
     background: none;
-    /* border: none; */
     float: right;
     margin: 0 2rem;
 }
@@ -143,7 +137,7 @@ header img {
 }
 
 #weather-banner p {
-    /* color: var(--clr-logo); */
+    
     font-family: var(--font-heading1)
 }
 
@@ -173,7 +167,7 @@ header img {
 
 .navigation a:hover {
     background-color: var(--clr-light3);
-    /* color: var(--clr-dark2); */
+    
     font-weight: 700;
 }
 
@@ -237,12 +231,13 @@ header img {
     object-fit: cover;
 
 }
+
 .hero h1 {
     position: absolute;
     width: 100%;
     text-align: center;
     top: 20px;
-    /* font-size: rem; */
+
     text-shadow: 2px 2px var(--clr-dark2);
 }
 
@@ -287,7 +282,7 @@ header img {
 }
 
 .weather-card {
-    /* border: 1px solid black; */
+
     font-size: large;
 }
 
@@ -298,9 +293,6 @@ header img {
 
 /* ---------------Rental------------------- */
 
-.main-contain-container div {
-    border: solid blueviolet;
-}
 
 .main-rental-container h2,
 .main-rental-container p,
@@ -313,7 +305,7 @@ p.title {
 }
 
 .rent-card {
-    aspect-ratio : 1/.75;
+    /* aspect-ratio : 1/.75; */
     display: grid;    
 }
 
@@ -321,7 +313,7 @@ p.title {
     width: 100%;
     height: auto;
     object-fit: contain;
-    aspect-ratio : 1 /.7
+    /* aspect-ratio : 1 /.7 */
 }
 
 .img-desc {    
@@ -329,7 +321,7 @@ p.title {
     text-align: center;
     background-color: var(--clr-dark2);    
     min-height: 6.5rem;
-    /box-shadow: 0 .25rem 1rem rgba(0 0 0 /.1);    
+    /* box-shadow: 0 .25rem 1rem rgba(0 0 0 /.1);     */
 }
 
 .img-desc h3,
@@ -460,16 +452,10 @@ form legend {
 }
 /* --------------Contact------------------- */
 
-/* .contact-container {
-    display: block;
-}
-
-.form-contact {
-    display: block;
-} */
-
-.main-contain-container {
+.main-contact-container {
     position: relative;
+    justify-content: space-around;
+    padding: 2rem;
 }
 
 .location-container {
@@ -479,15 +465,22 @@ form legend {
 }
 
 .contact-container h2,
-.location-container h2 
-/* .main-contain-container h2  */
-{
+.location-container h2 {
     text-align: center;
+    /* font-size: large; */
+    /* padding: 1.5rem; */
+}
+.location-container p {
+    padding: 1.5rem;
 }
 
 .contact-container {
     margin: 0 auto;
     position: sticky;
+    top: 0;
+    right: 0;
+    align-self: start;    
+    min-width: 55%;
 }
 
 .form-contact label {
@@ -504,19 +497,19 @@ form legend {
     padding: 1rem;
     width: 100%;
     max-width: 500px;
-    /* border: solid 1px #999; */
+    
     border-radius: 5px;
-    color: #1e1d1d;
+    color: var(--clr-dark2);
 }
 
 .map {    
-    width: auto;    
-    padding: 0;
+    /* width: auto;     */
+    padding: 0 2rem;
 }
 .map iframe {
     border-radius: 5px;
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
+    max-height: 300px;
 }
 
 
