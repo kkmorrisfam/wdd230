@@ -64,7 +64,7 @@ function displayCards(data) {
         img.src = rental.image;
         img.setAttribute("class", "rent-img");
         img.setAttribute("alt", rental.type);
-        img.setAttribute("load", "lazy");
+        img.setAttribute("load", "lazy");        
         let divContent = document.createElement("div");
         divContent.setAttribute("class", "img-desc");
         let h3 = document.createElement("h3");
