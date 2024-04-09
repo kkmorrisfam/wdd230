@@ -407,8 +407,7 @@ tr:nth-of-type(2n){
 #veh-quantity6 {
     width: 5ch;
     text-align: right;
-    padding: 0;
-    /* display: visible; */
+    padding: 0;   
 }
 
 label[for="veh-quantity1"],
@@ -472,8 +471,7 @@ form legend {
     padding: 2rem;
 }
 
-.location-container {
-    /* text-align: center; */
+.location-container {    
     margin: 0 auto;
     
 }
