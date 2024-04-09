@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservations for ~Scoots~ Motor Scooter and Jeep Rental Company in Cozumel Mexico</title>
     <meta name="description"
-        content="">
+        content="Reservations for ~Scoots~ Motor Scooter and Jeep Rental Company in Cozumel Mexico">
     <meta name="author" content="Kerri Morris">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -30,7 +30,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo_scoots.webp">
+        <img src="images/logo_scoots.webp" alt="logo">
         <button id="small-menu" aria-label="small navigation menu"></button>
         <nav class="navigation">
             <ul>
@@ -53,7 +53,7 @@
             <p>Choose from our range of motor scooters, jeeps, and side-by-side ATVs to make your Cozumel adventure unforgettable.</p>
             <div class="grid-grow reserve-grid">
                 <div class="card">
-                    <form method="get" action "thankyou.html">
+                    <form method="get" action="thanks.html">
                         <div class="required">*indicates required field</div>
                         <fieldset>
                             <legend>Rental Type</legend>
@@ -66,11 +66,11 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><label for="vehicle1" class="col1">
+                                        <td><label for="vehicle1">
                                             <input type="checkbox" id="vehicle1" name="vehicle1" value="Honda Metro Scooter">
                                             ~Honda Metro Scooter
                                         </label></td>
-                                        <td><label for="veh-quantity1" class="col2">
+                                        <td><label for="veh-quantity1" area-label="Honda Metro scooter quantity">
                                             <input type="number" id="veh-quantity1" name="veh-quantity1" value="0"
                                         </label></td>
                                     </tr>
@@ -79,7 +79,7 @@
                                             <input type="checkbox" id="vehicle2" name="vehicle2" value="Honda Metro Scooter">
                                             ~Honda Dio Scooter
                                         </label></td>
-                                        <td><label for="veh-quantity2">
+                                        <td><label for="veh-quantity2" area-label="Honda Dio scooter quantity">
                                             <input type="number" id="veh-quantity2" name="veh-quantity2" value="0"
                                         </label></td>
                                     </tr>
@@ -88,7 +88,7 @@
                                             <input type="checkbox" id="vehicle3" name="vehicle3" value="Honda Metro Scooter">
                                             ~Honda PCX150 Scooter
                                         </label></td>
-                                        <td><label for="veh-quantity3">
+                                        <td><label for="veh-quantity3" area-label="Honda PCX150 scooter quantity">
                                             <input type="number" id="veh-quantity3" name="veh-quantity3" value="0"
                                         </label></td>
                                     </tr>
@@ -97,7 +97,7 @@
                                             <input type="checkbox" id="vehicle4" name="vehicle4" value="Honda Metro Scooter">
                                             Honda Pioneer ATV
                                         </label></td>
-                                        <td><label for="veh-quantity4">
+                                        <td><label for="veh-quantity4" area-label="Honda Pioneer ATV quantity">
                                             <input type="number" id="veh-quantity4" name="veh-quantity4" value="0"
                                         </label></td>
                                     </tr>
@@ -106,7 +106,7 @@
                                             <input type="checkbox" id="vehicle5" name="vehicle5" value="Honda Metro Scooter">
                                             Jeep Wrangler(2-door)
                                         </label></td>
-                                        <td><label for="veh-quantity5">
+                                        <td><label for="veh-quantity5" area-label="Jeep Wrangler 2-door quantity">
                                             <input type="number" id="veh-quantity5" name="veh-quantity5" value="0"
                                         </label></td>
                                     </tr>
@@ -115,7 +115,7 @@
                                             <input type="checkbox" id="vehicle6" name="vehicle6" value="Honda Metro Scooter">
                                             Jeep Wrangler(4-door)
                                         </label></td>
-                                        <td><label for="veh-quantity6">
+                                        <td><label for="veh-quantity6" area-label="Jeep Wrangler 4-door quantity">
                                             <input type="number" id="veh-quantity6" name="veh-quantity6" value="0"
                                         </label></td>
                                     </tr>
@@ -201,13 +201,13 @@
             <div class="flex footer-address">
                 <div>
                     <h4>Location 1</h4>
-                    <p>123 Center Street</p>
-                    <p>Cozumel, Mexico</p>
+                    <p>1562 Av. Rafael E. Melgar<br>
+                        San Miguel de Cozumel, Quintana Roo</p>
                 </div>
                 <div>
                     <h4>Location 2</h4>
-                    <p>123 Center Street</p>
-                    <p>Cozumel, Mexico</p>
+                    <p>Quintana Roo C-1 1a, <br>
+                        77675 Cozumel, Q.R., Mexico</p>
                 </div>
             </div>
         </div>
@@ -221,7 +221,7 @@
             <p>&#169; <span id="year"></span>Kerri Morris</p>
         </div>
     </footer>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/modified.js"></script>
     <script src="scripts/navigation.js"></script>
 </body>
 </html>

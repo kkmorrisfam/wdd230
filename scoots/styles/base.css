@@ -440,7 +440,7 @@ form legend {
 
 .submitBtn {
     border: none;
-    background-color: var(--clr-accent1);
+    background-color: var(--clr-accent3);
     color: white;
     font-weight: 600;
     font-size: larger;
@@ -467,11 +467,14 @@ form legend {
 .contact-container h2,
 .location-container h2 {
     text-align: center;
-    /* font-size: large; */
-    /* padding: 1.5rem; */
 }
+
 .location-container p {
     padding: 1.5rem;
+}
+
+.location-container h3 {
+    padding-top: 1rem;
 }
 
 .contact-container {

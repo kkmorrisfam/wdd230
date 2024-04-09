@@ -16,13 +16,13 @@ const weatherCaption = document.querySelector("#weather-caption");
 const humidityElement = document.querySelector("#humidity");
 const weatherDate = document.querySelector("#weather-date");
 const feelsLike = document.querySelector("#feels-like");
-const tomorrowHigh = document.querySelector("#forcast");
+const tomorrowHigh = document.querySelector("#forecast");
 
 // let newDateString = "";
-// const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=20.50&lon=-86.94&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
-// const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=20.50&lon=-86.84&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
-const weatherURL = "data/weather.json";
-const forcastURL = "data/test.json";
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=20.50&lon=-86.94&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
+const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=20.50&lon=-86.84&units=imperial&appid=421d590c51cdfab0417e68811f51ac9c";
+// const weatherURL = "data/weather.json";
+// const forcastURL = "data/test.json";
 
 
 //current weather information
@@ -65,6 +65,7 @@ function displayResults(data){
     maxTempt.innerHTML = `was ${(data.main.temp_max).toFixed(0)}&deg;F`;
   } else {
     maxTempt.innerHTML = `is ${(data.main.temp_max).toFixed(0)}&deg;F`;
+                        
   }
   
 }
@@ -87,38 +88,40 @@ async function apiFetchForecast() {
 }
 
 function displayForecast(data) {
-       
 
-    // let itemDateString = data.list.dt_txt;        
-    // console.log(itemDateString);
-    let currentDate = new Date();
-    let tomorrow = new Date();
-    tomorrow.setDate(currentDate.getDate() +1);
+    console.log(data);
+    let currentDate = new Date(Date.now());
+    // let nextday = 1;
+    let tomorrow = currentDate.getDate() + 1;
     console.log(tomorrow);
-    let newDateString = itemDateString.splice(0,9);
-    let newTomorrow = tomorrow.splice(0,9);
+    console.log(data.list.length);
 
-    // const tomorrowForcast = data.list.filter(item=> {
-    
-    //     return newDateString == newTomorrow;
-    // });
-
-    // console.log("tomorrow forcast new array:");
-    // console.log(tomorrowForcast);
-    //set DOM elements
-    
-            // forecastData.forEach((key) => {    
-            //     //id=forcast; clear innerHTML; create p element, create img
-            //     //set img src (key.weatherIcon), alt, set innerHTML of p to key.temp, key.description
-            //     let p = document.createElement("p");
+    for (let i = 1; i < data.list.length; i++) {
+        let forecastDt = new Date(data.list[i].dt_txt);
+        // console.log(data.list[i].dt_txt);
+        // console.log(forecastDt);
+        // console.log(forecastDt.getHours());
+        // console.log(currentDate.getDate());
+        // console.log(currentDate.getDate() + nextday);
+        // console.log(forecastDt.getDate());
+        if((forecastDt.getHours() == 15) && (forecastDt.getDate() == tomorrow))
+            {
+                    
+                // ... do something here ...
+                // console.log(nextday);
+                // console.log(forecastDt.getDate());
+                // console.log(currentDate.getDate());
+                console.log(data.list[i].main.temp);
+                tomorrowHigh.innerHTML = `${(data.list[i].main.temp).toFixed(0)}&deg;F`;
                 
-            //     let iconsrc = `https://openweathermap.org/img/wn/${key.weatherIcon}.png`;
-            //     let forecastDesc = capitalizeWords(key.description);
-            //     p.innerHTML=`<img src="${iconsrc}" alt="${key.description} image">${key.day} - ${key.temp.toFixed(0)}&deg;F  ${forecastDesc}`;
+            }
             
-            //     forcastDiv.appendChild(p);
-            // });
-}
+            // nextday += 0.125; // Increment nextday by 1/8
+            // if forecast
+        // }
+      }
+            
+  }
 
    
 function capitalizeWords(phrase) {

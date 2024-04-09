@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~Scoots~ Motor Scooter and Jeep Rental Company in Cozumel Mexico</title>
     <meta name="description"
-        content="">
+        content="~Scoots~ Motor Scooter and Jeep Rental Company in Cozumel Mexico">
     <meta name="author" content="Kerri Morris">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -31,10 +31,10 @@
 <body>
     <header>
         <div id = "weather-banner">
-            <button id="banner-btn"></button>
+            <button id="banner-btn" aria-label="Close Weather Banner"></button>
             <p>For Today, the High <span id="todays-high"></span></p>
         </div>
-        <img src="images/logo_scoots.webp">
+        <img src="images/logo_scoots.webp" alt="logo">
         <button id="small-menu" aria-label="small navigation menu"></button>
         <nav class="navigation">
             <ul>
@@ -61,7 +61,7 @@
             <section class="pair">
                 <h2>Your Ultimate Source for Motor Scooter Adventures on the Island</h2>
                 <div class="summary grid-grow">
-                    <div class="card"><img src="images/moped-couple.webp" width="400" height="400"></div>
+                    <div class="card"><img src="images/moped-couple.webp" alt="Tourists on a moped" width="400" height="400"></div>
                     <div class="card">
                         <p>~Scoots~ offers a variety of rental options to cater to different preferences and group sizes. For solo travelers or couples, they provide Honda Motor Scooters, including the Honda Metropolitan (49cc) suitable for one person, the Honda Dio (110cc) accommodating two persons, and the Honda PCX150 (149cc) also suitable for two riders. For those looking for more adventurous options, the company offers the Honda Pioneer 1000 side-by-side ATVs, which can accommodate up to four persons. Additionally, they provide Jeep rentals, with options including a Jeep Wrangler 4-door manual with A/C, accommodating five persons, and a Jeep Wrangler 2-door open-air manual suitable for four persons. </p>
                     </div>
@@ -73,7 +73,7 @@
                         <p>To confirm a reservation, a $50 security deposit is required, and renters must present a valid driver's license at the time of rental. Riders must be at least 12 years old to use the scooters. While the fuel charge is not included in the rental fee, unlimited mileage is offered, and liability insurance is included. Renters can also opt to purchase damage insurance. For the convenience of customers, free delivery to Cozumel hotels or Airbnbs is available for rentals of two days or more. Payments can be made via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo. Additionally, rentals can be returned to either of the company's two physical locations.</p>
                     </div>
                     <div class="card">
-                        <img src="images/jeep-tourists.webp" width="400" height="400">
+                        <img src="images/jeep-tourists.webp" width="400" height="400" alt="Tourists with a jeep on the road">
                     </div>
             </section>
             <section class="weather">
@@ -126,13 +126,13 @@
             <div class="flex footer-address">
                 <div>
                     <h4>Location 1</h4>
-                    <p>123 Center Street</p>
-                    <p>Cozumel, Mexico</p>
+                    <p>1562 Av. Rafael E. Melgar<br>
+                        San Miguel de Cozumel, Quintana Roo</p>
                 </div>
                 <div>
                     <h4>Location 2</h4>
-                    <p>123 Center Street</p>
-                    <p>Cozumel, Mexico</p>
+                    <p>Quintana Roo C-1 1a, <br>
+                        77675 Cozumel, Q.R., Mexico</p>
                 </div>
             </div>
         </div>
@@ -148,5 +148,6 @@
     </footer>
     <script src="scripts/weather.js"></script>
     <script src="scripts/navigation.js"></script>
+    <script src="scripts/modified.js"></script>
 </body>
 </html>

@@ -94,7 +94,7 @@
 
     /* --------------Contact------------------- */
     .location-container h3 {
-        
+
         font-size: 1.2rem;
     }
 
@@ -110,10 +110,21 @@
         text-align: left;
     }
 
+    footer > * {
+        padding: 1rem;
+    }
+
     .footer-info {
         text-align: right;
     }
 
+    .footer-address {
+        font-size: .8rem;
+    }
+
+    .footer-info p {
+        font-size: .9rem;
+    }
     .social {
         justify-content: right;
     }
