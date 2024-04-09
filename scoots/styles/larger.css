@@ -13,16 +13,12 @@
     }
 
     /* -----------Home__________________ */
-    .hero img {
-       /* max-width: 1268px;
-       max-height: 675px;  */
-    }
-
+    
     .hero h1 {
         font-size: 4rem;      
     }
 
-    .hero button {
+    .cta {
         top: 170px;
     }
     

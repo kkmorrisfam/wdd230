@@ -206,7 +206,11 @@ header img {
     border: 2px solid var(--clr-dark2);
     border-radius: 10px;
     background-color: var(--clr-accent2);
-    
+    /* hero button */
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    z-index: 10;
 }
 
 .cta a {
@@ -247,14 +251,6 @@ header img {
     top: 20px;
 
     text-shadow: 2px 2px var(--clr-dark2);
-}
-
-.hero button {
-    position: absolute;
-    top: 90px;
-    right: 10px;
-    z-index: 10;
-
 }
 
 .card img {
@@ -412,6 +408,16 @@ tr:nth-of-type(2n){
     width: 5ch;
     text-align: right;
     padding: 0;
+    /* display: visible; */
+}
+
+label[for="veh-quantity1"],
+label[for="veh-quantity2"],
+label[for="veh-quantity3"],
+label[for="veh-quantity4"],
+label[for="veh-quantity5"],
+label[for="veh-quantity6"] {
+    display: none;
 }
 
 form fieldset {

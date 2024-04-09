@@ -27,7 +27,7 @@
 
     .cta {
         padding: .5rem 3rem;
-        
+        top: 100px;        
     }
 
     #small-menu {
@@ -48,15 +48,7 @@
     }
 
     /* ---------------Home---------------------- */
-    /* .hero img {
-        width: 1089px;
-        height: 590px;
-    } */
-
-    .hero button {
-        top: 100px;
-    }
-
+    
     .weather {
         width: 80%;
     }
@@ -68,7 +60,7 @@
     /* ---------------Rental------------------- */
 
     th {
-        /* text-wrap: wrap; */
+        
         padding: .5rem 1rem;
     }
     td {

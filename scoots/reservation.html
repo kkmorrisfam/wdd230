@@ -58,11 +58,13 @@
                         <fieldset>
                             <legend>Rental Type</legend>
                             <table>
-                                <col width="300">
-                                    <col width="20">
+                                <!-- <col width="300">
+                                    <col width="20"> -->
                                 <thead>
-                                    <th>Vehicle Choice</th>
-                                    <th>Quantity</th>
+                                    <tr>
+                                        <th>Vehicle Choice</th>
+                                        <th>Quantity</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -70,54 +72,77 @@
                                             <input type="checkbox" id="vehicle1" name="vehicle1" value="Honda Metro Scooter">
                                             ~Honda Metro Scooter
                                         </label></td>
-                                        <td><label for="veh-quantity1" area-label="Honda Metro scooter quantity">
-                                            <input type="number" id="veh-quantity1" name="veh-quantity1" value="0"
-                                        </label></td>
+                                        <td><label for="veh-quantity1">Honda Metro scooter quantity</label>
+                                            <input type="number" id="veh-quantity1" name="veh-quantity1" value="0">
+                                        </td>
+                                        <!-- <td>
+                                            <input type="number" id="veh-quantity1" name="veh-quantity1" value="0" area-label="Honda Metro scooter quantity">
+                                        </td> -->
                                     </tr>
                                     <tr>
-                                        <td><label for="vehicle2">
+                                        <td>
+                                            <label for="vehicle2">
                                             <input type="checkbox" id="vehicle2" name="vehicle2" value="Honda Metro Scooter">
                                             ~Honda Dio Scooter
-                                        </label></td>
-                                        <td><label for="veh-quantity2" area-label="Honda Dio scooter quantity">
-                                            <input type="number" id="veh-quantity2" name="veh-quantity2" value="0"
-                                        </label></td>
+                                            </label></td>
+                                        <td>
+                                            <label for="veh-quantity2">Honda Dio scooter quantity</label>
+                                            <input type="number" id="veh-quantity2" name="veh-quantity2" value="0">
+                                        </td>
+                                        <!-- <td>
+                                            <input type="number" id="veh-quantity2" name="veh-quantity2" value="0" area-label="Honda Dio scooter quantity">
+                                        </td> -->
                                     </tr>
                                     <tr>
                                         <td><label for="vehicle3">
                                             <input type="checkbox" id="vehicle3" name="vehicle3" value="Honda Metro Scooter">
                                             ~Honda PCX150 Scooter
                                         </label></td>
-                                        <td><label for="veh-quantity3" area-label="Honda PCX150 scooter quantity">
-                                            <input type="number" id="veh-quantity3" name="veh-quantity3" value="0"
-                                        </label></td>
+                                        <td>
+                                            <label for="veh-quantity3">Honda PCX150 scooter quantity</label>
+                                            <input type="number" id="veh-quantity3" name="veh-quantity3" value="0">
+                                        </td>
+                                        <!-- <td>
+                                            <input type="number" id="veh-quantity3" name="veh-quantity3" value="0" area-label="Honda PCX150 scooter quantity">
+                                        </td> -->
                                     </tr>
                                     <tr>
                                         <td><label for="vehicle4">
                                             <input type="checkbox" id="vehicle4" name="vehicle4" value="Honda Metro Scooter">
                                             Honda Pioneer ATV
                                         </label></td>
-                                        <td><label for="veh-quantity4" area-label="Honda Pioneer ATV quantity">
-                                            <input type="number" id="veh-quantity4" name="veh-quantity4" value="0"
-                                        </label></td>
+                                        <td>
+                                            <label for="veh-quantity4">Honda Pioneer ATV quantity</label>
+                                            <input type="number" id="veh-quantity4" name="veh-quantity4" value="0">
+                                        </td>
+                                        <!-- <td>
+                                            <input type="number" id="veh-quantity4" name="veh-quantity4" value="0" area-label="Honda Pioneer ATV quantity">
+                                        </td> -->
                                     </tr>
                                     <tr>
                                         <td><label for="vehicle5">
                                             <input type="checkbox" id="vehicle5" name="vehicle5" value="Honda Metro Scooter">
                                             Jeep Wrangler(2-door)
                                         </label></td>
-                                        <td><label for="veh-quantity5" area-label="Jeep Wrangler 2-door quantity">
-                                            <input type="number" id="veh-quantity5" name="veh-quantity5" value="0"
-                                        </label></td>
+                                        <td>
+                                            <label for="veh-quantity5">Jeep Wrangler 2-door quantity</label>
+                                            <input type="number" id="veh-quantity5" name="veh-quantity5" value="0">
+                                        </td>
+                                        <!-- <td>
+                                            <input type="number" id="veh-quantity5" name="veh-quantity5" value="0" area-label="Jeep Wrangler 2-door quantity">
+                                        </td> -->
                                     </tr>
                                     <tr>
                                         <td><label for="vehicle6">
                                             <input type="checkbox" id="vehicle6" name="vehicle6" value="Honda Metro Scooter">
                                             Jeep Wrangler(4-door)
                                         </label></td>
-                                        <td><label for="veh-quantity6" area-label="Jeep Wrangler 4-door quantity">
-                                            <input type="number" id="veh-quantity6" name="veh-quantity6" value="0"
-                                        </label></td>
+                                        <td><label for="veh-quantity6">Jeep Wrangler 4-door quantity</label>
+                                            <input type="number" id="veh-quantity6" name="veh-quantity6" value="0">
+                                        </td>
+                                        <!-- <td>
+                                            <input type="number" id="veh-quantity6" name="veh-quantity6" value="0" area-label="Jeep Wrangler 4-door quantity">
+                                        </td> -->
                                     </tr>
                                 </tbody>
                             </table>
@@ -146,18 +171,18 @@
                             <label for="passengers" class="top">Number of Passengers
                                 <input type="number" name="passengers" id="passengers" value="1">
                             </label>                                
-                            <label for="location" class="top">Location Pick-up
-                                <input list="location" name="location" id="location">
+                            <label for="pickup" class="top">Location Pick-up
+                                <input list="location" name="pickup" id="pickup" placeholder="Location Pick-up">
                                 <datalist id="location">
                                     <option value="By the Ferry Dock"></option>
-                                    <option value="By the Cruise Dock"></option>
+                                    <option value="By the Cruise Dock"></option>                                
                                 </datalist>
                             </label>
                             <label for="touring-with" class="top">Hotel Name or Address or Cruise Ship Name
-                                <input type="text" name="touring-with" id="touring-with">
+                                <input type="text" name="touring-with" id="touring-with" placeholder="Lodging Place or Cruise Ship Name">
                             </label>
                             <label for="comments">Additional Comments (special accommodation request, drop-off request)
-                                <textarea rows="4" cols="50" name="comments" placeholder="Enter comments here...">
+                                <textarea rows="4" cols="50" name="comments" id="comments" placeholder="Enter comments here...">
                                 </textarea>                                        
                             </label>
 
@@ -184,6 +209,7 @@
                     
         
                 </div>
+            </div>
         </section>
     </main>
     <footer class="flex">
