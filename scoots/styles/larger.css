@@ -14,14 +14,12 @@
 
     /* -----------Home__________________ */
     .hero img {
-       max-width: 1268;
-       max-height: 675; 
+       /* max-width: 1268px;
+       max-height: 675px;  */
     }
 
     .hero h1 {
-        font-size: 4rem;
-        /* outline: 2px solid black; */
-        /* text-shadow: 2px 2px var(--clr-accent3); */
+        font-size: 4rem;      
     }
 
     .hero button {

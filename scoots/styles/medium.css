@@ -48,10 +48,10 @@
     }
 
     /* ---------------Home---------------------- */
-    .hero img {
-        width: 1089;
-        height: 590;
-    }
+    /* .hero img {
+        width: 1089px;
+        height: 590px;
+    } */
 
     .hero button {
         top: 100px;
