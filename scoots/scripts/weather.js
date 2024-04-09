@@ -4,8 +4,7 @@ const weatherBanner = document.querySelector("#weather-banner");
 const bannerBtn = document.querySelector("#banner-btn");
 
 bannerBtn.addEventListener("click", () => {
-    weatherBanner.classList.add("hide");
-    console.log("inside event click");
+    weatherBanner.classList.add("hide");    
 });
 
 // Get current weather - display results
@@ -48,7 +47,7 @@ function displayResults(data){
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   
   let newDateString = getDate(data.dt);
-  console.log(newDateString);
+  
   
   weatherDate.textContent = newDateString;
   weatherIcon.setAttribute('src', iconsrc);
@@ -75,9 +74,7 @@ async function apiFetchForecast() {
     try{
         const response = await fetch(forcastURL);
         if (response.ok) {
-            const data = await response.json();
-            console.log("inside apiFetchForcast")
-            console.log(data);
+            const data = await response.json();            
             displayForecast(data);
         } else {
             throw(Error(await response.text()))
@@ -88,39 +85,19 @@ async function apiFetchForecast() {
 }
 
 function displayForecast(data) {
-
-    console.log(data);
+    
     let currentDate = new Date(Date.now());
     // let nextday = 1;
     let tomorrow = currentDate.getDate() + 1;
-    console.log(tomorrow);
-    console.log(data.list.length);
 
     for (let i = 1; i < data.list.length; i++) {
         let forecastDt = new Date(data.list[i].dt_txt);
-        // console.log(data.list[i].dt_txt);
-        // console.log(forecastDt);
-        // console.log(forecastDt.getHours());
-        // console.log(currentDate.getDate());
-        // console.log(currentDate.getDate() + nextday);
-        // console.log(forecastDt.getDate());
+  
         if((forecastDt.getHours() == 15) && (forecastDt.getDate() == tomorrow))
             {
-                    
-                // ... do something here ...
-                // console.log(nextday);
-                // console.log(forecastDt.getDate());
-                // console.log(currentDate.getDate());
-                console.log(data.list[i].main.temp);
-                tomorrowHigh.innerHTML = `${(data.list[i].main.temp).toFixed(0)}&deg;F`;
-                
-            }
-            
-            // nextday += 0.125; // Increment nextday by 1/8
-            // if forecast
-        // }
-      }
-            
+                tomorrowHigh.innerHTML = `${(data.list[i].main.temp).toFixed(0)}&deg;F`;                
+            }            
+      }            
   }
 
    

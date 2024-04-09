@@ -2,13 +2,13 @@
 
     .grid-grow {        
         margin: 0 auto;
-        width: 80%;
+        width: 95%;
         
     }
 
     
     main {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -29,7 +29,7 @@
     }
     
     .weather {
-        width: 50%;
+        width: 70%;
     }
 
     /* -----------Rental----------------- */
@@ -41,5 +41,11 @@
 
     .reserve-grid {
         width: 95%;
+    }
+
+    /* ----------Contact----------------- */
+
+    .required {
+        text-align: center;
     }
 }

@@ -65,10 +65,6 @@
         padding: 1.2rem;
     }
     
-    .summary img {        
-        margin-left: .5rem;        
-    }
-
     /* ---------------Rental------------------- */
 
     th {
@@ -80,13 +76,11 @@
     }
     
     .table-container {
-        max-width: 90%;
-        /* overflow-x: scroll; */
+        max-width: 90%;    
     }
     
     /* -------------Reservation---------------- */
 
-    /* .reserve-grid .card:nth-child(2) p */
     .reserve-pair p {
         padding: 1.5rem;
     }
@@ -94,8 +88,11 @@
 
     /* --------------Contact------------------- */
     .location-container h3 {
-
         font-size: 1.2rem;
+    }
+
+    .map iframe {     
+        max-width: 100%;
     }
 
     /* ----------Thank You_____________________ */
